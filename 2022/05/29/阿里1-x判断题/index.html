@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <script src="/live2d-widget/autoload.js"></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="常错判断1、Nginx(“ engine x”)是一款是由俄罗斯的程序设计师Igor Sysoev所开发高性能的DB和反向代理服务器，也是一个IMAP&#x2F;POP3&#x2F;SMTP代理服务器。 12错高性能的 Web 和 反向代理 服务器  2、快照可以为所有类型的云盘创建崩溃—致性快照，是—种便捷高效的数据容灾手段，常用于数据备份、制作自定义镜像、应用容灾等。云盘第—份快照是实际使用量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里1+x判断题">
+<meta property="og:url" content="http://example.com/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%88%A4%E6%96%AD%E9%A2%98/index.html">
+<meta property="og:site_name" content="AlexQFMM的博客">
+<meta property="og:description" content="常错判断1、Nginx(“ engine x”)是一款是由俄罗斯的程序设计师Igor Sysoev所开发高性能的DB和反向代理服务器，也是一个IMAP&#x2F;POP3&#x2F;SMTP代理服务器。 12错高性能的 Web 和 反向代理 服务器  2、快照可以为所有类型的云盘创建崩溃—致性快照，是—种便捷高效的数据容灾手段，常用于数据备份、制作自定义镜像、应用容灾等。云盘第—份快照是实际使用量">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-29T00:54:12.000Z">
+<meta property="article:modified_time" content="2022-05-29T01:58:19.313Z">
+<meta property="article:author" content="AlexQFMM">
+<meta property="article:tag" content="判断">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%88%A4%E6%96%AD%E9%A2%98/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>阿里1+x判断题 | AlexQFMM的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">AlexQFMM的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%88%A4%E6%96%AD%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Avatar.jpg">
+      <meta itemprop="name" content="AlexQFMM">
+      <meta itemprop="description" content="Rainbow！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AlexQFMM的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          阿里1+x判断题
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-29 08:54:12 / 修改时间：09:58:19" itemprop="dateCreated datePublished" datetime="2022-05-29T08:54:12+08:00">2022-05-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%98%BF%E9%87%8C-1-x%EF%BC%88%E5%88%9D%E7%BA%A7%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">阿里 1+x（初级）</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="常错判断"><a href="#常错判断" class="headerlink" title="常错判断"></a>常错判断</h1><p>1、Nginx(“ engine x”)是一款是由俄罗斯的程序设计师Igor Sysoev所开发<em><strong>高性能的DB和反向代理服务器</strong></em>，也是一个IMAP&#x2F;POP3&#x2F;SMTP代理服务器。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">高性能的 Web 和 反向代理 服务器</span><br></pre></td></tr></table></figure>
+
+<p>2、快照可以为所有类型的云盘创建崩溃—致性快照，是—种便捷高效的数据容灾手段，常用于数据备份、制作自定义镜像、应用容灾等。云盘第—份快照是实际使用量的全量快照，<em><strong>即使是空数据块，也会做备份</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">不备份空数据块</span><br></pre></td></tr></table></figure>
+
+<p>3、在云计算平台中，<em><strong>每个用户一个资源池</strong></em>，通过动态资源调度机制实现对资源的合理分配。与传统的数据中心相比，资源利用率可以提高六十个百分点以上，优势十分明显。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">许多用户公用一个资源池</span><br></pre></td></tr></table></figure>
+
+<p>4、在云平台创建云服务器实例时，<em><strong>可以先不选择镜像</strong></em>，创建完云服务器实例后，再购买镜像，将镜像与云服务器实例绑定，并且可以随时解绑。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">创建云服务器实例时必须选择：安全组;IP地址;镜像;区域</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>5、UNIX是—种<strong>数据处理系统</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">Unix是多用户多任务操作系统</span><br></pre></td></tr></table></figure>
+
+<p>6、<em><strong>AUTO.BAT</strong></em>是自动批处理文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">AUTOEXEC.BAT自动批处理文件</span><br></pre></td></tr></table></figure>
+
+<p>7、受理CDN业务<em><strong>无需备案</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">CDN业务受理必须要求备案</span><br></pre></td></tr></table></figure>
+
+<p>8、流量控制是<em><strong>数据链路层特有</strong></em>的功能</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">流量控制并不是数据链路层特有的功能，许多高层协议也提供流量控制功能，只不过流量控制的对象不同而已</span><br></pre></td></tr></table></figure>
+
+<p>9、对于传统制造业客户上云需求，<em><strong>争取一步到位</strong></em>，引导客户建设云上工厂。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">上云不能一步到位，要循规蹈矩，根据企业现状，分阶段上云</span><br></pre></td></tr></table></figure>
+
+<p>10、海量的医疗影像多选用<em><strong>容量型云硬盘</strong></em>进行存储。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">—般采用OSS对象存储进行存储</span><br></pre></td></tr></table></figure>
+
+<p>11、<em><strong>堡垒机</strong></em>在等级保护中属于必须设备。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">堡垒机不是等保的必须设备。防火墙才是</span><br></pre></td></tr></table></figure>
+
+<p>12、异步灾备中，灾备系统主要用来提供在主节点宕机时，及时接替用户需求;同步灾备时，可采用负载均衡，实现业务分担</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>13、Java会有很多配置文件，根据用途存放在不同的目录下面，而且后缀名也不尽相同，最常见的配置文件的后缀名是conf和cnf，“properties后缀名也是Java的配置文件””是否正确。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对</span><br><span class="line">Java中conf文件夹下的主配置文件后缀名是properties,因此properties也是Java的配置文件的后缀名之一。而且在Web项目中大部分配置文件或者属性文件的后缀名也是properties。</span><br></pre></td></tr></table></figure>
+
+<p>14、JDK在安装完成之后，需要进行环境配置，才能正常使用，无论是Windows还是Linux的发行版，都<em><strong>需要</strong></em>重启系统才能使环境变量生效。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">不需要</span><br></pre></td></tr></table></figure>
+
+<p>15、Python变量名<em><strong>不区分</strong></em>大小写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">区分</span><br></pre></td></tr></table></figure>
+
+<p>16、阿里云弹性伸宿应用场景<em><strong>只包括弹性扩展和弹性收缩</strong></em>两种类型。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">阿里云弹性伸缩应用场景包括弹性扩展、弹性收缩和弹性自愈。</span><br></pre></td></tr></table></figure>
+
+<p>17、创建ECS实例时，涉及到选择镜像，镜像文件相当于副本文件，该副本文件<em><strong>包含了一块云盘中的系统数据</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">创建ECS实例时，涉及到选择镜像,镜像文件相当于副本文件，该副本文件包含了一块或多块云盘中的所有数据，对于ECS实例而言，这些云盘可以是单块系统盘，也可以是系统盘加数据盘的组合。</span><br></pre></td></tr></table></figure>
+
+<p>18、<em><strong>堡垒机</strong></em>支持统一管控企业内多个云账号和资源账号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">云安全中心支持统一管控企业内多个云账号和资源账号，并能够通过统—的界面展示企业内各个账号中检测出的安全风险。</span><br></pre></td></tr></table></figure>
+
+<p>19、安全组是—种<em><strong>实体</strong></em>防火墙，具备状态检测和数据包过滤能力，用于在云端划分安全域</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">虚拟</span><br></pre></td></tr></table></figure>
+
+<p>20、阿里云云防火墙可统—管理互联网到业务的访问控制策略和业务与业务之间的微隔离策略。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>21、如果需要上网，电脑上<em><strong>必须</strong></em>要配置DNS</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">不必须</span><br></pre></td></tr></table></figure>
+
+<p>22、<em><strong>VPN网关</strong></em>在VPC间建立私网通信通道，通过自动路由分发及学习，提高网络的快速收敛和跨网络通信的质量和安全性，实现全网资源的互通</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">云企业网(Cloud Enterprise Network)帮助您在VPC间建立私网通信通道，通过自动路由分发及学习，提高网络的快速收敛和跨网络通信的质量和安全性，实现全网资源的互通，帮助您打造—张具有企业级规模和通信能力的互联网络。</span><br></pre></td></tr></table></figure>
+
+<p>23、使用CDN加速资源时，如果出现源站资源变化而CDN节点仍然是旧资源的情况，可通过配置静态资源指定目录和文件后缀名的缓存过期时间提高访问效率。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>24、如果您的网站易遭受攻击且必须兼顾加速的业务场景，则需要使用<em><strong>全站加速功能</strong></em>，提升全站安全性。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line"></span><br><span class="line">安全加速</span><br></pre></td></tr></table></figure>
+
+<p>25、<em><strong>HTTP协议</strong></em>是以安全为目标的HTTP通道，<em><strong>HTTP</strong></em>的安全基础是SSL&#x2F;TLS协议。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">HTTPS协议是以安全为目标的HTTP通道，简单来说，HTTPS是HTTP的安全版，即将HTTP用SSL/TLS协议进行封装，HTTPS的安全基础是SSL/TLS协议。</span><br></pre></td></tr></table></figure>
+
+<p>26、V2V迁移是指从其他云平台或者传统虚拟化平台的虚拟主机迁移到阿里云的ECS虚拟主机</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对</span><br><span class="line">V是指的虚拟化virtual,代表的是云平台或者虚拟机，P是指的物理机Physical,所以V2V就是指从其他云平台或者传统虚拟化平台的虚拟主机迁移到阿里云的ECS虚拟主机</span><br></pre></td></tr></table></figure>
+
+<p>27、企业级实例性能稳定且有严格的SLA保证，共享型实例性能不稳定<em><strong>且没有可用性</strong></em>SLA保证。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">企业级实例采用固定CPU调度模式。每个vCPU绑定到一个物理CPU超线程，实例间无CPU资源争抢，实例计算性能稳定且有严格的SLA保证。共享型实例采用非绑定CPU调度模式。每个vCPU会被随机分配到任何空闲CPU超线程上，不同实例vCPU会争抢物理CPU资源，并导致高负载时计算性能波动不稳定，有可用性SLA保证，但无性能SLA保证。</span><br></pre></td></tr></table></figure>
+
+<p>28、在大量高并发的情况下，可以使用nginx来代替apache以获取更好的性能。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对</span><br><span class="line">nginx处理请求是异步非阻塞的，而apache则是阻塞型的，在高并发下nginx能保持低资源低消耗高性能。</span><br></pre></td></tr></table></figure>
+
+<p>29、阿里云云数据库RDS在变更配置后，实例的内外网地址以及对应的<em><strong>IP地址</strong></em>均不会发生变化。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">内网/外网地址和读写分离地址不会改变，但是对应的IP地址可能会变化。建议在应用程序中使用内网/外网地址或读写分离地址。</span><br></pre></td></tr></table></figure>
+
+<p>30、阿里云快照服务<em><strong>需要在对应的云盘上安装代理才可以使用</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">阿里云快照服务是—种无代理(Agentless)的数据备份方式，</span><br></pre></td></tr></table></figure>
+
+<p>31、CDN的性能指标中，缓存命中率越高，代表性能越好。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>32、之前实例的地域为中国杭州，数据盘有快照。实例到期释放后在中国杭州地域又新购了一台实例，<em><strong>可以直接回滚到之前的实例</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">使用快照回滚云盘需要回滚到原来的实例。但可以利用之前数据盘的快照创建云盘，将云盘挂载到新的实例上。</span><br></pre></td></tr></table></figure>
+
+<p>33、一个请求通过负载均衡到达后端服务器，如果客户端在未收到后端服务器的回复前主动断开和负载均衡的连接，<em><strong>负载均衡会同时断开和后端服务器的连接</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">负载均衡在读写过程中不会断开与后端服务器的连接。</span><br></pre></td></tr></table></figure>
+
+<p>34、标准化文档—旦制定，<em><strong>就不应该修改</strong></em>。<br>错</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">标准化文档只是当前的最佳实践，随着时间的推移，新技术的引入,最佳实践也会有更新，因此标准化文档的拟定会是长期的不断迭代的过程</span><br></pre></td></tr></table></figure>
+
+<p>35、load越大，代表当前机器负载<em><strong>越低</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">load值代表的是当前负载情况，值越大，说明负载越高，反之越低</span><br></pre></td></tr></table></figure>
+
+<p>36、阿里云服务器迁移中心SMC是<em><strong>收费服务</strong></em>，使用时需要根据服务器规模收取使用费用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">SMC为免费服务，</span><br></pre></td></tr></table></figure>
+
+<p>37、小涛在查看目录与结构时，发现子目录显示比较乱，想要以树形结构显示目录，此时小涛只需要使用tree命令即可，<em><strong>不需要其他操作</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">查看树形结构的目录命令为tree,</span><br><span class="line">但使用tree需要下载tree包，所以此题为错误</span><br></pre></td></tr></table></figure>
+
+<p>38、在shel1命令行方式下，一行只能写一个指令，每次只能使用一个命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">可以用  ； 隔开</span><br></pre></td></tr></table></figure>
+
+<p>39、如果选择Apache作为inetd进程运行wwWW服务，那么在httpd.conf文件中指定服务端口就没有用，而是需要在<em><strong>inetd的配置文件</strong></em>&#x2F;etc&#x2F;services中指定。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">Apache配置文件参数</span><br></pre></td></tr></table></figure>
+
+<p>40、从GROUPBY分组的结果集中在此用条件表达式进行筛选的子句是<em><strong>FROM</strong></em>吗?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">从GROUP BY分组的结果集中在此用条件表达式进行筛选的子句是HAVING吗</span><br></pre></td></tr></table></figure>
+
+<p>41、MySQL中的enum(是MySQL的枚举数据类型?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>42、小王想把自己阿里云云主机ECS从经典网络迁移到专有网络VPC，内网IP不会变化，小王的理解是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>43、常见网络连接设备有<em><strong>网卡</strong></em>、集线器、交换机、路由器等，该说法是否正确</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">中继器、集线器、交换机和路由器等</span><br></pre></td></tr></table></figure>
+
+<p>44、”因为Virtual PC模拟了显卡，所以通用性很强”该描述是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>45、阿里云容器服务兼容开源Kubernetes框架</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>46、基础设施服务(1aas)的费者对事件的遏制、排除和恢复负主要责任，这句话描述是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>47、小刘是公司的运维工程师，公司业务要搬迁上云对于网络规划，小刘想<em><strong>公有云网络和本地基础设施应该始终使用相同的网络地址范围</strong></em>这种思路是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">云和本地基础设施应该始终使用不同的网络地址范围，否则会导致IP冲突。</span><br></pre></td></tr></table></figure>
+
+<p>48、自定义DNS是指自己创建的DNS服务器，并使用自定义DNS服务器提供域名解析服务。对于自定义DNS服务器描述是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>49、Moodle是一个课程管理系统,采用PHP加MySQL方式运行的自由开源软件。使用Moodle为学生建立网上动态网站，可以根据需要随时调整界面、增减内容。<em><strong>在安装部署完成后，用户就可以通过使用域名访问网站站点了</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错</span><br><span class="line">安装完成后，用户可以使用公网IP地址访问您的网站。如果您希望用户使用域名访问您的站点，应先绑定域名。</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%88%A4%E6%96%AD/" rel="tag"># 判断</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/28/%E9%98%BF%E9%87%8C1-x%E5%8D%95%E9%80%89%E9%A2%98/" rel="prev" title="阿里1+x单选题">
+      <i class="fa fa-chevron-left"></i> 阿里1+x单选题
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E9%94%99%E5%88%A4%E6%96%AD"><span class="nav-number">1.</span> <span class="nav-text">常错判断</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="AlexQFMM"
+      src="/images/Avatar.jpg">
+  <p class="site-author-name" itemprop="name">AlexQFMM</p>
+  <div class="site-description" itemprop="description">Rainbow！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=22707025&auto=1&height=66"></iframe>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">AlexQFMM</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
