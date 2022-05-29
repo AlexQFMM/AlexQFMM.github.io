@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <script src="/live2d-widget/autoload.js"></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="多选1、在Linux中第一个字符代表这个文件是目录、文件或链接文件等等。当为[ -]则是（）;若是[ b ]则表示为（） 12A.文件D.装置文件里面的可供储存的接口设备(可随机存取装置)  2、在Linux系统当中，1s命令可能是最常被运行的。加上不同的参数运行的效果不—样，比如-a参数是指();-d参数是指(); 12B.全部的文件,连同隐藏档(开头为.的文件)一起列出来c.仅列出目录本身,而">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里1+x多选题">
+<meta property="og:url" content="http://example.com/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%A4%9A%E9%80%89%E9%A2%98/index.html">
+<meta property="og:site_name" content="AlexQFMM的博客">
+<meta property="og:description" content="多选1、在Linux中第一个字符代表这个文件是目录、文件或链接文件等等。当为[ -]则是（）;若是[ b ]则表示为（） 12A.文件D.装置文件里面的可供储存的接口设备(可随机存取装置)  2、在Linux系统当中，1s命令可能是最常被运行的。加上不同的参数运行的效果不—样，比如-a参数是指();-d参数是指(); 12B.全部的文件,连同隐藏档(开头为.的文件)一起列出来c.仅列出目录本身,而">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-29T05:37:47.000Z">
+<meta property="article:modified_time" content="2022-05-29T13:18:42.482Z">
+<meta property="article:author" content="AlexQFMM">
+<meta property="article:tag" content="多选">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%A4%9A%E9%80%89%E9%A2%98/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>阿里1+x多选题 | AlexQFMM的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">AlexQFMM的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%A4%9A%E9%80%89%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Avatar.jpg">
+      <meta itemprop="name" content="AlexQFMM">
+      <meta itemprop="description" content="Rainbow！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AlexQFMM的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          阿里1+x多选题
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-29 13:37:47 / 修改时间：21:18:42" itemprop="dateCreated datePublished" datetime="2022-05-29T13:37:47+08:00">2022-05-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%98%BF%E9%87%8C-1-x%EF%BC%88%E5%88%9D%E7%BA%A7%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">阿里 1+x（初级）</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="多选"><a href="#多选" class="headerlink" title="多选"></a>多选</h1><p>1、在Linux中第一个字符代表这个文件是目录、文件或链接文件等等。当为[ -]则是（）;若是[ b ]则表示为（）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.文件</span><br><span class="line">D.装置文件里面的可供储存的接口设备(可随机存取装置)</span><br></pre></td></tr></table></figure>
+
+<p>2、在Linux系统当中，1s命令可能是最常被运行的。加上不同的参数运行的效果不—样，比如-a参数是指();-d参数是指();</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.全部的文件,连同隐藏档(开头为.的文件)一起列出来</span><br><span class="line">c.仅列出目录本身,而不是列出目录内的文件数据</span><br></pre></td></tr></table></figure>
+
+<p>3、下面属于测试用例黑盒技术的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.等级类划分</span><br><span class="line">B.边界值分析</span><br><span class="line">C.错误推测</span><br><span class="line">D.因果图</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>4、批量删除当前目录下后缀名为.c的文件。如a.c、b.c。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.rm *.c</span><br><span class="line">B. find . -name &quot;*.c&quot; -maxdepth 1 | xargs rm</span><br></pre></td></tr></table></figure>
+
+<p>5、进程间通讯方式有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.管道</span><br><span class="line">B.消息队列</span><br><span class="line">C.共享内存</span><br><span class="line">D.文件和记录锁定</span><br></pre></td></tr></table></figure>
+
+<p>6、云服务器可用的镜像类型有哪几个?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.共有镜像</span><br><span class="line">B.自定义镜像</span><br><span class="line">C.服务市场镜像</span><br></pre></td></tr></table></figure>
+
+<p>7、包年包月的云主机和按需付费的不同之处在于?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.包年包月的云主机费用单价更低</span><br><span class="line">c.包年包月的云主机在到期后会进入回收站一段时间，避免数据损失</span><br></pre></td></tr></table></figure>
+
+<p>8、以下关于云主机的磁盘部分，描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.当数据盘，系统盘为本地盘时，硬件配置(CPU，内存)不可升降</span><br><span class="line">B.当数据盘，系统盘为云硬盘时，硬件配置(CPU，内存)调整功能</span><br></pre></td></tr></table></figure>
+
+<p>9、创建云主机时，可以购买的网络带宽有哪几个计费标准?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.按使用流量计费</span><br><span class="line">B.按带宽计费</span><br></pre></td></tr></table></figure>
+
+<p>10、UNIX系统由哪几部分组成?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.Kemel(内核)</span><br><span class="line">B.Shell(外壳)</span><br><span class="line">c.工具及应用程序</span><br></pre></td></tr></table></figure>
+
+<p>11、Neutron服务包括下面哪些组件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. neutron-server</span><br><span class="line">C. OpenStack网络插件和代理</span><br><span class="line">D. 消息队列</span><br></pre></td></tr></table></figure>
+
+<p>12、白盒技术主要包括?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.语句覆盖</span><br><span class="line">B.判定覆盖</span><br><span class="line">C.条件覆盖</span><br><span class="line">D.逻辑覆盖</span><br></pre></td></tr></table></figure>
+
+<p>13、在容器平台中，日志大致分为环境日志和应用日志，下面日志中属于环境日志的有?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.容器运行日志</span><br><span class="line">C.宿主机容器引擎日志</span><br><span class="line">D.容器平台管理日志</span><br></pre></td></tr></table></figure>
+
+<p>14、项目从开始到结束的若干阶段构成了项目的生命周期，下面哪些是项目生命周期阶段?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.实施阶段</span><br><span class="line">C.概念阶段</span><br><span class="line">D.计划阶段</span><br></pre></td></tr></table></figure>
+
+<p>15、交换机的主要功能有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.环路避免</span><br><span class="line">C.转发过滤</span><br><span class="line">D.地址学习</span><br></pre></td></tr></table></figure>
+
+<p>16、VLAN划分方式有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.基于策略方式</span><br><span class="line">D.基于MAC地址方式</span><br></pre></td></tr></table></figure>
+
+<p>17、Samba服务所需软件包括哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. Samba</span><br><span class="line">C. Samba-client</span><br><span class="line">D. Samba-common</span><br></pre></td></tr></table></figure>
+
+<p>18、NFS由下列那几个部分组成?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.NFS内核模块</span><br><span class="line">B.NFS用户空间工具</span><br><span class="line">C.RPC相关服务</span><br></pre></td></tr></table></figure>
+
+<p>19、下面那些是主从数据的优点?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.方便做数据的热备份</span><br><span class="line">B.架构的扩展更容易</span><br><span class="line">C.读写分离，使数据库能支撑更大的并发</span><br></pre></td></tr></table></figure>
+
+<p>20、下面选项当中，哪些是私有云平台分类?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.私有云平台</span><br><span class="line">B.私有云服务</span><br><span class="line">D.私有云管理平台</span><br></pre></td></tr></table></figure>
+
+<p>21、下列选项当中，不是说明Swift组件作用的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.用于提供镜像服务</span><br><span class="line">C.用于提供计星与监控功能</span><br><span class="line">D.用于提供编排服务或功能</span><br></pre></td></tr></table></figure>
+
+<p>22、在下列选项当中，属于Mysq1特点的有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.性能卓越、服务稳定</span><br><span class="line">B.成本低、支持多种操作系统</span><br><span class="line">C.对流行的PHP语言无缝支持</span><br></pre></td></tr></table></figure>
+
+<p>23、以下选项的组合可以保护S3对象免于意外删除和意外覆盖?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.在存储桶上启用S3版本控制。</span><br><span class="line">D.启用多因素身份验证(MFA)保护的访问。</span><br></pre></td></tr></table></figure>
+
+<p>24、以下哪项是存储网关的有效选项?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.文件网关</span><br><span class="line">B.卷网关</span><br></pre></td></tr></table></figure>
+
+<p>25、哪些是VPC端点类型?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.接口端点</span><br><span class="line">C.网关端点</span><br></pre></td></tr></table></figure>
+
+<p>26、以下哪项提供了自动备份RDS数据库的方法?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.自动快照</span><br><span class="line">C.自动备份</span><br></pre></td></tr></table></figure>
+
+<p>27、以下哪些是SSD支持的卷的特征?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.事务性工作量</span><br><span class="line">C. Small I/O Size</span><br></pre></td></tr></table></figure>
+
+<p>28、下列选项当中，哪些不是K8S查看Deployment列表的命令?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. kubectl show deployment</span><br><span class="line">C. kubectl display deployment</span><br><span class="line">D. kubectl check deployment</span><br></pre></td></tr></table></figure>
+
+<p>29、下面有关bash配置文件，说法正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.bash logout:退出shell时，要执行的命令</span><br><span class="line">B.bash profile:每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行—次!默认情况下</span><br><span class="line">D. /etc/profile:此文件为系统的每个用户设置环境信息，当用户第一次登录时，该文件被执行</span><br></pre></td></tr></table></figure>
+
+<p>30、将文件file1复制为file2可以用下面哪些命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.cp file1 file2</span><br><span class="line">B.cat file1 &gt;file2</span><br><span class="line">c.cat &lt; file1 &gt;file2</span><br><span class="line">D.dd if=file1 of=file2</span><br></pre></td></tr></table></figure>
+
+<p>31、Docker中Cgroup的功能是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.资源限制</span><br><span class="line">B.优先级分配</span><br><span class="line">C.资源统计</span><br><span class="line">D.任务控制</span><br></pre></td></tr></table></figure>
+
+<p>32、下列有关Nginx配置文件nginx.conf的叙述正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. nginx进程数设置为CPU总核心数最佳</span><br><span class="line">D.设置工作模式与连接数上限时，应考虑单个进程最大连接数(最大连接数=连接数*进程数)</span><br></pre></td></tr></table></figure>
+
+<p>33、下面有关Ext2和ext3文件系统的描述，错误的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. ext2lext3文件系统使用索引节点来记录文件信息，包含了一个文件的长度、创建及修改时间、权限、所属关系、磁盘中的位置等信息</span><br><span class="line">D. ext3支持1EB的文件系统，以及16TB的文件。</span><br></pre></td></tr></table></figure>
+
+<p>34、在Linux系统，关于硬链接的描述正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.不可以跨文件系统</span><br><span class="line">D.链接文件的i节点与被链接文件的i节点相同</span><br></pre></td></tr></table></figure>
+
+<p>35、下面关于glance服务的说法，正确的是。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A. glance-api负责接爱ImageAPI请求，处理image查询和存储等</span><br><span class="line">B. glance-registry负责存储，处理和检索image的元数据(大小，类型等)</span><br><span class="line">C.使用数据库来存储image文件的元数据</span><br><span class="line">D.支持不同的存储仓库来存储image文件，包括swift,本地磁盘，RADOS块设备，AmazonS3,HTTP</span><br></pre></td></tr></table></figure>
+
+<p>36、下面属于nova组件中的服务的是。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. nova-api</span><br><span class="line">B. nova-scheduler</span><br><span class="line">C. nova-novncproxy</span><br></pre></td></tr></table></figure>
+
+<p>37、块存储服务(cinder)为实例提供块存储。存储的分配和消耗是由块存储驱动器，或者多后端配置的驱动器决定的。下面那些是可用的驱动程序。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.NAS/SAN</span><br><span class="line">B.NFS</span><br><span class="line">D.Ceph</span><br></pre></td></tr></table></figure>
+
+<p>38、您正在从本地网络到AWS VPC设置站点到站点VPN。您可能需要执行以下哪些步骤?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.为客户网关设置一个公共IP地址。</span><br><span class="line">C.为虚拟专用网关设置一个公用IP地址。</span><br></pre></td></tr></table></figure>
+
+<p>39、使用分段上传应考虑以下哪些方式?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.用于通过稳定的高带宽网络上载大型对象以最大化带宽</span><br><span class="line">C.用于通过斑点网络上载任何大小的文件以提高弹性</span><br></pre></td></tr></table></figure>
+
+<p>40、以下哪个是访问S3存储桶的有效URL?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B. https: //s3-us-west-l.amazonaws.com/prototypeBucket32</span><br><span class="line">D. https : lprototypeBucket32.s3-s-west-l.amazonaws.com</span><br></pre></td></tr></table></figure>
+
+<p>41、如果启用了MFA删除，以下哪个操作将被利用?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.更改存储桶的版本控制状态</span><br><span class="line">C.永久删除对象版本</span><br></pre></td></tr></table></figure>
+
+<p>42、Elastic Beanstalk支持以下哪个?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. Docker</span><br><span class="line">D.Node.js</span><br></pre></td></tr></table></figure>
+
+<p>43、下面关于mycat服务分库分表之后，支持联表查询的说法，正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.使用好ER表</span><br><span class="line">B.善用全局表</span><br><span class="line">D.在sql上添加注解</span><br></pre></td></tr></table></figure>
+
+<p>44、下面哪些是Swift对象存储的特点。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.弹性可伸缩</span><br><span class="line">B.高可用</span><br><span class="line">c.分布式</span><br></pre></td></tr></table></figure>
+
+<p>45、使用useradd创建用户时和主目录相关的参数是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.d</span><br><span class="line">c.m</span><br><span class="line">D.M</span><br></pre></td></tr></table></figure>
+
+<p>46、云计算IAAS层，能够带来哪些好处?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.资源集中自动化管理</span><br><span class="line">B.快速供应基础设施</span><br><span class="line">c.提高资源利用、降低能耗</span><br><span class="line">D.共享硬件资源</span><br></pre></td></tr></table></figure>
+
+<p>47、你正在为你的VPC设计互联网连接。Web服务器必须在Internet上可用。该应用程序必须具有高度可用的体系结构。您应该考虑哪些替代方案?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C.将所有Web服务器放在ELB后面配置Route53 CNMIE以指向ELB DNS名称。</span><br><span class="line">D.将EIP分配给所有Web服务器。使用所有EIP配置Route53记录集，并进行运行状况检查和DNS故障转移。</span><br></pre></td></tr></table></figure>
+
+<p>48、Nginx的发音为“engine X””，是一个高性能的（）和（）服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B. http</span><br><span class="line">C.反向代理</span><br></pre></td></tr></table></figure>
+
+<p>49、Apache的访问控制分为两种，分别是基于()和基于()的访问控制。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.用户</span><br><span class="line">D.IP</span><br></pre></td></tr></table></figure>
+
+<p>50、云计算的概念从平台技术视角可以从计算角度、服务角度、存储角度、配置角度来理解。比如在服务角度来看，云计算是指通过互联网提供的弹性的（）服务。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.硬件</span><br><span class="line">B.软件</span><br><span class="line">D.数据</span><br></pre></td></tr></table></figure>
+
+<p>51、客户购买了一台Linux操作系统的云服务器,现在想要远程登录云服务器，客户本地的操作系统是Windows，那么客户可以通过______方式远程登录云服务器。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.PuTTY等客户端工具</span><br><span class="line">C.VNC</span><br></pre></td></tr></table></figure>
+
+<p>52、安全组是一个逻辑上的分组，由同—地域内具有相同安全保护需求并相互信任的实例组成。一台云服务器实例()。一个安全组可以管理云()服务器实例。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A。至少属于—个安全组，可以同时加入多个安全组</span><br><span class="line">D.同一个地域内的多台</span><br></pre></td></tr></table></figure>
+
+<p>53、专有网络整体架构里面，配置通路和数据通路互相分离。交换机是分布式的结点，()和())都是集群部署并且是多机房互备的，并且所有链路上都有冗余容灾，提升了专有网络产品的整体可用性。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C.网关</span><br><span class="line">D.控制器</span><br></pre></td></tr></table></figure>
+
+<p>54、存储磁盘陈列按其连接方式的不同，可分为哪几类()</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.DAS</span><br><span class="line">B.NAS</span><br><span class="line">c.SAN</span><br></pre></td></tr></table></figure>
+
+<p>55 、云安全主要的考虑的关键技术有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.数据安全</span><br><span class="line">B.应用安全</span><br><span class="line">C.虚拟化安全</span><br></pre></td></tr></table></figure>
+
+<p>56、在云计算中，虚拟层主要包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.服务器虚拟化</span><br><span class="line">B.存储虚拟化</span><br><span class="line">c.网络虚拟化</span><br></pre></td></tr></table></figure>
+
+<p>57、云平台存储可以哪些方式来挂接?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.FC</span><br><span class="line">B. Iscsi</span><br><span class="line">C.NAS</span><br></pre></td></tr></table></figure>
+
+<p>58、云计算的特点有:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.大规模</span><br><span class="line">B.平滑扩展</span><br><span class="line">C.资源共享</span><br><span class="line">D.动态分配</span><br></pre></td></tr></table></figure>
+
+<p>59、”云计算的基本特征包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.宽带接入</span><br><span class="line">B.虚拟化的资源池</span><br><span class="line">C.快速弹性架构</span><br><span class="line">D.可测量的服务</span><br></pre></td></tr></table></figure>
+
+<p>60、分布式计算的的优势包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.大数据高性能高</span><br><span class="line">B.时效性低成本处理</span><br><span class="line">C.跨域协同</span><br></pre></td></tr></table></figure>
+
+<p>61、将应用托管至PaaS平台的好处主要包含以下哪几种:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.初始投资小、更快的上线时间</span><br><span class="line">B.现用现买,高可伸缩性</span><br><span class="line">C.业务更聚焦</span><br></pre></td></tr></table></figure>
+
+<p>62、下面关于有关IP协议说法说法中正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.IP协议是一个无连接的协议</span><br><span class="line">B.P协议是一个尽最大努力传递数据的协议</span><br><span class="line">D.IP协议是TCP/IP协议族网络层的核心协议</span><br></pre></td></tr></table></figure>
+
+<p>63、以下关于应用集群部署云上架构的描述中，需要关注哪些安全注意事项?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.登录安全</span><br><span class="line">B.服务器安全域隔离</span><br><span class="line">D.负载均衡设备本身安全</span><br></pre></td></tr></table></figure>
+
+<p>64、棱镜事件后，外界所说的去”IOE””指以下()产品。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.IBM</span><br><span class="line">B.ORACLE</span><br><span class="line">C.EMC</span><br></pre></td></tr></table></figure>
+
+<p>65、公有云云主机一般有哪些功能() 。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.存储及网络资源管理</span><br><span class="line">B.备份管理</span><br><span class="line">c.详情查看</span><br></pre></td></tr></table></figure>
+
+<p>66、CDN为客户提供以下哪些服务() 。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.加速内容测试</span><br><span class="line">B.资源分发加速</span><br><span class="line">C.业务分析</span><br></pre></td></tr></table></figure>
+
+<p>67、根据OSI七层模型划分.阿里云云上的ELB支持()的负载均衡。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C.四层</span><br><span class="line">D.七层</span><br></pre></td></tr></table></figure>
+
+<p>68、公有云一般采用(和( )方式提供IAAS服务。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.OpenStack</span><br><span class="line">C.KVM</span><br></pre></td></tr></table></figure>
+
+<p>69、弹性负载均衡，—般支持的调度算法()。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.支持轮询</span><br><span class="line">B.多级反馈队列</span><br><span class="line">D.源地址算法</span><br></pre></td></tr></table></figure>
+
+<p>70、以下适合电商行业的云产品( )。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.CDN</span><br><span class="line">C.云主机</span><br><span class="line">D.云专线</span><br></pre></td></tr></table></figure>
+
+<p>71、ELK中的“红”主要由哪三个核心组件组成(）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. Input</span><br><span class="line">B.Filter</span><br><span class="line">D.Output</span><br></pre></td></tr></table></figure>
+
+<p>72、Filebeat主要的组件有哪些(）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. prospectors</span><br><span class="line">C. harvesters</span><br></pre></td></tr></table></figure>
+
+<p>73、redis支持哪些存储的数据类型？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. String</span><br><span class="line">C.List</span><br><span class="line">D. Hash</span><br></pre></td></tr></table></figure>
+
+<p>74、Nginx的upstream负载的几种方式()</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.轮询</span><br><span class="line">B. weight</span><br><span class="line">C. ip_hash</span><br><span class="line">D. url_hash</span><br></pre></td></tr></table></figure>
+
+<p>75、以下哪些是harbor所需的容器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. harbor-adminserver</span><br><span class="line">B. harbor-db</span><br><span class="line">C. harbor-jobservice</span><br></pre></td></tr></table></figure>
+
+<p>76、企业网络架构包括</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.核心层</span><br><span class="line">C.汇聚层</span><br><span class="line">D.接入层</span><br></pre></td></tr></table></figure>
+
+<p>77、对于openstack云存储机制的描述，以下()是正确的(选2项)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. Cinder支持本地存储:LVM(iSCST,网络存储:NFS,RBD(Ceph).</span><br><span class="line">D.Glance支持多种存储类型镜像格式:raw vhd,vmdk vdi,iso,qcow2。</span><br></pre></td></tr></table></figure>
+
+<p>78、方火墙可以作用包括</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.企业内网管控隔离</span><br><span class="line">B.互联网边界防护</span><br><span class="line">C.数据中心隔离</span><br></pre></td></tr></table></figure>
+
+<p>79、以下关于安全组和云防火墙说法正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.安全组默认允许从虚拟机内部向外部的流量访问</span><br><span class="line">C.防火墙的默认策略是禁止所有流量流入</span><br><span class="line">D.防火墙的默认策略是禁止所有流量流出</span><br></pre></td></tr></table></figure>
+
+<p>80、某企业在订购了云资源后，反应网络中断，将此种情况反应到了前端，前端可以如何应对()</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.让用户先自行检查云防火墙、安全组设置,判断是否由于自己错误配置导致;</span><br><span class="line">B.若用户判断不是由于在云防火墙、安全组的错误配置导致，需要用户提供—些基础信息，如主机IP(内网、外网)、登录用户名及密码、ping及traceroute命令的截图;</span><br><span class="line">D.定期与客服联系了解进度，并及时反馈给用户</span><br></pre></td></tr></table></figure>
+
+<p>81、JDK如果是1.5以上版本只需要设置(）变量</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.JAVA HOME</span><br><span class="line">C.PATH</span><br></pre></td></tr></table></figure>
+
+<p>82、IPython的交互式架构的特点包括(</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">A.强大的交互式Shell</span><br><span class="line">B.Jupyter</span><br><span class="line">c.交互式的数据可视化</span><br><span class="line">D.灵活可嵌套的解释器</span><br><span class="line">E.易于使用</span><br><span class="line">F.高性能的并行计算工具</span><br></pre></td></tr></table></figure>
+
+<p>83、Python多行注释符号是(）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.&quot;&quot;&quot;...&quot;&quot;&quot;</span><br><span class="line">B.&#x27;&#x27;&#x27;...&#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>84、cd命令可让用户切换当前所在的目录，下列关于cd命令描述正确的有:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. cd..切换到上一层目录</span><br><span class="line">B. cd/切换到系统根目录</span><br><span class="line">D. cd/usr/bin切换到/usr/bin目录</span><br></pre></td></tr></table></figure>
+
+<p>85、在创建并管理ECS实例中，以下步骤包括操作ECS实例的生命周期的有:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B,使用向导创建实例</span><br><span class="line">C.远程连接ECS实例</span><br><span class="line">D.释放实例</span><br></pre></td></tr></table></figure>
+
+<p>86、伸缩规则用于触发伸缩活动或者智能设置伸缩组边界值，伸缩规则包括的类型有</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.简单规则</span><br><span class="line">D.目标追踪规则</span><br><span class="line">E.步进规则</span><br></pre></td></tr></table></figure>
+
+<p>87、云盘根据性能分类，以下描述正确的有?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.ESSD云盘建议在大型OLTP数据库、NoSQL数据库和ELK分布式日志等场景中使用。</span><br><span class="line">C.SSD云盘建议在LO密集型应用、中小型关系数据库和NoSQL数据库等场景中使用</span><br><span class="line">E-普通云盘:属于上—代云盘产品,已经逐步停止售卖</span><br></pre></td></tr></table></figure>
+
+<p>88、资源编排服务ROS(Resource OrchestrationService)具有广泛的应用场景，既可以帮助企业快速上云，又可以实现按需批量部署和业务环境分发。以下属于其应用场景的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.企业快速上云</span><br><span class="line">c.按需批量部署</span><br><span class="line">E.云上环境管控</span><br></pre></td></tr></table></figure>
+
+<p>89、RAM允许在一个阿里云账号下创建并管理多个身份，并允许给单个身份或—组身份分配不同的资源权限。RAM的功能特性包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.单点登录管理(SSO)</span><br><span class="line">B.集中控制云资源</span><br><span class="line">C.集中控制RAM用户的资源访问方式</span><br></pre></td></tr></table></figure>
+
+<p>90、安全组是一个逻辑上的分组，以下关于安全组描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.一台ECS实例至少属于一个安全组</span><br><span class="line">B.—个安全组可以管理同个地域内的多台ECS实例</span><br><span class="line">C.不同安全组内的ECS实例之间默认内网不通</span><br></pre></td></tr></table></figure>
+
+<p>91、云防火墙可以防护以下哪些云资产或流量?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C.互联网方向</span><br><span class="line">D. VPC到VPC之间</span><br><span class="line">E. VPC和本地数据中心(IDC)之间</span><br></pre></td></tr></table></figure>
+
+<p>92、每个专有网络都有哪些必须的组件组成?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.私网网段</span><br><span class="line">C.路由器</span><br><span class="line">E.交换机</span><br></pre></td></tr></table></figure>
+
+<p>93、默认专有网络和交换机的特点，以下描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.每个地域的默认专有网络唯一</span><br><span class="line">B.每个可用区的默认交换机唯一</span><br><span class="line">C.默认专有网络由阿里云创建</span><br></pre></td></tr></table></figure>
+
+<p>94、ARP是TCP&#x2F;IP协议族中的一个重要协议，用于确定对应IP地址的网卡物理地址。以下描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. arp -a:用于查看高速缓存中的所有项目</span><br><span class="line">c. arp -a P:如果有多个网卡，只显示与该接口相关的ARP缓存项目</span><br><span class="line">D. arp -d IP:使用本命令能够人工删除—个静态项目</span><br></pre></td></tr></table></figure>
+
+<p>95、以下哪些是VPN网关(SSL-VPN功能)远程接入VPC的优点?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C.低成本</span><br><span class="line">D.可靠</span><br><span class="line">E.易配置部暑</span><br></pre></td></tr></table></figure>
+
+<p>96、专有网络VPC是独有的云上私有网络。阿里云提供了针对不同场景的VPC私网接入产品和服务，包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.高速通道</span><br><span class="line">C. VPN网关</span><br><span class="line">D.智能接入网关</span><br></pre></td></tr></table></figure>
+
+<p>97、负载均衡CLB是将访问流量根据转发策略分发到后端多台云服务器的流量分发控制服务。负载均衡的组成包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.监听</span><br><span class="line">C.负载均衡实例</span><br><span class="line">E.后端服务器</span><br></pre></td></tr></table></figure>
+
+<p>98、以下属于阿里云边缘节点的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.CDN节点</span><br><span class="line">B.Cache节点</span><br><span class="line">C.加速节点</span><br></pre></td></tr></table></figure>
+
+<p>99、假设您的加速域名为<a target="_blank" rel="noopener" href="http://www.a.com,接入cdn网络,开始使用加速服务后,当终端用户(北京)发起http请求时,以下哪些过程属于cdn工作流程/">www.a.com，接入CDN网络,开始使用加速服务后，当终端用户(北京)发起HTTP请求时，以下哪些过程属于CDN工作流程</a>?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A.首先向LDNS(本地DNS)发起域名解析请求，</span><br><span class="line">B.NS检查缓存中是否有www.a.com的IP地址记录。如果没有，则向授权DNS查询</span><br><span class="line">C.域名解析请求发送至阿里云DNS调度系统，并为请求分配最佳节点IP地址</span><br><span class="line">D.用户向获取的IP地址发起对该资源的访问请求</span><br></pre></td></tr></table></figure>
+
+<p>100、CDN的业务使用场景主要分为哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.静态内容加速</span><br><span class="line">C.动态内容加速</span><br><span class="line">D.安全加速</span><br></pre></td></tr></table></figure>
+
+<p>101、当选择—项基础服务后，可选择—种或者多种增值服务。下列属于增值服务预付费模式的有:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.静态HTTPS资源包</span><br><span class="line">C.边缘WAF资源包</span><br><span class="line">E.图片鉴黄资源包</span><br></pre></td></tr></table></figure>
+
+<p>102、开通了CDN服务后，添加加速域名的操作，以下选项属于其操作步骤的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.登录CDN控制台在左侧导航栏，单击域名管理</span><br><span class="line">B.单击添加域名</span><br><span class="line">C.配置加速域名信息</span><br></pre></td></tr></table></figure>
+
+<p>103、配置自定义HTTP响应头，需要进行参数设置，以下哪些是自定义HTTP响应头参数?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C.响应头操作</span><br><span class="line">D.响应头值</span><br><span class="line">E.自定义响应头名称</span><br></pre></td></tr></table></figure>
+
+<p>104、VPN网关配置灵活，可满足那些不同的应用场景?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. VPC到本地数据中心的连接</span><br><span class="line">C. VPC到VPC的连接</span><br><span class="line">D. VPC到移动客户端的连接</span><br></pre></td></tr></table></figure>
+
+<p>105、VPN网关满足分支互联、移动办公等接入场景，其产品优势包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.安全</span><br><span class="line">C.可靠</span><br><span class="line">D.易用</span><br></pre></td></tr></table></figure>
+
+<p>106、OSS的管理方式包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.通过控制台管理OSS</span><br><span class="line">B.通过API或SDK管理OSS</span><br><span class="line">D.通过工具管理OSS</span><br></pre></td></tr></table></figure>
+
+<p>107、通过OSS控制台可以完成的常见操作包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.创建存储空间</span><br><span class="line">B.下载文件</span><br><span class="line">C.上传文件</span><br></pre></td></tr></table></figure>
+
+<p>108、对象存储OSS提供哪些存储类型，从而全面覆盖从热到冷的各种数据存储场景?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.标准</span><br><span class="line">C.低频访问</span><br><span class="line">E.归档</span><br></pre></td></tr></table></figure>
+
+<p>109、根据性能分类，云盘包含以下哪几类产品?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.ESSD云盘</span><br><span class="line">C.SSD云盘</span><br><span class="line">D.高效云盘</span><br></pre></td></tr></table></figure>
+
+<p>110、RDS的可靠性、持久性和读写性能均会满足产品SLA承诺，其提供的存储类型有?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.本地SSD盘</span><br><span class="line">C.SSD云盘</span><br><span class="line">D.ESSD云盘</span><br></pre></td></tr></table></figure>
+
+<p>111、在创建数据库过程中，需要设置的参数包括() ?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.数据库名称</span><br><span class="line">B.支持字符集</span><br><span class="line">C.授权账号</span><br></pre></td></tr></table></figure>
+
+<p>112、DBS云备份解决方案与自建备份系统在成本方面相比，下列描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.自建备份系统:多级存储介质引入，运维成本骤增</span><br><span class="line">B.DBS云备份:冷热数据分级存储,适用于长期归档</span><br><span class="line">D.DBS云备份:无需运维人员与托管费用，0成本运维</span><br></pre></td></tr></table></figure>
+
+<p>113、先期试点迁移的业务系统在满足迁移上云的前提下，可优先考虑以下哪两种思路</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.考虑同期在建项目的同步迁移工作，可以在建设过程中直接参照云平台技术进行开发部署</span><br><span class="line">C.选取非核心，单独的业务系统进行试点迁移</span><br></pre></td></tr></table></figure>
+
+<p>114、镜像迁移主要有哪两种迁移方式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.冷迁移</span><br><span class="line">B.热迁移</span><br></pre></td></tr></table></figure>
+
+<p>115、以下哪两项是常用的web应用服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.Nginx</span><br><span class="line">C.Apache</span><br></pre></td></tr></table></figure>
+
+<p>116、以下属于常用的非关系型数据库的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C.redis</span><br><span class="line">D.mongodb</span><br></pre></td></tr></table></figure>
+
+<p>117、以下哪两项是给网站配置https带来的好处?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.防劫持、防篡改、防监听</span><br><span class="line">C.提升网站的访问流量</span><br></pre></td></tr></table></figure>
+
+<p>118、阿里云快照支持哪两种快照创建模式?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.手动快照</span><br><span class="line">B.自动快照</span><br></pre></td></tr></table></figure>
+
+<p>119、以下哪些属于prometheus的常用组件?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. exporters</span><br><span class="line">B. alertmanager</span><br></pre></td></tr></table></figure>
+
+<p>120、以下属于zabbix常用组件的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. zabbix server</span><br><span class="line">B. zabbix agent</span><br></pre></td></tr></table></figure>
+
+<p>121、nginx的反向代理可以实现以下哪种功能</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.负载均衡</span><br><span class="line">D.端口转发</span><br></pre></td></tr></table></figure>
+
+<p>122、分别创建HTTP和HTTPS监听，两个监听使用同样的后端服务器。以HTTP方式访问监听端口对应的网站时，网站正常显示，但使用HTTPS监听访问时，网站排版显示错乱，可能的原因是哪几项?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.证书和浏览器安全级别不兼容导致</span><br><span class="line">D.证书是非正规第三方证书，需要联系证书发布者检查证书问题</span><br></pre></td></tr></table></figure>
+
+<p>123、负载均衡服务TCP端口健康检查成功，但是在后端业务日志中出现网络连接异常信息，以下哪两种办法可以解决该问题?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.更换TCP协议为HTTP协议</span><br><span class="line">B.在业务层面，对来自SLB服务器P地址段的相关请求做日志过滤，忽略相关错误信息。</span><br></pre></td></tr></table></figure>
+
+<p>124、以下属于常用的自动化运维工具的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. ansible</span><br><span class="line">B. saltstack</span><br></pre></td></tr></table></figure>
+
+<p>125、以下属于蓝绿部署特点的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.无需停机,并目风险较小</span><br><span class="line">B.部著的过程中，应用始终在线，保证系统在不间断提供服务</span><br></pre></td></tr></table></figure>
+
+<p>126、标准化文档想要能被有效率地执行，需要哪些要求:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.简单清晰</span><br><span class="line">B.方便评估</span><br></pre></td></tr></table></figure>
+
+<p>127、在基础架构硬件的内存评估中，需要关注的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.内存容量</span><br><span class="line">C.内存型号</span><br></pre></td></tr></table></figure>
+
+<p>128、阿里云数据迁移中心SMC为了保证数据传输安全，可以使用以下哪些方式?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.采用默认的SSL 2048位RSA密钥加密传输通道</span><br><span class="line">B.通过VPN网关、高速通道物理专线等私网迁移</span><br></pre></td></tr></table></figure>
+
+<p>129、业务迁移上云的过程中，如果涉及到了一个框架改造为另外—个框架，那么工作量的评估可以从那几个维度进行评估?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.改造前的业务代码依赖于原来框架运行时的程度</span><br><span class="line">C.目标框架本身对于业务代码采用的技术的支持程度</span><br></pre></td></tr></table></figure>
+
+<p>130、小明刚刚装了Linux系统,将进—步分区，必须至少要创建哪些分区？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.根分区</span><br><span class="line">B.交换(swap)分区</span><br></pre></td></tr></table></figure>
+
+<p>131、关于建立系统用户的正确描述是？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.在Linux系统下建立用户使用useradd命令</span><br><span class="line">D.每个系统用户在默认状态下的工作目录在/home/用户名</span><br></pre></td></tr></table></figure>
+
+<p>132、Windows server 2003中域本地组不在以下那个文件夹下?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">B.COMPUTER</span><br><span class="line">C.DOMAIN CONTROL</span><br><span class="line">D.BUILTIN</span><br><span class="line"></span><br><span class="line">PS:在 USER下</span><br></pre></td></tr></table></figure>
+
+<p>133、Windows server 2003中实现管理的手段有下列那些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.控制面板</span><br><span class="line">B.系统工具</span><br><span class="line">C.管理控制台</span><br></pre></td></tr></table></figure>
+
+<p>134、MySQL的缺点有?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. MySQL不允许调试存储过程</span><br><span class="line">D. MySQL安全系统</span><br></pre></td></tr></table></figure>
+
+<p>135、以下哪项是事务的特性?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.持久性</span><br><span class="line">C.一致性</span><br><span class="line">D.原子性</span><br></pre></td></tr></table></figure>
+
+<p>136、下列哪项不属于DDL操作</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A. update</span><br><span class="line">c. insert</span><br><span class="line">D. delete</span><br><span class="line"></span><br><span class="line">ddl英文缩写是data definition language（数据定义语言），主要的命令有alter、create、drop、truncate，ddl主要用在定义或者改变表的结构。</span><br></pre></td></tr></table></figure>
+
+<p>137、一个表的主键个数下列选项错误的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A.至少3个</span><br><span class="line">B.至少2个</span><br><span class="line">D.至少4个</span><br><span class="line"></span><br><span class="line">PS：最多一个</span><br></pre></td></tr></table></figure>
+
+<p>138、小刘将公司业务帮搬迁至阿里云，对于云盾是否有屏蔽IP地址的功能描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.目前，云盾没有单独屏蔽IP的功能。</span><br><span class="line">C.使用的ECS实例是Windows系统，可以在IIS中屏蔽单独IP地址的访问。</span><br></pre></td></tr></table></figure>
+
+<p>139、小刘所在公司受新冠疫情影响近期想把业务部署到云上，在业务搬迁前小刘对云主机进行UDP PPS测试以及TCP带宽测试时性能不稳定，以下选项中有效解决该问题的选项是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.为测试任务绑定vCPU</span><br><span class="line">D.将接收任务和网卡接收队列中断绑定在不同的vCPU</span><br></pre></td></tr></table></figure>
+
+<p>140、虚拟化有哪些分类?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.硬件虚拟化</span><br><span class="line">C.全虚拟化</span><br><span class="line">D.准虚拟化</span><br></pre></td></tr></table></figure>
+
+<p>141、安装完Vmware vCente后，可扩展的组件有以下那些功能?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C.云平台管理、站点恢复管理;</span><br><span class="line">D.APP接口、更新管理等;</span><br></pre></td></tr></table></figure>
+
+<p>142、云效2020「流水线」，又名「F1ow」 ，是—款企业级、自动化的研发交付流水线,提供灵活易用的持续集成、持续验证、持续发布功能，帮助企业高质量、高效率的交付业务。「F1ow」支持主机脚本部署有那些?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.灰度发布</span><br><span class="line">C.分批发布</span><br></pre></td></tr></table></figure>
+
+<p>143、云计算有五个基本特征。““消费者可以根据自己的需求提供计算能量，比如服务器时间和网络存储””以下哪个特征的描述不正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.按需自助服务</span><br><span class="line">B.弹性</span><br><span class="line">D.可测量服务</span><br></pre></td></tr></table></figure>
+
+<p>144、在阿里云上，如何获取当前软件版本及漏洞信息?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.在云安全中心中查看当前软件版本及漏洞信息</span><br><span class="line">B. rpm -qa | grep xXX</span><br><span class="line">C.dpkg-query -W -f&#x27;$&#123;Package&#125;-- $&#123;Source&#125; \n&#x27; | grep xxx</span><br></pre></td></tr></table></figure>
+
+<p>145、小刘所在公司的网站程序(PHP研发)在虚拟主机上运行正常，但转移到公有云之后，网站打开报500错误，排查故障原因选项正确是?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.检查您的程序在虚拟主机上的PIP版本。</span><br><span class="line">C.查看您的程序中是否设置了伪静态规则。</span><br></pre></td></tr></table></figure>
+
+<p>146、购买域名并付款成功后订单—直显示在处理中，主要有以下几个原因造成:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A.商标保护域名属于注册局的保护域名，不允许注册。</span><br><span class="line">B.填写的域名注册信息有误，注册局审核无法通过。</span><br><span class="line">C.系统升级导致升级过程中存在短暂的订单处理中状态。</span><br></pre></td></tr></table></figure>
+
+<p>147、小刘所在公司进行域名备案，收到核查不合格的提示为已经取得备案号的网站“xxxxx.cn”打开后内容涉及经营性，请您修改网站内容，或联系当地通信管理局咨询办理增值电信业务许可证时，说明小刘的公司网站涉及经营性相关内容，以下选项中是正确整改的选项是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A.修改网站所涉及的经营性相关内容，如商品标价、售卖链接等。</span><br><span class="line">B.联系当地通信管理局咨询并办理增值电信业务许可证，即办理经营性ICP许可证。</span><br></pre></td></tr></table></figure>
+
+<p>148、FTP (File Transfer Protocol)是—种文件传输协议，基于客户端&#x2F;服务器架构，支持以下哪两种工作模式:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B.主动模式</span><br><span class="line">C.手动模式</span><br></pre></td></tr></table></figure>
+
+<p>149、FTP支持以下选项中，哪种认证模式:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B.匿名用户模式</span><br><span class="line">C.本地用户模式</span><br><span class="line">D.虚拟用户模式</span><br></pre></td></tr></table></figure>
+
+<p>150、java.security是Java的安全配置文件，该软件还包含历史性的“有限”强度策略文件，该文件限制了加密强度。要使用有限强度策略，而不是默认的无限策略，必须更新crypto.policy”安全属性。请问java.security默认所在的位置是在()下()目录中?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A. conf</span><br><span class="line">E. security</span><br></pre></td></tr></table></figure>
+
+<p>151、官网上介绍JDK最新版本是Oracle JDK 16，这个版本对Windows系列的认证版本，包括两种版本，一种是PC版，一种是Server版。无论是PC版还是Server版都需要CPUArchitecture是x64(64-bit) ,那么请问下列Windows版本是Oracle JDK 16所支持的Windows版本?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A. Windows10</span><br><span class="line">B. Windows8</span><br><span class="line">C. Windows Server 2012R2</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%A4%9A%E9%80%89/" rel="tag"># 多选</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%88%A4%E6%96%AD%E9%A2%98/" rel="prev" title="阿里1+x判断题">
+      <i class="fa fa-chevron-left"></i> 阿里1+x判断题
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E9%80%89"><span class="nav-number">1.</span> <span class="nav-text">多选</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="AlexQFMM"
+      src="/images/Avatar.jpg">
+  <p class="site-author-name" itemprop="name">AlexQFMM</p>
+  <div class="site-description" itemprop="description">Rainbow！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=22707025&auto=1&height=66"></iframe>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">AlexQFMM</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
