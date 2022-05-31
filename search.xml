@@ -278,35 +278,6 @@
       </tags>
   </entry>
   <entry>
-    <title>java常见用法</title>
-    <url>/2022/05/31/java%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="java常见"><a href="#java常见" class="headerlink" title="java常见"></a>java常见</h1><h4 id="1、随机数"><a href="#1、随机数" class="headerlink" title="1、随机数"></a>1、随机数</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Random;</span><br><span class="line"></span><br><span class="line">Random r = new Random();</span><br><span class="line"></span><br><span class="line">int num = r.nextInt(10);   //0-10 不包括10</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h4 id="2、数组"><a href="#2、数组" class="headerlink" title="2、数组"></a>2、数组</h4><h6 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int[] nums = new int[100];</span><br><span class="line"></span><br><span class="line">String[] names = new String[]&#123;&quot;alex&quot;,&quot;qm&quot;,&quot;tom&quot;&#125;;</span><br><span class="line"></span><br><span class="line">Object[] object = &#123;&quot;alex&quot;,&quot;qm&quot;&#125;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="3、输出（print，printf，println）"><a href="#3、输出（print，printf，println）" class="headerlink" title="3、输出（print，printf，println）"></a>3、输出（print，printf，println）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1、print：将信息显示在命令窗口中，输出光标定位在最后一个字符之后。</span><br><span class="line"></span><br><span class="line">2、printf：将信息进行格式化显示在命令窗口中，输出光标定位在最后一个字符之后。</span><br><span class="line"></span><br><span class="line">3、println：将信息显示在命令窗口中，输出光标换行定位在下一行开头。</span><br></pre></td></tr></table></figure>
-
-<h4 id="4、包装类数据类型"><a href="#4、包装类数据类型" class="headerlink" title="4、包装类数据类型"></a>4、包装类数据类型</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">byte            Byte</span><br><span class="line">short           Short</span><br><span class="line">int             Integer     【特殊】</span><br><span class="line">long            Long</span><br><span class="line">float           Float</span><br><span class="line">double          Double</span><br><span class="line">char            Character   【特殊】</span><br><span class="line">boolean         Boolean</span><br></pre></td></tr></table></figure>
-
-<h4 id="5、for-each"><a href="#5、for-each" class="headerlink" title="5、for-each"></a>5、for-each</h4><h6 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for-each循环是通过应该与数组内元素类型相同的变量进行遍历，直接得到数组内从下标为0的位置至最后一个位置的元素的元素值，便于数组内元素的查找</span><br><span class="line">不用返回元素对应的数组下标时，for-each循环是一个不错的选择。</span><br></pre></td></tr></table></figure>
-
-<h6 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for ( 变量类型  变量名 : 数组名 ) &#123;</span><br><span class="line"></span><br><span class="line">    需要执行的循环语句;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> 其中变量类型为与数组内元素类型相同的类型。</span><br></pre></td></tr></table></figure>
-
-<h6 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int[] a =new int[10];</span><br><span class="line"></span><br><span class="line">//for 循环</span><br><span class="line">for(int i=0;i &lt; 10;i++) a[i];</span><br><span class="line"></span><br><span class="line">//for-each</span><br><span class="line">for(int i : a);</span><br></pre></td></tr></table></figure>
-
-<h4 id="6、输入Scanner"><a href="#6、输入Scanner" class="headerlink" title="6、输入Scanner"></a>6、输入Scanner</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner</span><br><span class="line"></span><br><span class="line">Scanner scan(自定义) = new Scanner(System.in); </span><br><span class="line"></span><br><span class="line">int a=scan.nextInt();</span><br><span class="line"></span><br><span class="line">string a=scan.next();</span><br><span class="line"></span><br><span class="line">scanner语句中没有char字符型的方法所以不能直接输入字符</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>理论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阿里1+x判断题</title>
     <url>/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%88%A4%E6%96%AD%E9%A2%98/</url>
     <content><![CDATA[<h1 id="常错判断"><a href="#常错判断" class="headerlink" title="常错判断"></a>常错判断</h1><p>1、Nginx(“ engine x”)是一款是由俄罗斯的程序设计师Igor Sysoev所开发<em><strong>高性能的DB和反向代理服务器</strong></em>，也是一个IMAP&#x2F;POP3&#x2F;SMTP代理服务器。</p>
@@ -464,6 +435,35 @@
       </categories>
       <tags>
         <tag>判断</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java常见用法</title>
+    <url>/2022/05/31/java%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="java常见"><a href="#java常见" class="headerlink" title="java常见"></a>java常见</h1><h4 id="1、随机数"><a href="#1、随机数" class="headerlink" title="1、随机数"></a>1、随机数</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Random;</span><br><span class="line"></span><br><span class="line">Random r = new Random();</span><br><span class="line"></span><br><span class="line">int num = r.nextInt(10);   //0-10 不包括10</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h4 id="2、数组"><a href="#2、数组" class="headerlink" title="2、数组"></a>2、数组</h4><h6 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int[] nums = new int[100];</span><br><span class="line"></span><br><span class="line">String[] names = new String[]&#123;&quot;alex&quot;,&quot;qm&quot;,&quot;tom&quot;&#125;;</span><br><span class="line"></span><br><span class="line">Object[] object = &#123;&quot;alex&quot;,&quot;qm&quot;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、输出（print，printf，println）"><a href="#3、输出（print，printf，println）" class="headerlink" title="3、输出（print，printf，println）"></a>3、输出（print，printf，println）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1、print：将信息显示在命令窗口中，输出光标定位在最后一个字符之后。</span><br><span class="line"></span><br><span class="line">2、printf：将信息进行格式化显示在命令窗口中，输出光标定位在最后一个字符之后。</span><br><span class="line"></span><br><span class="line">3、println：将信息显示在命令窗口中，输出光标换行定位在下一行开头。</span><br></pre></td></tr></table></figure>
+
+<h4 id="4、包装类数据类型"><a href="#4、包装类数据类型" class="headerlink" title="4、包装类数据类型"></a>4、包装类数据类型</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">byte            Byte</span><br><span class="line">short           Short</span><br><span class="line">int             Integer     【特殊】</span><br><span class="line">long            Long</span><br><span class="line">float           Float</span><br><span class="line">double          Double</span><br><span class="line">char            Character   【特殊】</span><br><span class="line">boolean         Boolean</span><br></pre></td></tr></table></figure>
+
+<h4 id="5、for-each"><a href="#5、for-each" class="headerlink" title="5、for-each"></a>5、for-each</h4><h6 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for-each循环是通过应该与数组内元素类型相同的变量进行遍历，直接得到数组内从下标为0的位置至最后一个位置的元素的元素值，便于数组内元素的查找</span><br><span class="line">不用返回元素对应的数组下标时，for-each循环是一个不错的选择。</span><br></pre></td></tr></table></figure>
+
+<h6 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for ( 变量类型  变量名 : 数组名 ) &#123;</span><br><span class="line"></span><br><span class="line">    需要执行的循环语句;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> 其中变量类型为与数组内元素类型相同的类型。</span><br></pre></td></tr></table></figure>
+
+<h6 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int[] a =new int[10];</span><br><span class="line"></span><br><span class="line">//for 循环</span><br><span class="line">for(int i=0;i &lt; 10;i++) a[i];</span><br><span class="line"></span><br><span class="line">//for-each</span><br><span class="line">for(int i : a);</span><br></pre></td></tr></table></figure>
+
+<h4 id="6、输入Scanner"><a href="#6、输入Scanner" class="headerlink" title="6、输入Scanner"></a>6、输入Scanner</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner</span><br><span class="line"></span><br><span class="line">Scanner scan(自定义) = new Scanner(System.in); </span><br><span class="line"></span><br><span class="line">int a=scan.nextInt();</span><br><span class="line"></span><br><span class="line">string a=scan.next();</span><br><span class="line"></span><br><span class="line">scanner语句中没有char字符型的方法所以不能直接输入字符</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>理论</tag>
       </tags>
   </entry>
   <entry>
