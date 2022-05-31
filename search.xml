@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>java ArrayList与HashMap</title>
+    <url>/2022/05/31/java-ArrayList%E4%B8%8EHashMap/</url>
+    <content><![CDATA[<h1 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h1><h4 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ArrayList 类是一个可以动态修改的数组，与普通数组的区别就是它是没有固定大小的限制，我们可以添加或删除元素。</span><br><span class="line"></span><br><span class="line">ArrayList 继承了 AbstractList ，并实现了 List 接口。</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h4 id="二、使用"><a href="#二、使用" class="headerlink" title="二、使用"></a>二、使用</h4><h6 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.ArrayList;</span><br></pre></td></tr></table></figure>
+
+<h6 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;E&gt; list =new ArrayList&lt;&gt;();　</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">E只能为引用数据类型。</span><br><span class="line"></span><br><span class="line">​	Byte</span><br><span class="line">​	Short</span><br><span class="line">​	Integer     【特殊】</span><br><span class="line">​	Long</span><br><span class="line">​	Float</span><br><span class="line">​	Double</span><br><span class="line">​	Character   【特殊】</span><br><span class="line">​	Boolean</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="三、常用方法"><a href="#三、常用方法" class="headerlink" title="三、常用方法"></a>三、常用方法</h4><table>
+<thead>
+<tr>
+<th align="left">方法</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">add()</td>
+<td align="left">将元素插入到指定位置的 arraylist 中</td>
+</tr>
+<tr>
+<td align="left">addAll()</td>
+<td align="left">添加集合中的所有元素到 arraylist 中</td>
+</tr>
+<tr>
+<td align="left">clear()</td>
+<td align="left">删除 arraylist 中的所有元素</td>
+</tr>
+<tr>
+<td align="left">clone()</td>
+<td align="left">复制一份 arraylist</td>
+</tr>
+<tr>
+<td align="left">contains()</td>
+<td align="left">判断元素是否在 arraylist</td>
+</tr>
+<tr>
+<td align="left">get()</td>
+<td align="left">通过索引值获取 arraylist 中的元素</td>
+</tr>
+<tr>
+<td align="left">indexOf()</td>
+<td align="left">返回 arraylist 中元素的索引值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-removeall.html">removeAll()</a></td>
+<td align="left">删除存在于指定集合中的 arraylist 里的所有元素</td>
+</tr>
+<tr>
+<td align="left">remove()</td>
+<td align="left">删除 arraylist 里的单个元素</td>
+</tr>
+<tr>
+<td align="left">size()</td>
+<td align="left">返回 arraylist 里元素数量</td>
+</tr>
+<tr>
+<td align="left">isEmpty()</td>
+<td align="left">判断 arraylist 是否为空</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-sublist.html">subList()</a></td>
+<td align="left">截取部分 arraylist 的元素</td>
+</tr>
+<tr>
+<td align="left">set()</td>
+<td align="left">替换 arraylist 中指定索引的元素</td>
+</tr>
+<tr>
+<td align="left">sort()</td>
+<td align="left">对 arraylist 元素进行排序</td>
+</tr>
+<tr>
+<td align="left">toArray()</td>
+<td align="left">将 arraylist 转换为数组</td>
+</tr>
+<tr>
+<td align="left">toString()</td>
+<td align="left">将 arraylist 转换为字符串</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-surecapacity.html">ensureCapacity</a>()</td>
+<td align="left">设置指定容量大小的 arraylist</td>
+</tr>
+<tr>
+<td align="left">lastIndexOf()</td>
+<td align="left">返回指定元素在 arraylist 中最后一次出现的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-retainall.html">retainAll()</a></td>
+<td align="left">保留 arraylist 中在指定集合中也存在的那些元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-containsall.html">containsAll()</a></td>
+<td align="left">查看 arraylist 是否包含指定集合中的所有元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-trimtosize.html">trimToSize()</a></td>
+<td align="left">将 arraylist 中的容量调整为数组中的元素个数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-removerange.html">removeRange()</a></td>
+<td align="left">删除 arraylist 中指定索引之间存在的元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-replaceall.html">replaceAll()</a></td>
+<td align="left">将给定的操作内容替换掉数组中每一个元素</td>
+</tr>
+<tr>
+<td align="left">removeif()</td>
+<td align="left">删除所有满足特定条件的 arraylist 元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-arraylist-foreach.html">forEach()</a></td>
+<td align="left">遍历 arraylist 中每一个元素并执行特定操作</td>
+</tr>
+</tbody></table>
+<h4 id="四、排序"><a href="#四、排序" class="headerlink" title="四、排序"></a>四、排序</h4><h6 id="导入Collections类"><a href="#导入Collections类" class="headerlink" title="导入Collections类"></a>导入Collections类</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Collections;</span><br></pre></td></tr></table></figure>
+
+<h6 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Collections.sort(list);</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="五、遍历"><a href="#五、遍历" class="headerlink" title="五、遍历"></a>五、遍历</h4><h6 id="1、for-each遍历"><a href="#1、for-each遍历" class="headerlink" title="1、for-each遍历"></a>1、for-each遍历</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for(int i : list)</span><br><span class="line">System.out.println( i ); </span><br></pre></td></tr></table></figure>
+
+<h6 id="2、迭代器遍历"><a href="#2、迭代器遍历" class="headerlink" title="2、迭代器遍历"></a>2、迭代器遍历</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Iterator;</span><br><span class="line"></span><br><span class="line">Iterator&lt;Integer&gt; i = list.iterator(); //定义迭代器</span><br><span class="line"></span><br><span class="line">while(i.hasNext)</span><br><span class="line"></span><br><span class="line">&#123;	</span><br><span class="line"> 	System.out.println( i.next() );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">PS：i.next()的值的类型为Object！</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h1><h4 id="一、概念-1"><a href="#一、概念-1" class="headerlink" title="一、概念"></a>一、概念</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HashMap 是一个散列表，它存储的内容是键值对(key-value)映射。</span><br><span class="line"></span><br><span class="line">HashMap 实现了 Map 接口，根据键的 HashCode 值存储数据，具有很快的访问速度，最多允许一条记录的键为 null，不支持线程同步。</span><br><span class="line"></span><br><span class="line">HashMap 是无序的，即不会记录插入的顺序。</span><br><span class="line"></span><br><span class="line">HashMap 继承于AbstractMap，实现了 Map、Cloneable、java.io.Serializable 接口。</span><br><span class="line"></span><br><span class="line">HashMap 的 key 与 value 类型可以相同也可以不同，可以是字符串（String）类型的 key 和 value，也可以是整型（Integer）的 key 和字符串（String）类型的 value。</span><br><span class="line"></span><br><span class="line">HashMap 中的元素实际上是对象，一些常见的基本类型可以使用它的包装类。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="二、使用-1"><a href="#二、使用-1" class="headerlink" title="二、使用"></a>二、使用</h4><h6 id="导入-1"><a href="#导入-1" class="headerlink" title="导入"></a>导入</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.HashMap;</span><br></pre></td></tr></table></figure>
+
+<h6 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HashMap&lt;Integer, String&gt; Hashmap = new HashMap&lt;Integer, String&gt;();</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="三、常见方法"><a href="#三、常见方法" class="headerlink" title="三、常见方法"></a>三、常见方法</h4><table>
+<thead>
+<tr>
+<th align="left">方法</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">clear()</td>
+<td align="left">删除 hashMap 中的所有键&#x2F;值对</td>
+</tr>
+<tr>
+<td align="left">clone()</td>
+<td align="left">复制一份 hashMap</td>
+</tr>
+<tr>
+<td align="left">isEmpty()</td>
+<td align="left">判断 hashMap 是否为空</td>
+</tr>
+<tr>
+<td align="left">size()</td>
+<td align="left">计算 hashMap 中键&#x2F;值对的数量</td>
+</tr>
+<tr>
+<td align="left">put()</td>
+<td align="left">将键&#x2F;值对添加到 hashMap 中</td>
+</tr>
+<tr>
+<td align="left">putAll()</td>
+<td align="left">将所有键&#x2F;值对添加到 hashMap 中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-hashmap-putifabsent.html">putIfAbsent()</a></td>
+<td align="left">如果 hashMap 中不存在指定的键，则将指定的键&#x2F;值对插入到 hashMap 中。</td>
+</tr>
+<tr>
+<td align="left">remove()</td>
+<td align="left">删除 hashMap 中指定键 key 的映射关系</td>
+</tr>
+<tr>
+<td align="left">containKey()</td>
+<td align="left">检查 hashMap 中是否存在指定的 key 对应的映射关系。</td>
+</tr>
+<tr>
+<td align="left">containsValue()</td>
+<td align="left">检查 hashMap 中是否存在指定的 value 对应的映射关系。</td>
+</tr>
+<tr>
+<td align="left">replace()</td>
+<td align="left">替换 hashMap 中是指定的 key 对应的 value。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-hashmap-replaceall.html">replaceAll()</a></td>
+<td align="left">将 hashMap 中的所有映射关系替换成给定的函数所执行的结果。</td>
+</tr>
+<tr>
+<td align="left">get()</td>
+<td align="left">获取指定 key 对应对 value</td>
+</tr>
+<tr>
+<td align="left">getOrDefault()</td>
+<td align="left">获取指定 key 对应对 value，如果找不到 key ，则返回设置的默认值</td>
+</tr>
+<tr>
+<td align="left">forEach()</td>
+<td align="left">对 hashMap 中的每个映射执行指定的操作。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-hashmap-entryset.html">entrySet()</a></td>
+<td align="left">返回 hashMap 中所有映射项的集合集合视图。</td>
+</tr>
+<tr>
+<td align="left">keySet()</td>
+<td align="left">返回 hashMap 中所有 key 组成的集合视图。</td>
+</tr>
+<tr>
+<td align="left">values()</td>
+<td align="left">返回 hashMap 中存在的所有 value 值。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-hashmap-merge.html">merge()</a></td>
+<td align="left">添加键值对到 hashMap 中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-hashmap-compute.html">compute()</a></td>
+<td align="left">对 hashMap 中指定 key 的值进行重新计算</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-hashmap-computeifabsent.html">computeIfAbsent()</a></td>
+<td align="left">对 hashMap 中指定 key 的值进行重新计算，如果不存在这个 key，则添加到 hasMap 中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/java/java-hashmap-computeifpresent.html">computeIfPresent()</a></td>
+<td align="left">对 hashMap 中指定 key 的值进行重新计算，前提是该 key 存在于 hashMap 中。</td>
+</tr>
+</tbody></table>
+<h4 id="四、遍历输出"><a href="#四、遍历输出" class="headerlink" title="四、遍历输出"></a>四、遍历输出</h4><h6 id="1、输出所有的key和value"><a href="#1、输出所有的key和value" class="headerlink" title="1、输出所有的key和value"></a>1、输出所有的key和value</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for (Integer i : map.keySet()) &#123;	</span><br><span class="line">	            System.out.println( i + hashmap.get(i));</span><br><span class="line">	        &#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="2、仅输出所有的Value值"><a href="#2、仅输出所有的Value值" class="headerlink" title="2、仅输出所有的Value值"></a>2、仅输出所有的Value值</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for (String value: Sites.values()) &#123;</span><br><span class="line">    			 System.out.print(value + &quot;, &quot;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h1><h4 id="随机20个数（大小0-9），放到arraylist里面，统计每个数（0-9）各出现几次（用hashmap）"><a href="#随机20个数（大小0-9），放到arraylist里面，统计每个数（0-9）各出现几次（用hashmap）" class="headerlink" title="随机20个数（大小0-9），放到arraylist里面，统计每个数（0-9）各出现几次（用hashmap）"></a>随机20个数（大小0-9），放到arraylist里面，统计每个数（0-9）各出现几次（用hashmap）</h4><h6 id="包导入"><a href="#包导入" class="headerlink" title="包导入"></a>包导入</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">package test;</span><br><span class="line"></span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.Collections;</span><br><span class="line">import java.util.Random;</span><br><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.Iterator;</span><br></pre></td></tr></table></figure>
+
+<h6 id="List存放数据"><a href="#List存放数据" class="headerlink" title="List存放数据"></a>List存放数据</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class TEST &#123;</span><br><span class="line"></span><br><span class="line">​	static ArrayList&lt;Integer&gt; saves = new ArrayList&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">​	public static void data_in() &#123;// 存放数字</span><br><span class="line">​		Random r = new Random();</span><br><span class="line">​		for (int i = 0; i &lt; 20; i++) &#123;</span><br><span class="line">​			int num = r.nextInt(10); // 0~9</span><br><span class="line">​			saves.add(num);</span><br><span class="line">​		&#125;</span><br><span class="line">​		System.out.println(saves);</span><br><span class="line">​	&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="遍历List存入hashmap"><a href="#遍历List存入hashmap" class="headerlink" title="遍历List存入hashmap"></a>遍历List存入hashmap</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public static void count() &#123;	// 计数</span><br><span class="line">	HashMap&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();</span><br><span class="line">	Iterator iterator = saves.iterator(); 	// 遍历saves</span><br><span class="line">	while (iterator.hasNext()) &#123; 	// 直到saves最后一个元素</span><br><span class="line">		Integer i = (Integer) iterator.next();	// iterator.next()值为object，需强制转换</span><br><span class="line">		if (map.containsKey(i)) 	// 如果有key则value+1否则value为1</span><br><span class="line">			map.put(i, map.get(i) + 1);</span><br><span class="line">		else</span><br><span class="line">			map.put(i, 1);		</span><br><span class="line">	&#125;		</span><br><span class="line">	 for (Integer i : map.keySet()) &#123;	//输出key和value</span><br><span class="line">            System.out.println( &quot;数字&quot;+i + &quot;出现的次数为:&quot; + map.get(i));</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">​		data_in();</span><br><span class="line">​		count();</span><br><span class="line">​	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>理论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一次的博客</title>
+    <url>/2022/05/28/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h1><span id="more"></span>
+
+<p><img src="/2022/05/28/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%9A%84%E5%8D%9A%E5%AE%A2/BE7ACF3136F48B84A63DAE9DEF5DF916-16536980966073.jpg" alt="BE7ACF3136F48B84A63DAE9DEF5DF916"></p>
+]]></content>
+      <categories>
+        <category>daily</category>
+      </categories>
+      <tags>
+        <tag>Testing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java常见用法</title>
+    <url>/2022/05/31/java%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="java常见"><a href="#java常见" class="headerlink" title="java常见"></a>java常见</h1><h4 id="1、随机数"><a href="#1、随机数" class="headerlink" title="1、随机数"></a>1、随机数</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Random;</span><br><span class="line"></span><br><span class="line">Random r = new Random();</span><br><span class="line"></span><br><span class="line">int num = r.nextInt(10);   //0-10 不包括10</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h4 id="2、数组"><a href="#2、数组" class="headerlink" title="2、数组"></a>2、数组</h4><h6 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int[] nums = new int[100];</span><br><span class="line"></span><br><span class="line">String[] names = new String[]&#123;&quot;alex&quot;,&quot;qm&quot;,&quot;tom&quot;&#125;;</span><br><span class="line"></span><br><span class="line">Object[] object = &#123;&quot;alex&quot;,&quot;qm&quot;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、输出（print，printf，println）"><a href="#3、输出（print，printf，println）" class="headerlink" title="3、输出（print，printf，println）"></a>3、输出（print，printf，println）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1、print：将信息显示在命令窗口中，输出光标定位在最后一个字符之后。</span><br><span class="line"></span><br><span class="line">2、printf：将信息进行格式化显示在命令窗口中，输出光标定位在最后一个字符之后。</span><br><span class="line"></span><br><span class="line">3、println：将信息显示在命令窗口中，输出光标换行定位在下一行开头。</span><br></pre></td></tr></table></figure>
+
+<h4 id="4、包装类数据类型"><a href="#4、包装类数据类型" class="headerlink" title="4、包装类数据类型"></a>4、包装类数据类型</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">byte            Byte</span><br><span class="line">short           Short</span><br><span class="line">int             Integer     【特殊】</span><br><span class="line">long            Long</span><br><span class="line">float           Float</span><br><span class="line">double          Double</span><br><span class="line">char            Character   【特殊】</span><br><span class="line">boolean         Boolean</span><br></pre></td></tr></table></figure>
+
+<h4 id="5、for-each"><a href="#5、for-each" class="headerlink" title="5、for-each"></a>5、for-each</h4><h6 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for-each循环是通过应该与数组内元素类型相同的变量进行遍历，直接得到数组内从下标为0的位置至最后一个位置的元素的元素值，便于数组内元素的查找</span><br><span class="line">不用返回元素对应的数组下标时，for-each循环是一个不错的选择。</span><br></pre></td></tr></table></figure>
+
+<h6 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for ( 变量类型  变量名 : 数组名 ) &#123;</span><br><span class="line"></span><br><span class="line">    需要执行的循环语句;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> 其中变量类型为与数组内元素类型相同的类型。</span><br></pre></td></tr></table></figure>
+
+<h6 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int[] a =new int[10];</span><br><span class="line"></span><br><span class="line">//for 循环</span><br><span class="line">for(int i=0;i &lt; 10;i++) a[i];</span><br><span class="line"></span><br><span class="line">//for-each</span><br><span class="line">for(int i : a);</span><br></pre></td></tr></table></figure>
+
+<h4 id="6、输入Scanner"><a href="#6、输入Scanner" class="headerlink" title="6、输入Scanner"></a>6、输入Scanner</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner</span><br><span class="line"></span><br><span class="line">Scanner scan(自定义) = new Scanner(System.in); </span><br><span class="line"></span><br><span class="line">int a=scan.nextInt();</span><br><span class="line"></span><br><span class="line">string a=scan.next();</span><br><span class="line"></span><br><span class="line">scanner语句中没有char字符型的方法所以不能直接输入字符</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>理论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里1+x判断题</title>
+    <url>/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%88%A4%E6%96%AD%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="常错判断"><a href="#常错判断" class="headerlink" title="常错判断"></a>常错判断</h1><p>1、Nginx(“ engine x”)是一款是由俄罗斯的程序设计师Igor Sysoev所开发<em><strong>高性能的DB和反向代理服务器</strong></em>，也是一个IMAP&#x2F;POP3&#x2F;SMTP代理服务器。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">高性能的 Web 和 反向代理 服务器</span><br></pre></td></tr></table></figure>
+
+<p>2、快照可以为所有类型的云盘创建崩溃—致性快照，是—种便捷高效的数据容灾手段，常用于数据备份、制作自定义镜像、应用容灾等。云盘第—份快照是实际使用量的全量快照，<em><strong>即使是空数据块，也会做备份</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">不备份空数据块</span><br></pre></td></tr></table></figure>
+
+<p>3、在云计算平台中，<em><strong>每个用户一个资源池</strong></em>，通过动态资源调度机制实现对资源的合理分配。与传统的数据中心相比，资源利用率可以提高六十个百分点以上，优势十分明显。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">许多用户公用一个资源池</span><br></pre></td></tr></table></figure>
+
+<p>4、在云平台创建云服务器实例时，<em><strong>可以先不选择镜像</strong></em>，创建完云服务器实例后，再购买镜像，将镜像与云服务器实例绑定，并且可以随时解绑。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">创建云服务器实例时必须选择：安全组;IP地址;镜像;区域</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>5、UNIX是—种<strong>数据处理系统</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">Unix是多用户多任务操作系统</span><br></pre></td></tr></table></figure>
+
+<p>6、<em><strong>AUTO.BAT</strong></em>是自动批处理文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">AUTOEXEC.BAT自动批处理文件</span><br></pre></td></tr></table></figure>
+
+<p>7、受理CDN业务<em><strong>无需备案</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">CDN业务受理必须要求备案</span><br></pre></td></tr></table></figure>
+
+<p>8、流量控制是<em><strong>数据链路层特有</strong></em>的功能</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">流量控制并不是数据链路层特有的功能，许多高层协议也提供流量控制功能，只不过流量控制的对象不同而已</span><br></pre></td></tr></table></figure>
+
+<p>9、对于传统制造业客户上云需求，<em><strong>争取一步到位</strong></em>，引导客户建设云上工厂。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">上云不能一步到位，要循规蹈矩，根据企业现状，分阶段上云</span><br></pre></td></tr></table></figure>
+
+<p>10、海量的医疗影像多选用<em><strong>容量型云硬盘</strong></em>进行存储。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">—般采用OSS对象存储进行存储</span><br></pre></td></tr></table></figure>
+
+<p>11、<em><strong>堡垒机</strong></em>在等级保护中属于必须设备。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">堡垒机不是等保的必须设备。防火墙才是</span><br></pre></td></tr></table></figure>
+
+<p>12、异步灾备中，灾备系统主要用来提供在主节点宕机时，及时接替用户需求;同步灾备时，可采用负载均衡，实现业务分担</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>13、Java会有很多配置文件，根据用途存放在不同的目录下面，而且后缀名也不尽相同，最常见的配置文件的后缀名是conf和cnf，“properties后缀名也是Java的配置文件””是否正确。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br><span class="line">Java中conf文件夹下的主配置文件后缀名是properties,因此properties也是Java的配置文件的后缀名之一。而且在Web项目中大部分配置文件或者属性文件的后缀名也是properties。</span><br></pre></td></tr></table></figure>
+
+<p>14、JDK在安装完成之后，需要进行环境配置，才能正常使用，无论是Windows还是Linux的发行版，都<em><strong>需要</strong></em>重启系统才能使环境变量生效。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">不需要</span><br></pre></td></tr></table></figure>
+
+<p>15、Python变量名<em><strong>不区分</strong></em>大小写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">区分</span><br></pre></td></tr></table></figure>
+
+<p>16、阿里云弹性伸宿应用场景<em><strong>只包括弹性扩展和弹性收缩</strong></em>两种类型。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">阿里云弹性伸缩应用场景包括弹性扩展、弹性收缩和弹性自愈。</span><br></pre></td></tr></table></figure>
+
+<p>17、创建ECS实例时，涉及到选择镜像，镜像文件相当于副本文件，该副本文件<em><strong>包含了一块云盘中的系统数据</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">创建ECS实例时，涉及到选择镜像,镜像文件相当于副本文件，该副本文件包含了一块或多块云盘中的所有数据，对于ECS实例而言，这些云盘可以是单块系统盘，也可以是系统盘加数据盘的组合。</span><br></pre></td></tr></table></figure>
+
+<p>18、<em><strong>堡垒机</strong></em>支持统一管控企业内多个云账号和资源账号</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">云安全中心支持统一管控企业内多个云账号和资源账号，并能够通过统—的界面展示企业内各个账号中检测出的安全风险。</span><br></pre></td></tr></table></figure>
+
+<p>19、安全组是—种<em><strong>实体</strong></em>防火墙，具备状态检测和数据包过滤能力，用于在云端划分安全域</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">虚拟</span><br></pre></td></tr></table></figure>
+
+<p>20、阿里云云防火墙可统—管理互联网到业务的访问控制策略和业务与业务之间的微隔离策略。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>21、如果需要上网，电脑上<em><strong>必须</strong></em>要配置DNS</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">不必须</span><br></pre></td></tr></table></figure>
+
+<p>22、<em><strong>VPN网关</strong></em>在VPC间建立私网通信通道，通过自动路由分发及学习，提高网络的快速收敛和跨网络通信的质量和安全性，实现全网资源的互通</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">云企业网(Cloud Enterprise Network)帮助您在VPC间建立私网通信通道，通过自动路由分发及学习，提高网络的快速收敛和跨网络通信的质量和安全性，实现全网资源的互通，帮助您打造—张具有企业级规模和通信能力的互联网络。</span><br></pre></td></tr></table></figure>
+
+<p>23、使用CDN加速资源时，如果出现源站资源变化而CDN节点仍然是旧资源的情况，可通过配置静态资源指定目录和文件后缀名的缓存过期时间提高访问效率。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>24、如果您的网站易遭受攻击且必须兼顾加速的业务场景，则需要使用<em><strong>全站加速功能</strong></em>，提升全站安全性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line"></span><br><span class="line">安全加速</span><br></pre></td></tr></table></figure>
+
+<p>25、<em><strong>HTTP协议</strong></em>是以安全为目标的HTTP通道，<em><strong>HTTP</strong></em>的安全基础是SSL&#x2F;TLS协议。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">HTTPS协议是以安全为目标的HTTP通道，简单来说，HTTPS是HTTP的安全版，即将HTTP用SSL/TLS协议进行封装，HTTPS的安全基础是SSL/TLS协议。</span><br></pre></td></tr></table></figure>
+
+<p>26、V2V迁移是指从其他云平台或者传统虚拟化平台的虚拟主机迁移到阿里云的ECS虚拟主机</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br><span class="line">V是指的虚拟化virtual,代表的是云平台或者虚拟机，P是指的物理机Physical,所以V2V就是指从其他云平台或者传统虚拟化平台的虚拟主机迁移到阿里云的ECS虚拟主机</span><br></pre></td></tr></table></figure>
+
+<p>27、企业级实例性能稳定且有严格的SLA保证，共享型实例性能不稳定<em><strong>且没有可用性</strong></em>SLA保证。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">企业级实例采用固定CPU调度模式。每个vCPU绑定到一个物理CPU超线程，实例间无CPU资源争抢，实例计算性能稳定且有严格的SLA保证。共享型实例采用非绑定CPU调度模式。每个vCPU会被随机分配到任何空闲CPU超线程上，不同实例vCPU会争抢物理CPU资源，并导致高负载时计算性能波动不稳定，有可用性SLA保证，但无性能SLA保证。</span><br></pre></td></tr></table></figure>
+
+<p>28、在大量高并发的情况下，可以使用nginx来代替apache以获取更好的性能。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br><span class="line">nginx处理请求是异步非阻塞的，而apache则是阻塞型的，在高并发下nginx能保持低资源低消耗高性能。</span><br></pre></td></tr></table></figure>
+
+<p>29、阿里云云数据库RDS在变更配置后，实例的内外网地址以及对应的<em><strong>IP地址</strong></em>均不会发生变化。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">内网/外网地址和读写分离地址不会改变，但是对应的IP地址可能会变化。建议在应用程序中使用内网/外网地址或读写分离地址。</span><br></pre></td></tr></table></figure>
+
+<p>30、阿里云快照服务<em><strong>需要在对应的云盘上安装代理才可以使用</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">阿里云快照服务是—种无代理(Agentless)的数据备份方式，</span><br></pre></td></tr></table></figure>
+
+<p>31、CDN的性能指标中，缓存命中率越高，代表性能越好。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>32、之前实例的地域为中国杭州，数据盘有快照。实例到期释放后在中国杭州地域又新购了一台实例，<em><strong>可以直接回滚到之前的实例</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">使用快照回滚云盘需要回滚到原来的实例。但可以利用之前数据盘的快照创建云盘，将云盘挂载到新的实例上。</span><br></pre></td></tr></table></figure>
+
+<p>33、一个请求通过负载均衡到达后端服务器，如果客户端在未收到后端服务器的回复前主动断开和负载均衡的连接，<em><strong>负载均衡会同时断开和后端服务器的连接</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">负载均衡在读写过程中不会断开与后端服务器的连接。</span><br></pre></td></tr></table></figure>
+
+<p>34、标准化文档—旦制定，<em><strong>就不应该修改</strong></em>。<br>错</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标准化文档只是当前的最佳实践，随着时间的推移，新技术的引入,最佳实践也会有更新，因此标准化文档的拟定会是长期的不断迭代的过程</span><br></pre></td></tr></table></figure>
+
+<p>35、load越大，代表当前机器负载<em><strong>越低</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">load值代表的是当前负载情况，值越大，说明负载越高，反之越低</span><br></pre></td></tr></table></figure>
+
+<p>36、阿里云服务器迁移中心SMC是<em><strong>收费服务</strong></em>，使用时需要根据服务器规模收取使用费用。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">SMC为免费服务，</span><br></pre></td></tr></table></figure>
+
+<p>37、小涛在查看目录与结构时，发现子目录显示比较乱，想要以树形结构显示目录，此时小涛只需要使用tree命令即可，<em><strong>不需要其他操作</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">查看树形结构的目录命令为tree,</span><br><span class="line">但使用tree需要下载tree包，所以此题为错误</span><br></pre></td></tr></table></figure>
+
+<p>38、在shel1命令行方式下，一行只能写一个指令，每次只能使用一个命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">可以用  ； 隔开</span><br></pre></td></tr></table></figure>
+
+<p>39、如果选择Apache作为inetd进程运行wwWW服务，那么在httpd.conf文件中指定服务端口就没有用，而是需要在<em><strong>inetd的配置文件</strong></em>&#x2F;etc&#x2F;services中指定。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">Apache配置文件参数</span><br></pre></td></tr></table></figure>
+
+<p>40、从GROUPBY分组的结果集中在此用条件表达式进行筛选的子句是<em><strong>FROM</strong></em>吗?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">从GROUP BY分组的结果集中在此用条件表达式进行筛选的子句是HAVING吗</span><br></pre></td></tr></table></figure>
+
+<p>41、MySQL中的enum(是MySQL的枚举数据类型?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>42、小王想把自己阿里云云主机ECS从经典网络迁移到专有网络VPC，内网IP不会变化，小王的理解是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>43、常见网络连接设备有<em><strong>网卡</strong></em>、集线器、交换机、路由器等，该说法是否正确</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">中继器、集线器、交换机和路由器等</span><br></pre></td></tr></table></figure>
+
+<p>44、”因为Virtual PC模拟了显卡，所以通用性很强”该描述是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>45、阿里云容器服务兼容开源Kubernetes框架</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>46、基础设施服务(1aas)的费者对事件的遏制、排除和恢复负主要责任，这句话描述是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>47、小刘是公司的运维工程师，公司业务要搬迁上云对于网络规划，小刘想<em><strong>公有云网络和本地基础设施应该始终使用相同的网络地址范围</strong></em>这种思路是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">云和本地基础设施应该始终使用不同的网络地址范围，否则会导致IP冲突。</span><br></pre></td></tr></table></figure>
+
+<p>48、自定义DNS是指自己创建的DNS服务器，并使用自定义DNS服务器提供域名解析服务。对于自定义DNS服务器描述是否正确?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对</span><br></pre></td></tr></table></figure>
+
+<p>49、Moodle是一个课程管理系统,采用PHP加MySQL方式运行的自由开源软件。使用Moodle为学生建立网上动态网站，可以根据需要随时调整界面、增减内容。<em><strong>在安装部署完成后，用户就可以通过使用域名访问网站站点了</strong></em>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错</span><br><span class="line">安装完成后，用户可以使用公网IP地址访问您的网站。如果您希望用户使用域名访问您的站点，应先绑定域名。</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>阿里 1+x（初级）</category>
+      </categories>
+      <tags>
+        <tag>判断</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里1+x操作题</title>
+    <url>/2022/05/30/%E9%98%BF%E9%87%8C1-x%E6%93%8D%E4%BD%9C%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="操作题"><a href="#操作题" class="headerlink" title="操作题"></a>操作题</h1><h4 id="1、YUM源配置"><a href="#1、YUM源配置" class="headerlink" title="1、YUM源配置"></a>1、YUM源配置</h4><p><strong>当前有一个centos7.2-1511.iso的镜像文件，使用这个文件配置yum源，要求将这个镜像文件挂载在&#x2F;opt&#x2F;centos目录。还存在一个ftp源，IP地址为192.168.100.200，ftp共享的目录为&#x2F;opt,&#x2F;opt目录中存在一个iaas目录(该目录下存在一个repo data目录)请问如何配置自己的local. Repo文件，使得可以使用这两个地方的软件包，安装文件。请将local. Repo文件的内容以文本形式提交到答题框。</strong></p>
+<span id="more"></span>
+
+<h6 id="配置YUM源"><a href="#配置YUM源" class="headerlink" title="配置YUM源"></a>配置YUM源</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local.repo</span><br><span class="line"></span><br><span class="line">[centos]</span><br><span class="line">name=centos</span><br><span class="line">baseurl=file:///opt/centos</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ftp.repo</span><br><span class="line"></span><br><span class="line">[iaas]</span><br><span class="line">name=iaas</span><br><span class="line">baseurl=ftp://192.168.100.200/centos/iaas-repo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br></pre></td></tr></table></figure>
+
+<p>PS： yum repolist验证 ftp源需要在本地源主机上安装vsftpd服务</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum install -y vsftpd</span><br><span class="line">vi /etc/vsftpd/vsftpd.conf</span><br><span class="line">最上方插入</span><br><span class="line">anon_root=/root</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2、主从数据库"><a href="#2、主从数据库" class="headerlink" title="2、主从数据库"></a>2、主从数据库</h4><p><strong>使用VMWare创建两台centos7的系统的虚拟机，安装数据库服务，并将两台数据库配置为主从数据库模式(master和slave)。配置完成后，在从节点，执行show status salvage查看从节点的复制状态。将查看从节点服务状态的返回结果以文本形式提交的答题框。(数据库用户名root，密码000000;关于数据库的命令均使用小写)</strong></p>
+<h6 id="master节点与node节点-安装数据库"><a href="#master节点与node节点-安装数据库" class="headerlink" title="master节点与node节点(安装数据库)"></a>master节点与node节点(安装数据库)</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@c1 ~]# yum install -y mariadb-server</span><br><span class="line">[root@c1 ~]# systemctl start mariadb</span><br><span class="line">[root@c1 ~]# systemctl enable mariadb</span><br><span class="line">[root@c1 ~]# mysql_secure_installation </span><br><span class="line">enter</span><br><span class="line">y</span><br><span class="line">000000</span><br><span class="line">000000</span><br><span class="line">y</span><br><span class="line">n(Disallow root login remotely?)</span><br><span class="line">y</span><br><span class="line">y</span><br></pre></td></tr></table></figure>
+
+<h6 id="master"><a href="#master" class="headerlink" title="master"></a>master</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vi /etc/my.cnf.d/server.cnf</span><br><span class="line">[mysqld]</span><br><span class="line">log_bin = mysql-bin</span><br><span class="line">binlog_ignore_db = mysql</span><br><span class="line">server_id = 10</span><br></pre></td></tr></table></figure>
+
+<h6 id="slave"><a href="#slave" class="headerlink" title="slave"></a>slave</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vi /etc/my.cnf.d/server.cnf</span><br><span class="line">[mysqld]</span><br><span class="line">log_bin = mysql-bin</span><br><span class="line">binlog_ignore_db = mysql</span><br><span class="line">server_id = 20</span><br></pre></td></tr></table></figure>
+
+<h6 id="master节点与slave节点（重启并登录数据库）"><a href="#master节点与slave节点（重启并登录数据库）" class="headerlink" title="master节点与slave节点（重启并登录数据库）"></a>master节点与slave节点（重启并登录数据库）</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@c1 ~]# systemctl restart mariadb</span><br><span class="line">[root@c1 ~]# mysql -uroot -p000000</span><br></pre></td></tr></table></figure>
+
+<h6 id="master-1"><a href="#master-1" class="headerlink" title="master"></a>master</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">MariaDB [(none)]&gt; grant all privileges on *.* to &#x27;root&#x27;@&#x27;%&#x27; identified by &#x27;000000&#x27;;</span><br><span class="line">MariaDB [(none)]&gt; grant replication slave on *.* to &#x27;user&#x27;@&#x27;20.0.0.20&#x27; identified by &#x27;000000&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h6 id="slave-1"><a href="#slave-1" class="headerlink" title="slave"></a>slave</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">MariaDB [(none)]&gt; change master to master_host=&#x27;20.0.0.10&#x27;,master_user=&#x27;user&#x27;,master_password=&#x27;000000&#x27;;</span><br><span class="line">MariaDB [(none)]&gt; start slave;</span><br><span class="line">MariaDB [(none)]&gt; show slave status\G</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*************************** 1. row ***************************</span><br><span class="line">               Slave_IO_State: Waiting for master to send event</span><br><span class="line">                  Master_Host: 20.0.0.10</span><br><span class="line">                  Master_User: user</span><br><span class="line">                  Master_Port: 3306</span><br><span class="line">                Connect_Retry: 60</span><br><span class="line">              Master_Log_File: mysql-bin.000001</span><br><span class="line">          Read_Master_Log_Pos: 534</span><br><span class="line">               Relay_Log_File: mariadb-relay-bin.000002</span><br><span class="line">                Relay_Log_Pos: 818</span><br><span class="line">        Relay_Master_Log_File: mysql-bin.000001</span><br><span class="line">             Slave_IO_Running: Yes</span><br><span class="line">            Slave_SQL_Running: Yes</span><br><span class="line">              Replicate_Do_DB: </span><br><span class="line">          Replicate_Ignore_DB: </span><br><span class="line">           Replicate_Do_Table: </span><br><span class="line">       Replicate_Ignore_Table: </span><br><span class="line">      Replicate_Wild_Do_Table: </span><br><span class="line">  Replicate_Wild_Ignore_Table: </span><br><span class="line">                   Last_Errno: 0</span><br><span class="line">                   Last_Error: </span><br><span class="line">                 Skip_Counter: 0</span><br><span class="line">          Exec_Master_Log_Pos: 534</span><br><span class="line">              Relay_Log_Space: 1114</span><br><span class="line">              Until_Condition: None</span><br><span class="line">               Until_Log_File: </span><br><span class="line">                Until_Log_Pos: 0</span><br><span class="line">           Master_SSL_Allowed: No</span><br><span class="line">           Master_SSL_CA_File: </span><br><span class="line">           Master_SSL_CA_Path: </span><br><span class="line">              Master_SSL_Cert: </span><br><span class="line">            Master_SSL_Cipher: </span><br><span class="line">               Master_SSL_Key: </span><br><span class="line">        Seconds_Behind_Master: 0</span><br><span class="line">Master_SSL_Verify_Server_Cert: No</span><br><span class="line">                Last_IO_Errno: 0</span><br><span class="line">                Last_IO_Error: </span><br><span class="line">               Last_SQL_Errno: 0</span><br><span class="line">               Last_SQL_Error: </span><br><span class="line">  Replicate_Ignore_Server_Ids: </span><br><span class="line">             Master_Server_Id: 10</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、openstack搭建"><a href="#3、openstack搭建" class="headerlink" title="3、openstack搭建"></a>3、openstack搭建</h4><p><strong>使用VMWare创建两台CentOS7.2的操作系统，自行配置网络与IP，使用提供的软件包，安装OpenStack平台。完成安装后，使用curl命令查询<a href="http://192.168.100.10/dashboard/auth/login/%E3%80%82%E5%B0%86cur1%E5%91%BD%E4%BB%A4%E7%9A%84%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E4%BB%A5%E6%96%87%E6%9C%AC%E5%BD%A2%E5%BC%8F%E6%8F%90%E4%BA%A4%E5%88%B0%E7%AD%94%E9%A2%98%E6%A1%86%E3%80%82">http://192.168.100.10/dashboard/auth/login/。将cur1命令的查询结果以文本形式提交到答题框。</a></strong></p>
+<h6 id="yum源"><a href="#yum源" class="headerlink" title="yum源"></a>yum源</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">controller</span><br><span class="line"></span><br><span class="line">[centos]</span><br><span class="line">name=centos</span><br><span class="line">baseurl=file:///opt/centos</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">[iaas]</span><br><span class="line">name=iaas</span><br><span class="line">baseurl=file:///opt/iaas-repo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">compute</span><br><span class="line">[centos]</span><br><span class="line">name=centos</span><br><span class="line">baseurl=ftp://192.168.100.10/centos</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">[iaas]</span><br><span class="line">name=iaas</span><br><span class="line">baseurl=ftp://192.168.100.10/iaas-repo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br></pre></td></tr></table></figure>
+
+<h6 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">controller</span><br><span class="line"></span><br><span class="line">【挂载CentOS-7-x86_64-DVD-1804.iso】</span><br><span class="line">[root@controller ~]# mount -o loop CentOS-7-x86_64-DVD-1804.iso  /mnt/</span><br><span class="line">[root@controller ~]# mkdir /opt/centos</span><br><span class="line">[root@controller ~]# cp -rvf /mnt/* /opt/centos/</span><br><span class="line">[root@controller ~]# umount  /mnt/</span><br><span class="line"></span><br><span class="line">【挂载XianDian-IaaS-v2.4.iso】</span><br><span class="line">[root@controller ~]# mount -o loop XianDian-IaaS-v2.4.iso  /mnt/</span><br><span class="line">[root@controller ~]# cp -rvf /mnt/* /opt/</span><br><span class="line">[root@controller ~]# umount  /mnt/</span><br></pre></td></tr></table></figure>
+
+<h6 id="安装ftp（见题1）"><a href="#安装ftp（见题1）" class="headerlink" title="安装ftp（见题1）"></a>安装ftp（见题1）</h6><h6 id="编辑环境变量（最重要，千万千万存快照）"><a href="#编辑环境变量（最重要，千万千万存快照）" class="headerlink" title="编辑环境变量（最重要，千万千万存快照）"></a>编辑环境变量（最重要，千万千万存快照）</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum install iaas-xiandian -y</span><br><span class="line"></span><br><span class="line">controller</span><br><span class="line">vi /etc/xiandian/openrc.sh</span><br><span class="line"> </span><br><span class="line"> %s/^#//g</span><br><span class="line"> %s/PASS=/PASS=000000</span><br><span class="line"> </span><br><span class="line"> 填内容</span><br><span class="line"> PS:swift处的ip地址填compute的ip</span><br><span class="line"> </span><br><span class="line"> scp /etc/xiandian/openrc.sh compute:/xiandian/openrc.sh</span><br><span class="line"> </span><br><span class="line"> compute</span><br><span class="line"> </span><br><span class="line"> Neture初的ip改成compute的IP</span><br></pre></td></tr></table></figure>
+
+<h6 id="安装脚本"><a href="#安装脚本" class="headerlink" title="安装脚本"></a>安装脚本</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">iaas-pre-sh</span><br><span class="line"></span><br><span class="line">安装完后重启</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>controller</th>
+<th>compute</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>iaas-install-mysql.sh</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>iaas-install-keystone.sh</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>iaas-install-glance.sh</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>iaas-install-nova-controller.sh</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>iaas-install-neutron-controller.sh</strong></td>
+<td><strong>iaas-install-nova-compute.sh</strong></td>
+</tr>
+<tr>
+<td><strong>iaas-install-cinder-controller.sh</strong></td>
+<td><strong>iaas-install-neutron-compute.sh</strong></td>
+</tr>
+<tr>
+<td><strong>iaas-install-swift-controller.sh</strong></td>
+<td><strong>iaas-install-cinder-compute.sh</strong></td>
+</tr>
+<tr>
+<td><strong>iaas-install-heat.sh</strong></td>
+<td><strong>iaas-install-swift-compute.sh</strong></td>
+</tr>
+<tr>
+<td><strong>iaas-install-dashboard.sh</strong></td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl http://192.168.100.10/dashboard/auth/login/ </span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>阿里 1+x（初级）</category>
+      </categories>
+      <tags>
+        <tag>操作题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里1+x单选题</title>
+    <url>/2022/05/28/%E9%98%BF%E9%87%8C1-x%E5%8D%95%E9%80%89%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="常错题目"><a href="#常错题目" class="headerlink" title="常错题目"></a>常错题目</h1><p>1、VPC的公共子网是哪一个？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在其关联的路由表中至少有一个使用internet网关（IGW）的路由</span><br></pre></td></tr></table></figure>
+
+<p>2、下面那个不是docker容器的驱动程序？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">XFS</span><br></pre></td></tr></table></figure>
+
+<p>3、您需要制作一个要在web上公开的PDF文件，该文件会被客户通过浏览器下载数百万次，哪种选项最具有成本效益?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">将文件存储在S3 Standard中</span><br></pre></td></tr></table></figure>
+
+<p>4、Amazon S3存储桶提供以下哪项?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">重新编写新对象的一致性，并最终与覆盖和删除一致</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>5、8个300G的硬盘做RAID6后的容量空间为</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.8T</span><br><span class="line"></span><br><span class="line">RAID6容量计算：n-2</span><br></pre></td></tr></table></figure>
+
+<p>6、下列哪项nova服务不是OpenStack平台控制节点必须的服务</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nova-compute</span><br></pre></td></tr></table></figure>
+
+<p>7、下面关于数据库主从复制机制的原理概述，哪个是错误的?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql主从复制是将所有的事物操作写到binlog, slave获取binlog读入自己的中继区，然后再进形执行。</span><br></pre></td></tr></table></figure>
+
+<p>8、下面不属于分布式数据存储中间件mycat的核心流程?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">数据导入</span><br></pre></td></tr></table></figure>
+
+<p>9、下面关于mycat数据库中间件的端口正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">8066端口</span><br></pre></td></tr></table></figure>
+
+<p>10、哪两个文件不能放在同一个文件夹中？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ABC.COM与abc.</span><br></pre></td></tr></table></figure>
+
+<p>11、通过安装哪个插件可以统计分析和图表化elasticsearch集群状态信息</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bigdesk</span><br></pre></td></tr></table></figure>
+
+<p>12、以下命令能够删除—列的是？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table emp drop column addcolumn</span><br></pre></td></tr></table></figure>
+
+<p>13、ELK是三个开源软件的缩写，分别表示？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Elasticsearch , Logstash, Kibana</span><br></pre></td></tr></table></figure>
+
+<p>14、ELK中的“K”的默认端口o</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5601</span><br></pre></td></tr></table></figure>
+
+<p>15、通过安装哪个插件可以在web界面查看elasticsearch集群状态信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">head</span><br></pre></td></tr></table></figure>
+
+<p>16、MYSQL中可以用来声明游标的命令是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DECLARE CURSOR</span><br></pre></td></tr></table></figure>
+
+<p>17、在select语句的where子句中，使用正则表达式过浙数据的关键字()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">regexp</span><br></pre></td></tr></table></figure>
+
+<p>18、如果用户需要创建SLB实例为了能够真正的实现应用的负载分担,那么要保证至少要有多少个ECS实例?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<p>19、操作系统中采用缓冲技术的目的是为了增强系统()的能力</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">并行操作</span><br></pre></td></tr></table></figure>
+
+<p>20、不属于ifconfig命令作用范围(</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">加载网卡到内核中</span><br></pre></td></tr></table></figure>
+
+<p>21、从资源管理的角度看，操作系统中进程调度是为了进行(</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">处理机管理</span><br></pre></td></tr></table></figure>
+
+<p>22、root用户可以使用()命令向所有用户发送消息</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wall</span><br></pre></td></tr></table></figure>
+
+<p>23、将系统D盘的文件系统由FAT32无损转换为NTFS的命令是()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">convert D:/fs:ntfs</span><br></pre></td></tr></table></figure>
+
+<p>24、linux进程有哪三种状态?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">运行态、就绪态和等待态</span><br></pre></td></tr></table></figure>
+
+<p>25、下面采用SPF算法的协议是(）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">OSPF</span><br></pre></td></tr></table></figure>
+
+<p>26、在tomcat上发布web应用时，默认的是什么目录)。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webapps</span><br></pre></td></tr></table></figure>
+
+<p>27、表示重定的状态码是？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">302</span><br></pre></td></tr></table></figure>
+
+<p>28、以下tomat参数调优中哪个参数用于调优每个线程的堆栈大小。o</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Xss</span><br></pre></td></tr></table></figure>
+
+<p>29、可以完成主机名与IP地址正向解析和反向解析任务的命令是（)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nslookup</span><br></pre></td></tr></table></figure>
+
+<p>30、linux文件系统中，文件在外存的物理地址存放在( ) 中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">i节点</span><br></pre></td></tr></table></figure>
+
+<p>31、下面哪个不是OSPF定义的基本网络类型?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Virtual Link</span><br></pre></td></tr></table></figure>
+
+<p>32、K8S的有状态应用是(</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">StatefulSet</span><br></pre></td></tr></table></figure>
+
+<p>33、容器网络技术calico与flanne1相比之下的优点是0)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">较高的性能</span><br></pre></td></tr></table></figure>
+
+<p>34、对于tomcat,下面的说法正确的是:( ) 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tomcat在台机器上可以运行多个</span><br></pre></td></tr></table></figure>
+
+<p>35、对于tomcat，下面的说法错误的是:( ) 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tomcat 下的bin文件夹是应用程序的发布目录</span><br></pre></td></tr></table></figure>
+
+<p>36、对于nginx，下面的说法错误的是:( ) 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nginx.conf中，一个sever作用域中以嵌套多个http作用域</span><br></pre></td></tr></table></figure>
+
+<p>37、nginx负载均衡默认情况下使用哪种策略( 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">round_robin</span><br></pre></td></tr></table></figure>
+
+<p>38、nginx日志中出现状态码为499，其中499状态码表示() 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">服务端处理时间过长,客户端主动关闭了连接</span><br></pre></td></tr></table></figure>
+
+<p>39、etcd的端口是？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2379和2380</span><br></pre></td></tr></table></figure>
+
+<p>40、prometheus的数据存储特点(） 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">时序数据</span><br></pre></td></tr></table></figure>
+
+<p>41、关于对安全组的描述，不正确的是(）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">安全组无法实现对端口的过滤</span><br></pre></td></tr></table></figure>
+
+<p>42、RAID10的至少需要(块磁盘</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<p>43、灾备两个关键技术指标是() 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">数据恢复时间点(RPO)和应用恢复时间(RTO)</span><br></pre></td></tr></table></figure>
+
+<p>44、关于虚拟私有云(VPC)描述不正确的是(）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">可以通过安全组实现不同VPC之间的云主机互通</span><br></pre></td></tr></table></figure>
+
+<p>45、Java本身具有跨系统平台的特性，是因为它运行的环境并不依赖操作系统，而是运行在Java的虚机中，JVM就是Java的虚机名称,JVM的配置文件名称是jvm.cfg，JVM的配置文件是在哪个文件夹下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lib</span><br></pre></td></tr></table></figure>
+
+<p>46、使用镜像可能会产生费用，以下公共镜像的计费描述正确的是:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Red Hat Enterprise Linux:收取镜像费用，以创建实例时显示的信息为准</span><br></pre></td></tr></table></figure>
+
+<p>47、下面关于阿里云弹性伸缩服务中的名称概念描述正确的是:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">伸缩规则:伸缩规则定义了具体的扩展或收缩操作，例如加入或移出N个ECS实例</span><br></pre></td></tr></table></figure>
+
+<p>48、有关资源编排(ROS）功能特点，描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">通过使用资源编排ROS重复部署，您可以将应用环境的配置统一化、标准化，减少差异，这属于标准化部署</span><br></pre></td></tr></table></figure>
+
+<p>49、假设企业A购买了多种云资源来开展业务，并需要授权企业B代为开展部分业务，则可以利用RAM角色来实现此目的。RAM角色是—种虚拟用户，没有确定的身份认证密钥，需要被一个受信的实体用户扮演才能正常使用。为了满足企业A的需求，可以按照以下流程操作:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">企业A创建RAM角色--企业A为该RAM角色添加权限--企业B创建RAM用户--企业B为RAM 用户添加AliyunSTSAssumeRoleAccess权限--企业B的RAM用户通过控制台或API访问企业A的资源</span><br></pre></td></tr></table></figure>
+
+<p>50、下面地址不属于私网地址的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">60.165.34.7</span><br><span class="line">私网地址的范围:</span><br><span class="line">A类地址: 10.0.0.0~10.255.255.255</span><br><span class="line">B类地址:172.16.0.0~172.31.255.255</span><br><span class="line">C类地址:192.168.0.0~192.168.255.255</span><br></pre></td></tr></table></figure>
+
+<p>51、创建专有网络后，可以通过创建交换机为专有网络划分一个或多个子网。有关交换机说法正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">同一VPC内不同可用区的交换机内网互通</span><br></pre></td></tr></table></figure>
+
+<p>52、负载均衡基础架构是采用集群部署，采用开源软件LVS (Linux Virtual Server) + keepalived的方式实现负载均衡的是那种基础架构?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">四层</span><br></pre></td></tr></table></figure>
+
+<p>53、可以使用什么产品功能从客户端远程接入VPC中部署的应用和服务?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SSL-VPN</span><br></pre></td></tr></table></figure>
+
+<p>54、阿里云CDN划分为多个计费区域,其中中国香港计费区域属于:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">亚太1区-AP1</span><br><span class="line">阿里云CDN划分为中国内地和境外两个计费区域。中国内地:中国内地-CN(大陆)统一计费。</span><br><span class="line">境外:按照阿里云CDN节点服务器所在区域，划分为北美-NA、欧洲-EU、亚太1区-AP1、亚太2区-AP2、亚太3区-AP3、中东、非洲-MEAA和南美-SA。</span><br><span class="line">北美-NA:加拿大、美国。</span><br><span class="line">欧洲-EU:俄罗斯、乌克兰、英国、法国、荷兰、西班牙、意大利、瑞典、德国。</span><br><span class="line">亚太1区-AP1:中国香港、中国澳门、中国台湾、日本以及东南亚除越南和印尼之外的地区。</span><br><span class="line">亚太2区-AP2:印度、印尼、韩国、越南。</span><br><span class="line">亚太3区-AP3:澳大利亚、新西兰。</span><br><span class="line">中东、非洲-MEAA:阿联酋迪拜、科威特、阿曼、南非。</span><br><span class="line">南美-SA:巴西。</span><br></pre></td></tr></table></figure>
+
+<p>55、VPN网关的数量仅受限于账号，与地域和VPC无关。一个账号可创建的VPN网关数量是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">30</span><br></pre></td></tr></table></figure>
+
+<p>56、OSS的多重冗余架构设计，为数据存储提供可靠保障。这属于OSS的什么优势?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">持久</span><br></pre></td></tr></table></figure>
+
+<p>57、OSS的图形化管理工具是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ossbrowser</span><br></pre></td></tr></table></figure>
+
+<p>58、以下关于存储容量单位包描述不正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">存储容星单位包SCU是一种按量后支付费用的存储容量资源包</span><br></pre></td></tr></table></figure>
+
+<p>59、云数据库RDS具有很多优点，其中无需购置数据库服务器硬件或软件，节省大量成本，这是云数据库的什么优点?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">即开即用</span><br></pre></td></tr></table></figure>
+
+<p>60、上云迁移的实施流程不包括以下哪项</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">系统状态监控</span><br></pre></td></tr></table></figure>
+
+<p>61、迁移物理服务器上的操作系统及其上的应用软件和数据到阿里云平台管理的ECS服务器中的迁移方式是以下哪种类型</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">P2V</span><br></pre></td></tr></table></figure>
+
+<p>62、tomcat默认状态下8005端口的作用是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">监听关闭tomcat的请求</span><br><span class="line">在启动tomcat的时候默认启动了3个端口，分别是8080 (8443) .8009、8005。</span><br><span class="line">其中8080负责监听浏览器发送的http请求，</span><br><span class="line">8443端口负责监听浏览器发送的https请求，</span><br><span class="line">8009负责使用ajpt协议反向代理请求，</span><br><span class="line">8005监听关闭tomcat的请求。</span><br></pre></td></tr></table></figure>
+
+<p>63、在连接RDS实例时，需要填写RDS的内网或外网地址和端口。以下关于修改地址和端口正确的说法是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">主备切换会影响连接地址</span><br></pre></td></tr></table></figure>
+
+<p>64、以下哪个命令可以用来测试块存储性能?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fio</span><br></pre></td></tr></table></figure>
+
+<p>65、在使用负载均衡SLB的时候，如果需要保证来自同—IP的访问请求都被调度至同一后端ECS，那么应该选择以下哪种调度算法?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一致性哈希</span><br></pre></td></tr></table></figure>
+
+<p>66、使用以下哪项功能可以定期的在主机上执行备份脚本?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">crontab</span><br><span class="line">crontab用于设置周期性被执行的指令。可以用来定期执行备份脚本。</span><br><span class="line">Rsync是用来对数据镜像备份的命令</span><br><span class="line">ntpdate是用来同步时间服务器的命令</span><br><span class="line">cp是用来复制文件或者目录</span><br></pre></td></tr></table></figure>
+
+<p>67、prometheus的默认端口是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">9090</span><br></pre></td></tr></table></figure>
+
+<p>68、性能压测应该在上云迁移项目的哪个环节进行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">系统架构设计和改造</span><br></pre></td></tr></table></figure>
+
+<p>69、以下不属于黑盒测试的优点的一项是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">自动化测试的复用性高</span><br><span class="line">黑盒测试的优点有:</span><br><span class="line">1)比较简单，不需要了解程序的内部的代码及实现</span><br><span class="line">2)与软件的内部实现无关</span><br><span class="line">3)从用户的角度出发，能很容易的知道用户会用到哪些功能,</span><br><span class="line">会遇到哪些问题</span><br><span class="line">4)基于软件开发文档,</span><br><span class="line">所以也能知道软件实现了文档中的哪些功能</span><br><span class="line">5)在做软件自动化测试时较为方便</span><br><span class="line">缺点:</span><br><span class="line">1)不可能覆盖所有的代码，覆盖率较低，大概只能达到总代码量的30%</span><br><span class="line">2)自动化测试的复用性较低。</span><br></pre></td></tr></table></figure>
+
+<p>70、	如一个文本文件的各权限位是这样的: -rW-r–f–,对该文件执行chmod g+s后，其权限位应显示为()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-rw-r-Sr--</span><br></pre></td></tr></table></figure>
+
+<p>71、小明想要查看自己的电脑是否安装了Apache，检查指令是(</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rpm -q apache</span><br><span class="line"></span><br><span class="line">rpm -q 查询软件包</span><br></pre></td></tr></table></figure>
+
+<p>72、关于策略处理规则，描述不正确的是(</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">如果子容器内的某个策略被配置，则此配置值会覆盖由其父容器所传递下来的配置值</span><br></pre></td></tr></table></figure>
+
+<p>73、Windows server 2008中.NET Framework的版本是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
+
+<p>74、小明使用root权限发现又一个文件无法修改，可使用说明命令看看其权限（)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lsattr</span><br></pre></td></tr></table></figure>
+
+<p>75、在SQL Server2000中，如果希望用户U1在DB1数据库中具有查询T1表的权限，那么正确的授权语句是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">GRANT SELECT ON T1 TO U1</span><br></pre></td></tr></table></figure>
+
+<p>76、delete from employee语句的作用是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">删除当前数据库中employee表内的所有行</span><br></pre></td></tr></table></figure>
+
+<p>77、Windows server 20003上自带的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">IIS 6.0</span><br></pre></td></tr></table></figure>
+
+<p>78、Windows server 2003操作系统比Windows 2000server操作系统多了那些服务?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">POP3</span><br></pre></td></tr></table></figure>
+
+<p>79、关于云主机的入网带宽和出网带宽的理解以下哪些选项是正确的?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">入网带宽是指云主机下载外部网络资源或FTP客户端上传资源到云主机中。出网带宽是指云主机提供对外部网络资源的访问或FTP客户端下载云主机内部资源。</span><br></pre></td></tr></table></figure>
+
+<p>80、小郑将业务Windows实例设置辅助私网ip后，无法访问公网环境，小郑通过工具进行排查发现是因为Windows 2008之后出网IP策略调整为选择与下—跳IP的前缀匹配最短的IP，会导致网络不通的情况，以下选项解决方案中可行的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">通过Netsh命令设置辅助私网IP，将skipassource设置为true。</span><br></pre></td></tr></table></figure>
+
+<p>81、如何禁用Linux云主机实例的公网网卡?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">通过ifconfig查看云主机实例网卡名称。通过ifdown禁用网卡。假设网卡名称为eth1,则输入ifdown eth1。</span><br></pre></td></tr></table></figure>
+
+<p>82、以下选项中属于半虚拟化的优势是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">效率高</span><br></pre></td></tr></table></figure>
+
+<p>83、传统的机器只有特权指令(特权指令是一些操作和管理关键系统资源的指令，这些指令只有在最高特权级上才能够运行。)和普通指令两种概念，而在有虚拟化的机器上则还有一个独特的概念是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">敏感指令</span><br></pre></td></tr></table></figure>
+
+<p>84、以下哪些选项是（原名ODPS）是—种“大数据计算服务，能提供快速、完全托管免运维的GB到EB级云数据仓库解决方案，已经与阿里云部分产品集成，快速实现多种业务场景。”</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">MaxCompute</span><br></pre></td></tr></table></figure>
+
+<p>85、ASK集群的功能是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">是阿里云基于弹性计算架构推出的无服务器Kubernetes容器服务，无需管理任何节点，可直接启动应用程序，快速创建Kubernetes容器应用。</span><br></pre></td></tr></table></figure>
+
+<p>86、以下那些选项中是阿里云提供的DevOps 平台，支持公共云、专有云和混合云多种部署形态，通过云原生新技术和研发新模式?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云效2020</span><br></pre></td></tr></table></figure>
+
+<p>87、云计算是—种共享技术模式，不同的组织通常会承担实施和管理不同部分的责任。因此，安全职责也由不同的组织分担，所有的组织都包含在其中。这通常被称为共享责任模型，以下安全责任模型描述正确的是:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">基础设施即服务:类似PaaS，云服务提供商负责基本的安全，而云消费者负责他们建立在该基础设施上的其它安全，不同于PaaS,IaaS的消费者承担更多的责任。</span><br></pre></td></tr></table></figure>
+
+<p>88、小刘所在公司已与云供应商建立业务关系，实现消售管理系统功能。可以通过API和SDK定义边界和函数，但在后端服务是由云提供商完成的。在文种情况下，云提供商提供什么样的服务?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">PAAS</span><br></pre></td></tr></table></figure>
+
+<p>89、部署了Web应用防火墙后再访问ECS服务器的网站提示“由于你访问的URL可能对网站造成安全威胁，您的访问被阻断—下解决选项正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在部著Web应用防火墙后，当访问有可能对网站造成安全威胁的URL时，会收到405报错，访问被阻断。这种情况下，如果确认该访问为正常业务请求，可以使用WAF的精准访问控制配置访问规则，将特定的URL或源IP放行。</span><br></pre></td></tr></table></figure>
+
+<p>90、域名一次性最多可以注册多少年?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">目前.co域名最多只能注册5年，常见的.com、 .net、.cn等域名,最多可注册10年。</span><br></pre></td></tr></table></figure>
+
+<p>91、如果在阿里云已有备案成功的主体和网站，登录阿里云ICP代备案管理系统后，备案信息主页上会展示增加网站和继续接入备案，那么新增网站与继续接入备案有什么区别?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.有区别，增加网站是在备案主体下添加一个新网站域名;继续接入备案是在其他服务商处备案了网站，要将在其他服务商备案的信息接入阿里云。</span><br></pre></td></tr></table></figure>
+
+<p>92、Magento是—款开源电商网站框架，其丰富的模块化架构体系及拓展功能可为大中型站点提供解决方案。使用Magento框架进行业务发布需要开通安全组的哪些端口?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">端口http 80和MySQL 3306</span><br></pre></td></tr></table></figure>
+
+<p>93、WordPress中设置固定链接后，跳转页面无法访问。以下选项中可以有效解决问题的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">可以对WordPress站点设置固定链接前，需要先在Nginx服务器中设置伪静态规则，再重启Nginx服务。</span><br></pre></td></tr></table></figure>
+
+<p>94、小明同学为了方便起见下载了可执行安装包，但是在安装过程中由于粗心，忘记了勾选配置环境变量选项，安装完成之后，使用Python命令验证的时候，系统提示”Python不是内部命令”，那么小明同学卸载Python，在重新安装的过程中勾选配置环境变量，是否还有其他的配置环境变量的方式?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">有其他方式，可以通过在系统变量中的PATH中增加Python的安装路径，然后重启使得环境变量生效</span><br></pre></td></tr></table></figure>
+
+<p>95、请阅读下面代码: </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> package Demo; </span><br><span class="line"></span><br><span class="line"> importjava.uti1.Scanner; </span><br><span class="line"></span><br><span class="line"> public class interaction&#123; </span><br><span class="line"></span><br><span class="line">​	publicstatic void main(String[]args) &#123; </span><br><span class="line"></span><br><span class="line">​		Scanner sc = newScanner(System.in); </span><br><span class="line"></span><br><span class="line">​		System.out.println(“你好，能告诉我你的名字吗?“); </span><br><span class="line"></span><br><span class="line">​		String name = sc.next(): &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>回答以下问题:上述代码即将开始编译，需要在确认—遍main中的逻辑，main中共有3条语句，请问这三条语句编译之后执行的顺序是0)?请以代码行数的编号进行排列</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6-7-5</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>阿里 1+x（初级）</category>
+      </categories>
+      <tags>
+        <tag>单选</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里1+x多选题</title>
+    <url>/2022/05/29/%E9%98%BF%E9%87%8C1-x%E5%A4%9A%E9%80%89%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="多选"><a href="#多选" class="headerlink" title="多选"></a>多选</h1><p>1、在Linux中第一个字符代表这个文件是目录、文件或链接文件等等。当为[ -]则是（）;若是[ b ]则表示为（）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.文件</span><br><span class="line">D.装置文件里面的可供储存的接口设备(可随机存取装置)</span><br></pre></td></tr></table></figure>
+
+<p>2、在Linux系统当中，1s命令可能是最常被运行的。加上不同的参数运行的效果不—样，比如-a参数是指();-d参数是指();</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.全部的文件,连同隐藏档(开头为.的文件)一起列出来</span><br><span class="line">c.仅列出目录本身,而不是列出目录内的文件数据</span><br></pre></td></tr></table></figure>
+
+<p>3、下面属于测试用例黑盒技术的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.等级类划分</span><br><span class="line">B.边界值分析</span><br><span class="line">C.错误推测</span><br><span class="line">D.因果图</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>4、批量删除当前目录下后缀名为.c的文件。如a.c、b.c。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.rm *.c</span><br><span class="line">B. find . -name &quot;*.c&quot; -maxdepth 1 | xargs rm</span><br></pre></td></tr></table></figure>
+
+<p>5、进程间通讯方式有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.管道</span><br><span class="line">B.消息队列</span><br><span class="line">C.共享内存</span><br><span class="line">D.文件和记录锁定</span><br></pre></td></tr></table></figure>
+
+<p>6、云服务器可用的镜像类型有哪几个?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.共有镜像</span><br><span class="line">B.自定义镜像</span><br><span class="line">C.服务市场镜像</span><br></pre></td></tr></table></figure>
+
+<p>7、包年包月的云主机和按需付费的不同之处在于?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.包年包月的云主机费用单价更低</span><br><span class="line">c.包年包月的云主机在到期后会进入回收站一段时间，避免数据损失</span><br></pre></td></tr></table></figure>
+
+<p>8、以下关于云主机的磁盘部分，描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.当数据盘，系统盘为本地盘时，硬件配置(CPU，内存)不可升降</span><br><span class="line">B.当数据盘，系统盘为云硬盘时，硬件配置(CPU，内存)调整功能</span><br></pre></td></tr></table></figure>
+
+<p>9、创建云主机时，可以购买的网络带宽有哪几个计费标准?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.按使用流量计费</span><br><span class="line">B.按带宽计费</span><br></pre></td></tr></table></figure>
+
+<p>10、UNIX系统由哪几部分组成?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.Kemel(内核)</span><br><span class="line">B.Shell(外壳)</span><br><span class="line">c.工具及应用程序</span><br></pre></td></tr></table></figure>
+
+<p>11、Neutron服务包括下面哪些组件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. neutron-server</span><br><span class="line">C. OpenStack网络插件和代理</span><br><span class="line">D. 消息队列</span><br></pre></td></tr></table></figure>
+
+<p>12、白盒技术主要包括?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.语句覆盖</span><br><span class="line">B.判定覆盖</span><br><span class="line">C.条件覆盖</span><br><span class="line">D.逻辑覆盖</span><br></pre></td></tr></table></figure>
+
+<p>13、在容器平台中，日志大致分为环境日志和应用日志，下面日志中属于环境日志的有?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.容器运行日志</span><br><span class="line">C.宿主机容器引擎日志</span><br><span class="line">D.容器平台管理日志</span><br></pre></td></tr></table></figure>
+
+<p>14、项目从开始到结束的若干阶段构成了项目的生命周期，下面哪些是项目生命周期阶段?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.实施阶段</span><br><span class="line">C.概念阶段</span><br><span class="line">D.计划阶段</span><br></pre></td></tr></table></figure>
+
+<p>15、交换机的主要功能有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.环路避免</span><br><span class="line">C.转发过滤</span><br><span class="line">D.地址学习</span><br></pre></td></tr></table></figure>
+
+<p>16、VLAN划分方式有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.基于策略方式</span><br><span class="line">D.基于MAC地址方式</span><br></pre></td></tr></table></figure>
+
+<p>17、Samba服务所需软件包括哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. Samba</span><br><span class="line">C. Samba-client</span><br><span class="line">D. Samba-common</span><br></pre></td></tr></table></figure>
+
+<p>18、NFS由下列那几个部分组成?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.NFS内核模块</span><br><span class="line">B.NFS用户空间工具</span><br><span class="line">C.RPC相关服务</span><br></pre></td></tr></table></figure>
+
+<p>19、下面那些是主从数据的优点?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.方便做数据的热备份</span><br><span class="line">B.架构的扩展更容易</span><br><span class="line">C.读写分离，使数据库能支撑更大的并发</span><br></pre></td></tr></table></figure>
+
+<p>20、下面选项当中，哪些是私有云平台分类?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.私有云平台</span><br><span class="line">B.私有云服务</span><br><span class="line">D.私有云管理平台</span><br></pre></td></tr></table></figure>
+
+<p>21、下列选项当中，不是说明Swift组件作用的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.用于提供镜像服务</span><br><span class="line">C.用于提供计星与监控功能</span><br><span class="line">D.用于提供编排服务或功能</span><br></pre></td></tr></table></figure>
+
+<p>22、在下列选项当中，属于Mysq1特点的有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.性能卓越、服务稳定</span><br><span class="line">B.成本低、支持多种操作系统</span><br><span class="line">C.对流行的PHP语言无缝支持</span><br></pre></td></tr></table></figure>
+
+<p>23、以下选项的组合可以保护S3对象免于意外删除和意外覆盖?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.在存储桶上启用S3版本控制。</span><br><span class="line">D.启用多因素身份验证(MFA)保护的访问。</span><br></pre></td></tr></table></figure>
+
+<p>24、以下哪项是存储网关的有效选项?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.文件网关</span><br><span class="line">B.卷网关</span><br></pre></td></tr></table></figure>
+
+<p>25、哪些是VPC端点类型?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.接口端点</span><br><span class="line">C.网关端点</span><br></pre></td></tr></table></figure>
+
+<p>26、以下哪项提供了自动备份RDS数据库的方法?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.自动快照</span><br><span class="line">C.自动备份</span><br></pre></td></tr></table></figure>
+
+<p>27、以下哪些是SSD支持的卷的特征?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.事务性工作量</span><br><span class="line">C. Small I/O Size</span><br></pre></td></tr></table></figure>
+
+<p>28、下列选项当中，哪些不是K8S查看Deployment列表的命令?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. kubectl show deployment</span><br><span class="line">C. kubectl display deployment</span><br><span class="line">D. kubectl check deployment</span><br></pre></td></tr></table></figure>
+
+<p>29、下面有关bash配置文件，说法正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.bash logout:退出shell时，要执行的命令</span><br><span class="line">B.bash profile:每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行—次!默认情况下</span><br><span class="line">D. /etc/profile:此文件为系统的每个用户设置环境信息，当用户第一次登录时，该文件被执行</span><br></pre></td></tr></table></figure>
+
+<p>30、将文件file1复制为file2可以用下面哪些命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.cp file1 file2</span><br><span class="line">B.cat file1 &gt;file2</span><br><span class="line">c.cat &lt; file1 &gt;file2</span><br><span class="line">D.dd if=file1 of=file2</span><br></pre></td></tr></table></figure>
+
+<p>31、Docker中Cgroup的功能是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.资源限制</span><br><span class="line">B.优先级分配</span><br><span class="line">C.资源统计</span><br><span class="line">D.任务控制</span><br></pre></td></tr></table></figure>
+
+<p>32、下列有关Nginx配置文件nginx.conf的叙述正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. nginx进程数设置为CPU总核心数最佳</span><br><span class="line">D.设置工作模式与连接数上限时，应考虑单个进程最大连接数(最大连接数=连接数*进程数)</span><br></pre></td></tr></table></figure>
+
+<p>33、下面有关Ext2和ext3文件系统的描述，错误的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. ext2lext3文件系统使用索引节点来记录文件信息，包含了一个文件的长度、创建及修改时间、权限、所属关系、磁盘中的位置等信息</span><br><span class="line">D. ext3支持1EB的文件系统，以及16TB的文件。</span><br></pre></td></tr></table></figure>
+
+<p>34、在Linux系统，关于硬链接的描述正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.不可以跨文件系统</span><br><span class="line">D.链接文件的i节点与被链接文件的i节点相同</span><br></pre></td></tr></table></figure>
+
+<p>35、下面关于glance服务的说法，正确的是。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. glance-api负责接爱ImageAPI请求，处理image查询和存储等</span><br><span class="line">B. glance-registry负责存储，处理和检索image的元数据(大小，类型等)</span><br><span class="line">C.使用数据库来存储image文件的元数据</span><br><span class="line">D.支持不同的存储仓库来存储image文件，包括swift,本地磁盘，RADOS块设备，AmazonS3,HTTP</span><br></pre></td></tr></table></figure>
+
+<p>36、下面属于nova组件中的服务的是。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. nova-api</span><br><span class="line">B. nova-scheduler</span><br><span class="line">C. nova-novncproxy</span><br></pre></td></tr></table></figure>
+
+<p>37、块存储服务(cinder)为实例提供块存储。存储的分配和消耗是由块存储驱动器，或者多后端配置的驱动器决定的。下面那些是可用的驱动程序。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.NAS/SAN</span><br><span class="line">B.NFS</span><br><span class="line">D.Ceph</span><br></pre></td></tr></table></figure>
+
+<p>38、您正在从本地网络到AWS VPC设置站点到站点VPN。您可能需要执行以下哪些步骤?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.为客户网关设置一个公共IP地址。</span><br><span class="line">C.为虚拟专用网关设置一个公用IP地址。</span><br></pre></td></tr></table></figure>
+
+<p>39、使用分段上传应考虑以下哪些方式?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.用于通过稳定的高带宽网络上载大型对象以最大化带宽</span><br><span class="line">C.用于通过斑点网络上载任何大小的文件以提高弹性</span><br></pre></td></tr></table></figure>
+
+<p>40、以下哪个是访问S3存储桶的有效URL?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B. https: //s3-us-west-l.amazonaws.com/prototypeBucket32</span><br><span class="line">D. https : lprototypeBucket32.s3-s-west-l.amazonaws.com</span><br></pre></td></tr></table></figure>
+
+<p>41、如果启用了MFA删除，以下哪个操作将被利用?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.更改存储桶的版本控制状态</span><br><span class="line">C.永久删除对象版本</span><br></pre></td></tr></table></figure>
+
+<p>42、Elastic Beanstalk支持以下哪个?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. Docker</span><br><span class="line">D.Node.js</span><br></pre></td></tr></table></figure>
+
+<p>43、下面关于mycat服务分库分表之后，支持联表查询的说法，正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.使用好ER表</span><br><span class="line">B.善用全局表</span><br><span class="line">D.在sql上添加注解</span><br></pre></td></tr></table></figure>
+
+<p>44、下面哪些是Swift对象存储的特点。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.弹性可伸缩</span><br><span class="line">B.高可用</span><br><span class="line">c.分布式</span><br></pre></td></tr></table></figure>
+
+<p>45、使用useradd创建用户时和主目录相关的参数是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.d</span><br><span class="line">c.m</span><br><span class="line">D.M</span><br></pre></td></tr></table></figure>
+
+<p>46、云计算IAAS层，能够带来哪些好处?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.资源集中自动化管理</span><br><span class="line">B.快速供应基础设施</span><br><span class="line">c.提高资源利用、降低能耗</span><br><span class="line">D.共享硬件资源</span><br></pre></td></tr></table></figure>
+
+<p>47、你正在为你的VPC设计互联网连接。Web服务器必须在Internet上可用。该应用程序必须具有高度可用的体系结构。您应该考虑哪些替代方案?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.将所有Web服务器放在ELB后面配置Route53 CNMIE以指向ELB DNS名称。</span><br><span class="line">D.将EIP分配给所有Web服务器。使用所有EIP配置Route53记录集，并进行运行状况检查和DNS故障转移。</span><br></pre></td></tr></table></figure>
+
+<p>48、Nginx的发音为“engine X””，是一个高性能的（）和（）服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B. http</span><br><span class="line">C.反向代理</span><br></pre></td></tr></table></figure>
+
+<p>49、Apache的访问控制分为两种，分别是基于()和基于()的访问控制。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.用户</span><br><span class="line">D.IP</span><br></pre></td></tr></table></figure>
+
+<p>50、云计算的概念从平台技术视角可以从计算角度、服务角度、存储角度、配置角度来理解。比如在服务角度来看，云计算是指通过互联网提供的弹性的（）服务。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.硬件</span><br><span class="line">B.软件</span><br><span class="line">D.数据</span><br></pre></td></tr></table></figure>
+
+<p>51、客户购买了一台Linux操作系统的云服务器,现在想要远程登录云服务器，客户本地的操作系统是Windows，那么客户可以通过______方式远程登录云服务器。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.PuTTY等客户端工具</span><br><span class="line">C.VNC</span><br></pre></td></tr></table></figure>
+
+<p>52、安全组是一个逻辑上的分组，由同—地域内具有相同安全保护需求并相互信任的实例组成。一台云服务器实例()。一个安全组可以管理云()服务器实例。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A。至少属于—个安全组，可以同时加入多个安全组</span><br><span class="line">D.同一个地域内的多台</span><br></pre></td></tr></table></figure>
+
+<p>53、专有网络整体架构里面，配置通路和数据通路互相分离。交换机是分布式的结点，()和())都是集群部署并且是多机房互备的，并且所有链路上都有冗余容灾，提升了专有网络产品的整体可用性。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.网关</span><br><span class="line">D.控制器</span><br></pre></td></tr></table></figure>
+
+<p>54、存储磁盘陈列按其连接方式的不同，可分为哪几类()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.DAS</span><br><span class="line">B.NAS</span><br><span class="line">c.SAN</span><br></pre></td></tr></table></figure>
+
+<p>55 、云安全主要的考虑的关键技术有哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.数据安全</span><br><span class="line">B.应用安全</span><br><span class="line">C.虚拟化安全</span><br></pre></td></tr></table></figure>
+
+<p>56、在云计算中，虚拟层主要包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.服务器虚拟化</span><br><span class="line">B.存储虚拟化</span><br><span class="line">c.网络虚拟化</span><br></pre></td></tr></table></figure>
+
+<p>57、云平台存储可以哪些方式来挂接?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.FC</span><br><span class="line">B. Iscsi</span><br><span class="line">C.NAS</span><br></pre></td></tr></table></figure>
+
+<p>58、云计算的特点有:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.大规模</span><br><span class="line">B.平滑扩展</span><br><span class="line">C.资源共享</span><br><span class="line">D.动态分配</span><br></pre></td></tr></table></figure>
+
+<p>59、”云计算的基本特征包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.宽带接入</span><br><span class="line">B.虚拟化的资源池</span><br><span class="line">C.快速弹性架构</span><br><span class="line">D.可测量的服务</span><br></pre></td></tr></table></figure>
+
+<p>60、分布式计算的的优势包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.大数据高性能高</span><br><span class="line">B.时效性低成本处理</span><br><span class="line">C.跨域协同</span><br></pre></td></tr></table></figure>
+
+<p>61、将应用托管至PaaS平台的好处主要包含以下哪几种:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.初始投资小、更快的上线时间</span><br><span class="line">B.现用现买,高可伸缩性</span><br><span class="line">C.业务更聚焦</span><br></pre></td></tr></table></figure>
+
+<p>62、下面关于有关IP协议说法说法中正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.IP协议是一个无连接的协议</span><br><span class="line">B.P协议是一个尽最大努力传递数据的协议</span><br><span class="line">D.IP协议是TCP/IP协议族网络层的核心协议</span><br></pre></td></tr></table></figure>
+
+<p>63、以下关于应用集群部署云上架构的描述中，需要关注哪些安全注意事项?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.登录安全</span><br><span class="line">B.服务器安全域隔离</span><br><span class="line">D.负载均衡设备本身安全</span><br></pre></td></tr></table></figure>
+
+<p>64、棱镜事件后，外界所说的去”IOE””指以下()产品。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.IBM</span><br><span class="line">B.ORACLE</span><br><span class="line">C.EMC</span><br></pre></td></tr></table></figure>
+
+<p>65、公有云云主机一般有哪些功能() 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.存储及网络资源管理</span><br><span class="line">B.备份管理</span><br><span class="line">c.详情查看</span><br></pre></td></tr></table></figure>
+
+<p>66、CDN为客户提供以下哪些服务() 。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.加速内容测试</span><br><span class="line">B.资源分发加速</span><br><span class="line">C.业务分析</span><br></pre></td></tr></table></figure>
+
+<p>67、根据OSI七层模型划分.阿里云云上的ELB支持()的负载均衡。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.四层</span><br><span class="line">D.七层</span><br></pre></td></tr></table></figure>
+
+<p>68、公有云一般采用(和( )方式提供IAAS服务。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.OpenStack</span><br><span class="line">C.KVM</span><br></pre></td></tr></table></figure>
+
+<p>69、弹性负载均衡，—般支持的调度算法()。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.支持轮询</span><br><span class="line">B.多级反馈队列</span><br><span class="line">D.源地址算法</span><br></pre></td></tr></table></figure>
+
+<p>70、以下适合电商行业的云产品( )。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.CDN</span><br><span class="line">C.云主机</span><br><span class="line">D.云专线</span><br></pre></td></tr></table></figure>
+
+<p>71、ELK中的“红”主要由哪三个核心组件组成(）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. Input</span><br><span class="line">B.Filter</span><br><span class="line">D.Output</span><br></pre></td></tr></table></figure>
+
+<p>72、Filebeat主要的组件有哪些(）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. prospectors</span><br><span class="line">C. harvesters</span><br></pre></td></tr></table></figure>
+
+<p>73、redis支持哪些存储的数据类型？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. String</span><br><span class="line">C.List</span><br><span class="line">D. Hash</span><br></pre></td></tr></table></figure>
+
+<p>74、Nginx的upstream负载的几种方式()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.轮询</span><br><span class="line">B. weight</span><br><span class="line">C. ip_hash</span><br><span class="line">D. url_hash</span><br></pre></td></tr></table></figure>
+
+<p>75、以下哪些是harbor所需的容器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. harbor-adminserver</span><br><span class="line">B. harbor-db</span><br><span class="line">C. harbor-jobservice</span><br></pre></td></tr></table></figure>
+
+<p>76、企业网络架构包括</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.核心层</span><br><span class="line">C.汇聚层</span><br><span class="line">D.接入层</span><br></pre></td></tr></table></figure>
+
+<p>77、对于openstack云存储机制的描述，以下()是正确的(选2项)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. Cinder支持本地存储:LVM(iSCST,网络存储:NFS,RBD(Ceph).</span><br><span class="line">D.Glance支持多种存储类型镜像格式:raw vhd,vmdk vdi,iso,qcow2。</span><br></pre></td></tr></table></figure>
+
+<p>78、方火墙可以作用包括</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.企业内网管控隔离</span><br><span class="line">B.互联网边界防护</span><br><span class="line">C.数据中心隔离</span><br></pre></td></tr></table></figure>
+
+<p>79、以下关于安全组和云防火墙说法正确的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.安全组默认允许从虚拟机内部向外部的流量访问</span><br><span class="line">C.防火墙的默认策略是禁止所有流量流入</span><br><span class="line">D.防火墙的默认策略是禁止所有流量流出</span><br></pre></td></tr></table></figure>
+
+<p>80、某企业在订购了云资源后，反应网络中断，将此种情况反应到了前端，前端可以如何应对()</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.让用户先自行检查云防火墙、安全组设置,判断是否由于自己错误配置导致;</span><br><span class="line">B.若用户判断不是由于在云防火墙、安全组的错误配置导致，需要用户提供—些基础信息，如主机IP(内网、外网)、登录用户名及密码、ping及traceroute命令的截图;</span><br><span class="line">D.定期与客服联系了解进度，并及时反馈给用户</span><br></pre></td></tr></table></figure>
+
+<p>81、JDK如果是1.5以上版本只需要设置(）变量</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.JAVA HOME</span><br><span class="line">C.PATH</span><br></pre></td></tr></table></figure>
+
+<p>82、IPython的交互式架构的特点包括(</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.强大的交互式Shell</span><br><span class="line">B.Jupyter</span><br><span class="line">c.交互式的数据可视化</span><br><span class="line">D.灵活可嵌套的解释器</span><br><span class="line">E.易于使用</span><br><span class="line">F.高性能的并行计算工具</span><br></pre></td></tr></table></figure>
+
+<p>83、Python多行注释符号是(）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.&quot;&quot;&quot;...&quot;&quot;&quot;</span><br><span class="line">B.&#x27;&#x27;&#x27;...&#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>84、cd命令可让用户切换当前所在的目录，下列关于cd命令描述正确的有:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. cd..切换到上一层目录</span><br><span class="line">B. cd/切换到系统根目录</span><br><span class="line">D. cd/usr/bin切换到/usr/bin目录</span><br></pre></td></tr></table></figure>
+
+<p>85、在创建并管理ECS实例中，以下步骤包括操作ECS实例的生命周期的有:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B,使用向导创建实例</span><br><span class="line">C.远程连接ECS实例</span><br><span class="line">D.释放实例</span><br></pre></td></tr></table></figure>
+
+<p>86、伸缩规则用于触发伸缩活动或者智能设置伸缩组边界值，伸缩规则包括的类型有</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.简单规则</span><br><span class="line">D.目标追踪规则</span><br><span class="line">E.步进规则</span><br></pre></td></tr></table></figure>
+
+<p>87、云盘根据性能分类，以下描述正确的有?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.ESSD云盘建议在大型OLTP数据库、NoSQL数据库和ELK分布式日志等场景中使用。</span><br><span class="line">C.SSD云盘建议在LO密集型应用、中小型关系数据库和NoSQL数据库等场景中使用</span><br><span class="line">E-普通云盘:属于上—代云盘产品,已经逐步停止售卖</span><br></pre></td></tr></table></figure>
+
+<p>88、资源编排服务ROS(Resource OrchestrationService)具有广泛的应用场景，既可以帮助企业快速上云，又可以实现按需批量部署和业务环境分发。以下属于其应用场景的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.企业快速上云</span><br><span class="line">c.按需批量部署</span><br><span class="line">E.云上环境管控</span><br></pre></td></tr></table></figure>
+
+<p>89、RAM允许在一个阿里云账号下创建并管理多个身份，并允许给单个身份或—组身份分配不同的资源权限。RAM的功能特性包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.单点登录管理(SSO)</span><br><span class="line">B.集中控制云资源</span><br><span class="line">C.集中控制RAM用户的资源访问方式</span><br></pre></td></tr></table></figure>
+
+<p>90、安全组是一个逻辑上的分组，以下关于安全组描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.一台ECS实例至少属于一个安全组</span><br><span class="line">B.—个安全组可以管理同个地域内的多台ECS实例</span><br><span class="line">C.不同安全组内的ECS实例之间默认内网不通</span><br></pre></td></tr></table></figure>
+
+<p>91、云防火墙可以防护以下哪些云资产或流量?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.互联网方向</span><br><span class="line">D. VPC到VPC之间</span><br><span class="line">E. VPC和本地数据中心(IDC)之间</span><br></pre></td></tr></table></figure>
+
+<p>92、每个专有网络都有哪些必须的组件组成?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.私网网段</span><br><span class="line">C.路由器</span><br><span class="line">E.交换机</span><br></pre></td></tr></table></figure>
+
+<p>93、默认专有网络和交换机的特点，以下描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.每个地域的默认专有网络唯一</span><br><span class="line">B.每个可用区的默认交换机唯一</span><br><span class="line">C.默认专有网络由阿里云创建</span><br></pre></td></tr></table></figure>
+
+<p>94、ARP是TCP&#x2F;IP协议族中的一个重要协议，用于确定对应IP地址的网卡物理地址。以下描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. arp -a:用于查看高速缓存中的所有项目</span><br><span class="line">c. arp -a P:如果有多个网卡，只显示与该接口相关的ARP缓存项目</span><br><span class="line">D. arp -d IP:使用本命令能够人工删除—个静态项目</span><br></pre></td></tr></table></figure>
+
+<p>95、以下哪些是VPN网关(SSL-VPN功能)远程接入VPC的优点?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.低成本</span><br><span class="line">D.可靠</span><br><span class="line">E.易配置部暑</span><br></pre></td></tr></table></figure>
+
+<p>96、专有网络VPC是独有的云上私有网络。阿里云提供了针对不同场景的VPC私网接入产品和服务，包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.高速通道</span><br><span class="line">C. VPN网关</span><br><span class="line">D.智能接入网关</span><br></pre></td></tr></table></figure>
+
+<p>97、负载均衡CLB是将访问流量根据转发策略分发到后端多台云服务器的流量分发控制服务。负载均衡的组成包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.监听</span><br><span class="line">C.负载均衡实例</span><br><span class="line">E.后端服务器</span><br></pre></td></tr></table></figure>
+
+<p>98、以下属于阿里云边缘节点的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.CDN节点</span><br><span class="line">B.Cache节点</span><br><span class="line">C.加速节点</span><br></pre></td></tr></table></figure>
+
+<p>99、假设您的加速域名为<a href="http://www.a.com,接入cdn网络,开始使用加速服务后,当终端用户(北京)发起http请求时,以下哪些过程属于cdn工作流程/">www.a.com，接入CDN网络,开始使用加速服务后，当终端用户(北京)发起HTTP请求时，以下哪些过程属于CDN工作流程</a>?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.首先向LDNS(本地DNS)发起域名解析请求，</span><br><span class="line">B.NS检查缓存中是否有www.a.com的IP地址记录。如果没有，则向授权DNS查询</span><br><span class="line">C.域名解析请求发送至阿里云DNS调度系统，并为请求分配最佳节点IP地址</span><br><span class="line">D.用户向获取的IP地址发起对该资源的访问请求</span><br></pre></td></tr></table></figure>
+
+<p>100、CDN的业务使用场景主要分为哪些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.静态内容加速</span><br><span class="line">C.动态内容加速</span><br><span class="line">D.安全加速</span><br></pre></td></tr></table></figure>
+
+<p>101、当选择—项基础服务后，可选择—种或者多种增值服务。下列属于增值服务预付费模式的有:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.静态HTTPS资源包</span><br><span class="line">C.边缘WAF资源包</span><br><span class="line">E.图片鉴黄资源包</span><br></pre></td></tr></table></figure>
+
+<p>102、开通了CDN服务后，添加加速域名的操作，以下选项属于其操作步骤的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.登录CDN控制台在左侧导航栏，单击域名管理</span><br><span class="line">B.单击添加域名</span><br><span class="line">C.配置加速域名信息</span><br></pre></td></tr></table></figure>
+
+<p>103、配置自定义HTTP响应头，需要进行参数设置，以下哪些是自定义HTTP响应头参数?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.响应头操作</span><br><span class="line">D.响应头值</span><br><span class="line">E.自定义响应头名称</span><br></pre></td></tr></table></figure>
+
+<p>104、VPN网关配置灵活，可满足那些不同的应用场景?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. VPC到本地数据中心的连接</span><br><span class="line">C. VPC到VPC的连接</span><br><span class="line">D. VPC到移动客户端的连接</span><br></pre></td></tr></table></figure>
+
+<p>105、VPN网关满足分支互联、移动办公等接入场景，其产品优势包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.安全</span><br><span class="line">C.可靠</span><br><span class="line">D.易用</span><br></pre></td></tr></table></figure>
+
+<p>106、OSS的管理方式包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.通过控制台管理OSS</span><br><span class="line">B.通过API或SDK管理OSS</span><br><span class="line">D.通过工具管理OSS</span><br></pre></td></tr></table></figure>
+
+<p>107、通过OSS控制台可以完成的常见操作包括:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.创建存储空间</span><br><span class="line">B.下载文件</span><br><span class="line">C.上传文件</span><br></pre></td></tr></table></figure>
+
+<p>108、对象存储OSS提供哪些存储类型，从而全面覆盖从热到冷的各种数据存储场景?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.标准</span><br><span class="line">C.低频访问</span><br><span class="line">E.归档</span><br></pre></td></tr></table></figure>
+
+<p>109、根据性能分类，云盘包含以下哪几类产品?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.ESSD云盘</span><br><span class="line">C.SSD云盘</span><br><span class="line">D.高效云盘</span><br></pre></td></tr></table></figure>
+
+<p>110、RDS的可靠性、持久性和读写性能均会满足产品SLA承诺，其提供的存储类型有?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.本地SSD盘</span><br><span class="line">C.SSD云盘</span><br><span class="line">D.ESSD云盘</span><br></pre></td></tr></table></figure>
+
+<p>111、在创建数据库过程中，需要设置的参数包括() ?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.数据库名称</span><br><span class="line">B.支持字符集</span><br><span class="line">C.授权账号</span><br></pre></td></tr></table></figure>
+
+<p>112、DBS云备份解决方案与自建备份系统在成本方面相比，下列描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.自建备份系统:多级存储介质引入，运维成本骤增</span><br><span class="line">B.DBS云备份:冷热数据分级存储,适用于长期归档</span><br><span class="line">D.DBS云备份:无需运维人员与托管费用，0成本运维</span><br></pre></td></tr></table></figure>
+
+<p>113、先期试点迁移的业务系统在满足迁移上云的前提下，可优先考虑以下哪两种思路</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.考虑同期在建项目的同步迁移工作，可以在建设过程中直接参照云平台技术进行开发部署</span><br><span class="line">C.选取非核心，单独的业务系统进行试点迁移</span><br></pre></td></tr></table></figure>
+
+<p>114、镜像迁移主要有哪两种迁移方式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.冷迁移</span><br><span class="line">B.热迁移</span><br></pre></td></tr></table></figure>
+
+<p>115、以下哪两项是常用的web应用服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.Nginx</span><br><span class="line">C.Apache</span><br></pre></td></tr></table></figure>
+
+<p>116、以下属于常用的非关系型数据库的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.redis</span><br><span class="line">D.mongodb</span><br></pre></td></tr></table></figure>
+
+<p>117、以下哪两项是给网站配置https带来的好处?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.防劫持、防篡改、防监听</span><br><span class="line">C.提升网站的访问流量</span><br></pre></td></tr></table></figure>
+
+<p>118、阿里云快照支持哪两种快照创建模式?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.手动快照</span><br><span class="line">B.自动快照</span><br></pre></td></tr></table></figure>
+
+<p>119、以下哪些属于prometheus的常用组件?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. exporters</span><br><span class="line">B. alertmanager</span><br></pre></td></tr></table></figure>
+
+<p>120、以下属于zabbix常用组件的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. zabbix server</span><br><span class="line">B. zabbix agent</span><br></pre></td></tr></table></figure>
+
+<p>121、nginx的反向代理可以实现以下哪种功能</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.负载均衡</span><br><span class="line">D.端口转发</span><br></pre></td></tr></table></figure>
+
+<p>122、分别创建HTTP和HTTPS监听，两个监听使用同样的后端服务器。以HTTP方式访问监听端口对应的网站时，网站正常显示，但使用HTTPS监听访问时，网站排版显示错乱，可能的原因是哪几项?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.证书和浏览器安全级别不兼容导致</span><br><span class="line">D.证书是非正规第三方证书，需要联系证书发布者检查证书问题</span><br></pre></td></tr></table></figure>
+
+<p>123、负载均衡服务TCP端口健康检查成功，但是在后端业务日志中出现网络连接异常信息，以下哪两种办法可以解决该问题?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.更换TCP协议为HTTP协议</span><br><span class="line">B.在业务层面，对来自SLB服务器P地址段的相关请求做日志过滤，忽略相关错误信息。</span><br></pre></td></tr></table></figure>
+
+<p>124、以下属于常用的自动化运维工具的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. ansible</span><br><span class="line">B. saltstack</span><br></pre></td></tr></table></figure>
+
+<p>125、以下属于蓝绿部署特点的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.无需停机,并目风险较小</span><br><span class="line">B.部著的过程中，应用始终在线，保证系统在不间断提供服务</span><br></pre></td></tr></table></figure>
+
+<p>126、标准化文档想要能被有效率地执行，需要哪些要求:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.简单清晰</span><br><span class="line">B.方便评估</span><br></pre></td></tr></table></figure>
+
+<p>127、在基础架构硬件的内存评估中，需要关注的是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.内存容量</span><br><span class="line">C.内存型号</span><br></pre></td></tr></table></figure>
+
+<p>128、阿里云数据迁移中心SMC为了保证数据传输安全，可以使用以下哪些方式?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.采用默认的SSL 2048位RSA密钥加密传输通道</span><br><span class="line">B.通过VPN网关、高速通道物理专线等私网迁移</span><br></pre></td></tr></table></figure>
+
+<p>129、业务迁移上云的过程中，如果涉及到了一个框架改造为另外—个框架，那么工作量的评估可以从那几个维度进行评估?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.改造前的业务代码依赖于原来框架运行时的程度</span><br><span class="line">C.目标框架本身对于业务代码采用的技术的支持程度</span><br></pre></td></tr></table></figure>
+
+<p>130、小明刚刚装了Linux系统,将进—步分区，必须至少要创建哪些分区？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.根分区</span><br><span class="line">B.交换(swap)分区</span><br></pre></td></tr></table></figure>
+
+<p>131、关于建立系统用户的正确描述是？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.在Linux系统下建立用户使用useradd命令</span><br><span class="line">D.每个系统用户在默认状态下的工作目录在/home/用户名</span><br></pre></td></tr></table></figure>
+
+<p>132、Windows server 2003中域本地组不在以下那个文件夹下?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.COMPUTER</span><br><span class="line">C.DOMAIN CONTROL</span><br><span class="line">D.BUILTIN</span><br><span class="line"></span><br><span class="line">PS:在 USER下</span><br></pre></td></tr></table></figure>
+
+<p>133、Windows server 2003中实现管理的手段有下列那些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.控制面板</span><br><span class="line">B.系统工具</span><br><span class="line">C.管理控制台</span><br></pre></td></tr></table></figure>
+
+<p>134、MySQL的缺点有?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. MySQL不允许调试存储过程</span><br><span class="line">D. MySQL安全系统</span><br></pre></td></tr></table></figure>
+
+<p>135、以下哪项是事务的特性?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.持久性</span><br><span class="line">C.一致性</span><br><span class="line">D.原子性</span><br></pre></td></tr></table></figure>
+
+<p>136、下列哪项不属于DDL操作</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. update</span><br><span class="line">c. insert</span><br><span class="line">D. delete</span><br><span class="line"></span><br><span class="line">ddl英文缩写是data definition language（数据定义语言），主要的命令有alter、create、drop、truncate，ddl主要用在定义或者改变表的结构。</span><br></pre></td></tr></table></figure>
+
+<p>137、一个表的主键个数下列选项错误的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.至少3个</span><br><span class="line">B.至少2个</span><br><span class="line">D.至少4个</span><br><span class="line"></span><br><span class="line">PS：最多一个</span><br></pre></td></tr></table></figure>
+
+<p>138、小刘将公司业务帮搬迁至阿里云，对于云盾是否有屏蔽IP地址的功能描述正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.目前，云盾没有单独屏蔽IP的功能。</span><br><span class="line">C.使用的ECS实例是Windows系统，可以在IIS中屏蔽单独IP地址的访问。</span><br></pre></td></tr></table></figure>
+
+<p>139、小刘所在公司受新冠疫情影响近期想把业务部署到云上，在业务搬迁前小刘对云主机进行UDP PPS测试以及TCP带宽测试时性能不稳定，以下选项中有效解决该问题的选项是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.为测试任务绑定vCPU</span><br><span class="line">D.将接收任务和网卡接收队列中断绑定在不同的vCPU</span><br></pre></td></tr></table></figure>
+
+<p>140、虚拟化有哪些分类?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.硬件虚拟化</span><br><span class="line">C.全虚拟化</span><br><span class="line">D.准虚拟化</span><br></pre></td></tr></table></figure>
+
+<p>141、安装完Vmware vCente后，可扩展的组件有以下那些功能?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C.云平台管理、站点恢复管理;</span><br><span class="line">D.APP接口、更新管理等;</span><br></pre></td></tr></table></figure>
+
+<p>142、云效2020「流水线」，又名「F1ow」 ，是—款企业级、自动化的研发交付流水线,提供灵活易用的持续集成、持续验证、持续发布功能，帮助企业高质量、高效率的交付业务。「F1ow」支持主机脚本部署有那些?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.灰度发布</span><br><span class="line">C.分批发布</span><br></pre></td></tr></table></figure>
+
+<p>143、云计算有五个基本特征。““消费者可以根据自己的需求提供计算能量，比如服务器时间和网络存储””以下哪个特征的描述不正确的是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.按需自助服务</span><br><span class="line">B.弹性</span><br><span class="line">D.可测量服务</span><br></pre></td></tr></table></figure>
+
+<p>144、在阿里云上，如何获取当前软件版本及漏洞信息?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.在云安全中心中查看当前软件版本及漏洞信息</span><br><span class="line">B. rpm -qa | grep xXX</span><br><span class="line">C.dpkg-query -W -f&#x27;$&#123;Package&#125;-- $&#123;Source&#125; \n&#x27; | grep xxx</span><br></pre></td></tr></table></figure>
+
+<p>145、小刘所在公司的网站程序(PHP研发)在虚拟主机上运行正常，但转移到公有云之后，网站打开报500错误，排查故障原因选项正确是?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.检查您的程序在虚拟主机上的PIP版本。</span><br><span class="line">C.查看您的程序中是否设置了伪静态规则。</span><br></pre></td></tr></table></figure>
+
+<p>146、购买域名并付款成功后订单—直显示在处理中，主要有以下几个原因造成:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.商标保护域名属于注册局的保护域名，不允许注册。</span><br><span class="line">B.填写的域名注册信息有误，注册局审核无法通过。</span><br><span class="line">C.系统升级导致升级过程中存在短暂的订单处理中状态。</span><br></pre></td></tr></table></figure>
+
+<p>147、小刘所在公司进行域名备案，收到核查不合格的提示为已经取得备案号的网站“xxxxx.cn”打开后内容涉及经营性，请您修改网站内容，或联系当地通信管理局咨询办理增值电信业务许可证时，说明小刘的公司网站涉及经营性相关内容，以下选项中是正确整改的选项是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A.修改网站所涉及的经营性相关内容，如商品标价、售卖链接等。</span><br><span class="line">B.联系当地通信管理局咨询并办理增值电信业务许可证，即办理经营性ICP许可证。</span><br></pre></td></tr></table></figure>
+
+<p>148、FTP (File Transfer Protocol)是—种文件传输协议，基于客户端&#x2F;服务器架构，支持以下哪两种工作模式:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.主动模式</span><br><span class="line">C.手动模式</span><br></pre></td></tr></table></figure>
+
+<p>149、FTP支持以下选项中，哪种认证模式:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">B.匿名用户模式</span><br><span class="line">C.本地用户模式</span><br><span class="line">D.虚拟用户模式</span><br></pre></td></tr></table></figure>
+
+<p>150、java.security是Java的安全配置文件，该软件还包含历史性的“有限”强度策略文件，该文件限制了加密强度。要使用有限强度策略，而不是默认的无限策略，必须更新crypto.policy”安全属性。请问java.security默认所在的位置是在()下()目录中?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. conf</span><br><span class="line">E. security</span><br></pre></td></tr></table></figure>
+
+<p>151、官网上介绍JDK最新版本是Oracle JDK 16，这个版本对Windows系列的认证版本，包括两种版本，一种是PC版，一种是Server版。无论是PC版还是Server版都需要CPUArchitecture是x64(64-bit) ,那么请问下列Windows版本是Oracle JDK 16所支持的Windows版本?</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. Windows10</span><br><span class="line">B. Windows8</span><br><span class="line">C. Windows Server 2012R2</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>阿里 1+x（初级）</category>
+      </categories>
+      <tags>
+        <tag>多选</tag>
+      </tags>
+  </entry>
+</search>
