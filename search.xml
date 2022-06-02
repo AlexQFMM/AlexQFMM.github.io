@@ -1326,4 +1326,34 @@
         <tag>多选</tag>
       </tags>
   </entry>
+  <entry>
+    <title>c++配置</title>
+    <url>/2022/06/02/c%E8%89%B9%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="c-配置"><a href="#c-配置" class="headerlink" title="c++配置"></a>c++配置</h1><h2 id="一、下载压缩包"><a href="#一、下载压缩包" class="headerlink" title="一、下载压缩包"></a>一、下载压缩包</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/11hNJABs599CB3KI0jnTKeA </span><br><span class="line">提取码：d02n </span><br><span class="line">--来自百度网盘超级会员V5的分享</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="二、安装vscode"><a href="#二、安装vscode" class="headerlink" title="二、安装vscode"></a>二、安装vscode</h2><p>一路下一步就完事了</p>
+<h2 id="三、配置mingw"><a href="#三、配置mingw" class="headerlink" title="三、配置mingw"></a>三、配置mingw</h2><h4 id="1、配置环境变量"><a href="#1、配置环境变量" class="headerlink" title="1、配置环境变量"></a>1、配置环境变量</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bin目录下连接复制至path</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、验证"><a href="#2、验证" class="headerlink" title="2、验证"></a>2、验证</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gcc -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、配置vscode"><a href="#四、配置vscode" class="headerlink" title="四、配置vscode"></a>四、配置vscode</h2><h4 id="1、新建工作目录并将下载的json目录下的文件移入目录"><a href="#1、新建工作目录并将下载的json目录下的文件移入目录" class="headerlink" title="1、新建工作目录并将下载的json目录下的文件移入目录"></a>1、新建工作目录并将下载的json目录下的文件移入目录</h4><p><img src="/image-20220602094857361.png" alt="image-20220602094857361"></p>
+<h4 id="2、安装如下插件"><a href="#2、安装如下插件" class="headerlink" title="2、安装如下插件"></a>2、安装如下插件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">c/c++</span><br><span class="line"></span><br><span class="line">code runner</span><br><span class="line"></span><br><span class="line">include autocompute</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="3、code-runner-配置"><a href="#3、code-runner-配置" class="headerlink" title="3、code runner 配置"></a>3、code runner 配置</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">打开C:\Users\Administrator\.vscode\extensions\formulahendry.code-runner-0.9.10\out\src目录找到codeManager.js</span><br></pre></td></tr></table></figure>
+
+<h6 id="注释12，225-236行"><a href="#注释12，225-236行" class="headerlink" title="注释12，225-236行"></a>注释12，225-236行</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//const micromatch = require(&quot;micromatch&quot;);</span><br><span class="line"></span><br><span class="line"> /**if (executor == null) &#123;</span><br><span class="line">            const executorMapByGlob = this._config.get(&quot;executorMapByGlob&quot;);</span><br><span class="line">            if (executorMapByGlob) &#123;</span><br><span class="line">                const fileBasename = path_1.basename(this._document.fileName);</span><br><span class="line">                for (const glob of Object.keys(executorMapByGlob)) &#123;</span><br><span class="line">                    if (micromatch.isMatch(fileBasename, glob)) &#123;</span><br><span class="line">                        executor = executorMapByGlob[glob];</span><br><span class="line">                        break;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;**/</span><br></pre></td></tr></table></figure>
+
+<h2 id="五，运行第一个程序"><a href="#五，运行第一个程序" class="headerlink" title="五，运行第一个程序"></a>五，运行第一个程序</h2><h4 id="1、工作目录下新建一个-cpp文件"><a href="#1、工作目录下新建一个-cpp文件" class="headerlink" title="1、工作目录下新建一个.cpp文件"></a>1、工作目录下新建一个.cpp文件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; &quot;Hello World!&quot; ;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、alt-ctrl-N运行"><a href="#2、alt-ctrl-N运行" class="headerlink" title="2、alt ctrl N运行"></a>2、alt ctrl N运行</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">PS E:\workplace\vscode_c&gt; cd &quot;e:\workplace\vscode_c\&quot; ; if ($?) &#123; g++ &#x27;1.cpp&#x27; -o &#x27;1.exe&#x27; -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK &#125; ; if ($?) &#123; &amp;&#x27;.\1&#x27; &#125;</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>c++</category>
+      </categories>
+  </entry>
 </search>
