@@ -1482,4 +1482,316 @@
         <tag>理论</tag>
       </tags>
   </entry>
+  <entry>
+    <title>阿里ACA笔记</title>
+    <url>/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="阿里云ACA笔记"><a href="#阿里云ACA笔记" class="headerlink" title="阿里云ACA笔记"></a>阿里云ACA笔记</h1><h2 id="一、阿里云简介"><a href="#一、阿里云简介" class="headerlink" title="一、阿里云简介"></a>一、阿里云简介</h2><h4 id="1、云计算的概念"><a href="#1、云计算的概念" class="headerlink" title="1、云计算的概念"></a>1、云计算的概念</h4><h6 id="（1）传统IT部署与云计算对比"><a href="#（1）传统IT部署与云计算对比" class="headerlink" title="（1）传统IT部署与云计算对比"></a>（1）传统IT部署与云计算对比</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">传统IT部署方式——自建机房</span><br><span class="line">   问题：</span><br><span class="line">     耗时耗力</span><br><span class="line">     人员和设备等成本高</span><br><span class="line">     不利于扩容</span><br></pre></td></tr></table></figure>
+
+<p>​	<span id="more"></span></p>
+<p>​		<strong>云计算是一种新的服务模式</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云计算</span><br><span class="line">   优势：</span><br><span class="line">     按需付费（成本低）</span><br><span class="line">     弹性伸缩（灵活高）</span><br></pre></td></tr></table></figure>
+
+
+
+<h6 id="（2）云计算的分类"><a href="#（2）云计算的分类" class="headerlink" title="（2）云计算的分类"></a>（2）云计算的分类</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">专有云：也叫私有云，属于企业内部自行构建的云环境</span><br><span class="line"></span><br><span class="line">公有云：云服务商提供云计算服务，用户通过互联网进行连接和使用</span><br><span class="line"></span><br><span class="line">混合云：企业内部云于公有云互通，具有私有云的私密性和公有云的灵活性</span><br></pre></td></tr></table></figure>
+
+
+
+<h6 id="（3）云计算的服务模式"><a href="#（3）云计算的服务模式" class="headerlink" title="（3）云计算的服务模式"></a>（3）云计算的服务模式</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">IaaS：基础设施即服务，为用户直接提供计算资源、存储资源、网络资源等；职位用户提供相应资源，用户与要自行构建自身系统，可操控性最高。一般云服务商都会提供</span><br><span class="line"></span><br><span class="line">PaaS：平台即服务，为开发者提供按需开发环境；主要针对开发者用户提供一个开发、测试等使用云环境</span><br><span class="line"></span><br><span class="line">SaaS：软件即服务，为用户提供按需软件服务；云服务商管理和提供软件，用户可直接使用云服务商软件</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2、阿里云的发展历程"><a href="#2、阿里云的发展历程" class="headerlink" title="2、阿里云的发展历程"></a>2、阿里云的发展历程</h4><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220513115030644.png" alt="image-20220513115030644"></p>
+<h4 id="3、阿里云产品全家福"><a href="#3、阿里云产品全家福" class="headerlink" title="3、阿里云产品全家福"></a>3、阿里云产品全家福</h4><h5 id="（1）服务类型"><a href="#（1）服务类型" class="headerlink" title="（1）服务类型"></a>（1）服务类型</h5><h6 id="弹性计算"><a href="#弹性计算" class="headerlink" title="弹性计算"></a>弹性计算</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云服务器：       云服务器ECS、弹性裸金属服务器(神龙)、专有宿主机、GPU云服务器、FPGA服务器...</span><br><span class="line"></span><br><span class="line">高性能计算HPC：  超级计算集群、弹性高性能计算E-HPC、批量计算..</span><br><span class="line"></span><br><span class="line">弹性编排：       弹性伸缩、资源编排...</span><br></pre></td></tr></table></figure>
+
+<h6 id="存储服务"><a href="#存储服务" class="headerlink" title="存储服务"></a>存储服务</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云储存：        对象存储oSS、块存储、文件存储NAS、归档存储..</span><br><span class="line"></span><br><span class="line">智能存储：      智能云相册、智能媒体管理..</span><br><span class="line"></span><br><span class="line">混合云存储：    云存储网关、混合云存储阵列...</span><br></pre></td></tr></table></figure>
+
+<h6 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云上网络：     专有网络VPC、云解析PrivateZone、负载均衡SLB、NAT 网关、弹性公网IP...</span><br><span class="line"></span><br><span class="line">跨地域网络：    云企业网...</span><br><span class="line"></span><br><span class="line">混合云网络：    VPN网关、智能接入网关、高速通道...</span><br></pre></td></tr></table></figure>
+
+<h6 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">关系型数据库：  云数据库 PolarDB、云数据库 RDS MySQL版、云数据库RDS MariaDB TX版...</span><br><span class="line"></span><br><span class="line">NoSQL数据库：  云数据库 Redis版、云数据库 MongoDB 版、TSDB时序刚空数据库、云数据库 Hbase版...</span><br><span class="line"></span><br><span class="line">数据库生态工具： 数据传铂服务DTS、数据库各份DBS、数据管理DMS...</span><br></pre></td></tr></table></figure>
+
+<h6 id="CDN与边缘"><a href="#CDN与边缘" class="headerlink" title="CDN与边缘"></a>CDN与边缘</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CDN与边缘：    CDN、安全加速SCDN、全站加速DCDN..</span><br></pre></td></tr></table></figure>
+
+<h6 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云安全：       DDoS高防IP、Web应用防火墙、云安全中心、云防火墙...</span><br><span class="line"></span><br><span class="line">业务安全：     游戏盾、内容安全、风险识别、实人认证...</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4、阿里云产品架构"><a href="#4、阿里云产品架构" class="headerlink" title="4、阿里云产品架构"></a>4、阿里云产品架构</h4><p><img src="/jiagou.jpg" alt="jiagou"></p>
+<h4 id="5、阿里云的基础架构"><a href="#5、阿里云的基础架构" class="headerlink" title="5、阿里云的基础架构"></a>5、阿里云的基础架构</h4><h5 id="地域和可用区"><a href="#地域和可用区" class="headerlink" title="地域和可用区"></a>地域和可用区</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">地域（Region）： 是阿里云基于地理位置进行划分，资源创建成功后不能修改地域。不同地域提供的阿里云资源也会略有不同，每个地域完全独立。</span><br><span class="line"></span><br><span class="line">可用区（Zone）： 是指在同一地域内，电力和网络互相独立的物理区域。同一可用区内实例之间的网络延时更小，每个可用区完全隔离。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">速度要求高：单可用区部署</span><br><span class="line"></span><br><span class="line">容灾要求：多可用区部署</span><br><span class="line"></span><br><span class="line">容灾要求高：多地域部署</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="二、阿里云弹性计算"><a href="#二、阿里云弹性计算" class="headerlink" title="二、阿里云弹性计算"></a>二、阿里云弹性计算</h2><h4 id="1、ECS的概念"><a href="#1、ECS的概念" class="headerlink" title="1、ECS的概念"></a>1、ECS的概念</h4><h6 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h6><p>​		云服务器（ECS）是阿里云提供的性能卓越、稳定可靠、弹性扩展的IaaS级别云计算服务。</p>
+<h6 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/ECS.png" alt="ECS"></p>
+<h6 id="Ecs部署需要考虑的因素"><a href="#Ecs部署需要考虑的因素" class="headerlink" title="Ecs部署需要考虑的因素"></a>Ecs部署需要考虑的因素</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">地域和可用区：依据用户地理位置、阿里云产品发布情况、应用可用性、是否需要内网通信选择</span><br><span class="line"></span><br><span class="line">高可用性：   通过快照实现数据备份，通过跨可用区、部署集、负载均衡实现应用容灾</span><br><span class="line"></span><br><span class="line">安全方案：   使用ECS的安全组，控制ECS实例的出入网访问策略以及端口监听状态</span><br><span class="line"></span><br><span class="line">网络规划：   自行规划私网IP，全面支持新功能和新型实例规格</span><br></pre></td></tr></table></figure>
+
+<h6 id="ECS的适用场景"><a href="#ECS的适用场景" class="headerlink" title="ECS的适用场景"></a>ECS的适用场景</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">企业官网或轻量的Web应用</span><br><span class="line"></span><br><span class="line">多媒体以及高并发应用或网站</span><br><span class="line"></span><br><span class="line">高I/O要求数据库</span><br><span class="line"></span><br><span class="line">访问量波动剧烈的应用或网站</span><br><span class="line"></span><br><span class="line">大数据及实时在线或离线分析</span><br><span class="line"></span><br><span class="line">机器学习和深度学习等AI应用</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2、ECS的产品优势"><a href="#2、ECS的产品优势" class="headerlink" title="2、ECS的产品优势"></a>2、ECS的产品优势</h4><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/ECS2.png" alt="ECS2"></p>
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220513132459161.png" alt="image-20220513132459161"></p>
+<h4 id="3、ECS的实例规格"><a href="#3、ECS的实例规格" class="headerlink" title="3、ECS的实例规格"></a>3、ECS的实例规格</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">实例：    一台云服务器ECS实例等同于一台虚拟机，包括vCPU、内存、操作系统、网络、磁盘等基础计算组件。可以方便地定制、更改实例的配置。</span><br><span class="line"></span><br><span class="line">实例规格： ECS实例分为多个规格族。同一个规格族，根据vCPU和内存的配置，分为多种不同的规格，包括物理CPU型号、主频。</span><br><span class="line"></span><br><span class="line">系统存储:  一台ECS实例必须包含一块系统盘，存储操作系统和核心配置。镜像主要用于初始化系统盘，决定ECS实例的操作系统和初始软件配置。</span><br><span class="line"></span><br><span class="line">网络类型： ECS实例在相同的网络中，可以使用私网IP得知通过内网通信。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4、弹性裸金属服务器（神龙，EBM）"><a href="#4、弹性裸金属服务器（神龙，EBM）" class="headerlink" title="4、弹性裸金属服务器（神龙，EBM）"></a>4、弹性裸金属服务器（神龙，EBM）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优势</span><br><span class="line"></span><br><span class="line">​	每一台神龙对应一台真实的物理机（性能高）</span><br><span class="line"></span><br><span class="line">​	兼具虚拟机的弹性</span><br><span class="line">​	</span><br><span class="line">​	用户独占计算资源</span><br><span class="line">​	</span><br><span class="line">​	加密计算</span><br><span class="line">​	</span><br><span class="line">​	兼容多种专有云</span><br><span class="line"></span><br><span class="line">​	异构指令集处理器支持</span><br></pre></td></tr></table></figure>
+
+<p><img src="/EBM.png" alt="EBM"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">EBM适用场合</span><br><span class="line"></span><br><span class="line">​	游戏场景</span><br><span class="line"></span><br><span class="line">​	SCC超级计算集群</span><br><span class="line"></span><br><span class="line">​	金融加密场景</span><br></pre></td></tr></table></figure>
+
+<h4 id="5、ECS的使用"><a href="#5、ECS的使用" class="headerlink" title="5、ECS的使用"></a>5、ECS的使用</h4><h6 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/ECS4.png" alt="ECS4"></p>
+<h6 id="镜像"><a href="#镜像" class="headerlink" title="镜像"></a>镜像</h6><p>!<img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/mirror.png" alt="mirror"></p>
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/connect.png" alt="connect"></p>
+<p>​	除了VNC连接以外，其他连接方式均要求待连接实例，分配了固定的公网IP或EIP。</p>
+<h6 id="重置密码"><a href="#重置密码" class="headerlink" title="重置密码"></a>重置密码</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/reset.png" alt="reset"></p>
+<h4 id="6、实验——ECS初体验"><a href="#6、实验——ECS初体验" class="headerlink" title="6、实验——ECS初体验"></a>6、实验——ECS初体验</h4><h2 id="三、阿里云存储服务"><a href="#三、阿里云存储服务" class="headerlink" title="三、阿里云存储服务"></a>三、阿里云存储服务</h2><h4 id="1、OSS的概念"><a href="#1、OSS的概念" class="headerlink" title="1、OSS的概念"></a>1、OSS的概念</h4><h6 id="存储结构分类"><a href="#存储结构分类" class="headerlink" title="存储结构分类"></a>存储结构分类</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">块存储：需要分区格式化才能使用，以数据块为存储单位。（主机硬盘）</span><br><span class="line">	优点：成熟，简单，在线存储，可信度高，可靠性高。</span><br><span class="line">	缺点：不适合大的存储存放，成本较高，很难跨操作系统</span><br><span class="line"></span><br><span class="line">文件存储：由文件存储服务器NAS提供文件访问服务，以文件为存储单位。（文件共享，只适合放资料类数据）</span><br><span class="line"></span><br><span class="line">对象存储：扁平化结构，以对象为存储单位。（大数据类数据，照片音乐视频）</span><br><span class="line">	优点：扩展性好，访问数据效率高</span><br></pre></td></tr></table></figure>
+
+<p>阿里云对象存储 oss 是阿里云提供的 海量、安全、低成本、高可靠的云存储服务。可以在任何应用、任何时间、任何地点存储二号访问任意类型的数据</p>
+<h6 id="oss中的概念"><a href="#oss中的概念" class="headerlink" title="oss中的概念"></a>oss中的概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">存储类型： oss提供标准、低频访问、归档（极少用到）三种存储类型</span><br><span class="line"></span><br><span class="line">存储空间：用于存储对象的容器，所有的对象都必须隶属于某个存储空间</span><br><span class="line"></span><br><span class="line">对象：oss存储数据的基本单元，也称为oss的文件。对象由信息、用户数据和文件名组成</span><br><span class="line"></span><br><span class="line">地域：oss的数据中心所在的物理位置</span><br><span class="line"></span><br><span class="line">访问域名：oss对外服务的访问域名</span><br><span class="line"></span><br><span class="line">访问密匙：访问身份验证中用到的用户密码</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2、OSS的优势和使用场景"><a href="#2、OSS的优势和使用场景" class="headerlink" title="2、OSS的优势和使用场景"></a>2、OSS的优势和使用场景</h4><h6 id="oss的优势"><a href="#oss的优势" class="headerlink" title="oss的优势"></a>oss的优势</h6><p> !![OSS Win](OSS Win.png)</p>
+<p>PS：冗余存储类似于数据备份。</p>
+<p>![OSS win!!](OSS win!!.png)</p>
+<p>PS ： WORM——一写多读</p>
+<h4 id="3、使用阿里云中的OSS"><a href="#3、使用阿里云中的OSS" class="headerlink" title="3、使用阿里云中的OSS"></a>3、使用阿里云中的OSS</h4><h6 id="使用流程"><a href="#使用流程" class="headerlink" title="使用流程"></a>使用流程</h6><p>![OSS use](OSS use.png)</p>
+<p>PS：对象文件一定要放在存储空间，每个存储空间可以放多个文件。</p>
+<h6 id="存储空间配置"><a href="#存储空间配置" class="headerlink" title="存储空间配置"></a>存储空间配置</h6><p>![Bucket config](Bucket config.png)</p>
+<h4 id="4、实验——OSS的使用"><a href="#4、实验——OSS的使用" class="headerlink" title="4、实验——OSS的使用"></a>4、实验——OSS的使用</h4><p>PS:  </p>
+<p>​	<strong>1.<em>Bucket名称创建完成后不能修改，可以新创建一个Bucket，将对象文件备份至新Bucket后，清空旧Bucket，再删除。</em></strong>*</p>
+<h4 id="5、块存储的概念"><a href="#5、块存储的概念" class="headerlink" title="5、块存储的概念"></a>5、块存储的概念</h4><h6 id="阿里云块存储的优点"><a href="#阿里云块存储的优点" class="headerlink" title="阿里云块存储的优点"></a>阿里云块存储的优点</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">高性能，低时延，支持随机读写，可以像使用物理硬盘一样格式化并建立文件系统来使用块存储，满足大部分通用业务场景下的数据存储需求。</span><br></pre></td></tr></table></figure>
+
+<h6 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">IOPS：指每秒能处理的I/O个数，表示块存储处理读写的能力，单位为此</span><br><span class="line"></span><br><span class="line">吞吐量： 单位时间内可以成功传输的数据数量，单位为MB/S</span><br><span class="line"></span><br><span class="line">访问时延：块存储处理一个I/O需要的时间，单位为s，ms或者μs</span><br><span class="line"></span><br><span class="line">容量：指存储空间大小，单位为TiB，GiB，MiB或者KiB（容量无法衡量块存储性能）</span><br></pre></td></tr></table></figure>
+
+<p>PS： 块存储是专门为ECS提供的产品</p>
+<h6 id="数据安全的表现"><a href="#数据安全的表现" class="headerlink" title="数据安全的表现"></a>数据安全的表现</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/kuai.png" alt="kuai"></p>
+<p> PS： 只有数据擦除机制适用于本地盘 </p>
+<h4 id="6、块存储的分类"><a href="#6、块存储的分类" class="headerlink" title="6、块存储的分类"></a>6、块存储的分类</h4><h6 id="块存储分类"><a href="#块存储分类" class="headerlink" title="块存储分类"></a>块存储分类</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云盘： 多副本的分布式机制，低时延、高性能、持久性、高可靠等性能，支持随时创建、扩容以及释放（没有缩容！）</span><br><span class="line"></span><br><span class="line">本地盘：基于ECS所在物理机上的本地硬盘设备，为ECS实例提供本地存储访问能力。为对存储I/O性能和海量存储性价比有极高要求的业务场景设计。低时延、高随机IOPS、高吞吐量、高性价比。</span><br><span class="line">	  本地盘来自单台物理机，数据可靠性取决于物理机可靠性，存在单点故障风险</span><br></pre></td></tr></table></figure>
+
+<h6 id="云盘的性能分类"><a href="#云盘的性能分类" class="headerlink" title="云盘的性能分类"></a>云盘的性能分类</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ESSD云盘：超高性能，单盘可提供高达100w的随机读写能力和更低的单路时延能力</span><br><span class="line"></span><br><span class="line">SSD云盘：高随机读写性能，高可靠性的高性能云盘产品</span><br><span class="line"></span><br><span class="line">高效云盘：高性价比、中等随机读写性能，高可靠性的云盘产品</span><br><span class="line"></span><br><span class="line">普通云盘：高可靠性，一般读写性能的云盘产品</span><br></pre></td></tr></table></figure>
+
+<h6 id="云盘的数据类型分类"><a href="#云盘的数据类型分类" class="headerlink" title="云盘的数据类型分类"></a>云盘的数据类型分类</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">系统盘：不可共享访问。初始化时，由镜像确定操作系统和应用数据。系统盘一定是云盘。不可单独创建，只能随实例创建，生命周期与挂载的ECS相通。单台实例上限为1</span><br><span class="line"></span><br><span class="line">数据盘：存储应用数据。可以与ECS实例同时创建也可以单独创建，可以是云盘也可以是本地盘。单台实例上限16台。</span><br></pre></td></tr></table></figure>
+
+<p>PS： 一块云盘只能挂载到同一地域的同一可用区的一台ECS实例。</p>
+<h4 id="7、块存储于对象存储"><a href="#7、块存储于对象存储" class="headerlink" title="7、块存储于对象存储"></a>7、块存储于对象存储</h4><h6 id="三种常见数据存储场景"><a href="#三种常见数据存储场景" class="headerlink" title="三种常见数据存储场景"></a>三种常见数据存储场景</h6><p>![oss cp](oss cp.png)</p>
+<h6 id="块存储对比oss"><a href="#块存储对比oss" class="headerlink" title="块存储对比oss"></a>块存储对比oss</h6><p>![oss cp2](oss cp2.png)</p>
+<h4 id="8、块存储的使用"><a href="#8、块存储的使用" class="headerlink" title="8、块存储的使用"></a>8、块存储的使用</h4><h6 id="使用流程-1"><a href="#使用流程-1" class="headerlink" title="使用流程"></a>使用流程</h6><p>![kuai use](kuai use.png)</p>
+<p>PS：不支持合并云盘。提前做好云盘数量和容量的规划。</p>
+<p>​		已创建的多块云盘，不建议制作LVM逻辑卷。	</p>
+<h6 id="分区"><a href="#分区" class="headerlink" title="分区"></a>分区</h6><p>​	</p>
+<table>
+<thead>
+<tr>
+<th align="center">操作系统</th>
+<th align="center">分区工具</th>
+<th align="center">分区格式</th>
+<th align="center">文件系统</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Windows</td>
+<td align="center">磁盘管理</td>
+<td align="center">MBR、GPT</td>
+<td align="center">NTFS、fat</td>
+</tr>
+<tr>
+<td align="center">Linux</td>
+<td align="center">fdisk、parted</td>
+<td align="center">MBR、GPT</td>
+<td align="center">vfat、ext3、ext4、xfs、btrfs</td>
+</tr>
+</tbody></table>
+<p>PS：MBR：只支持不大于2TiB的容量，且只支持划分4个主区。</p>
+<p>​		Linux分区格式化后还需要mount挂载和挂在信息写入&#x2F;etc&#x2F;fstab（开机自动挂载）</p>
+<p>​	</p>
+<h4 id="9、实验——块存储的使用"><a href="#9、实验——块存储的使用" class="headerlink" title="9、实验——块存储的使用"></a>9、实验——块存储的使用</h4><h6 id="分区-格式化-挂载-删除"><a href="#分区-格式化-挂载-删除" class="headerlink" title="分区-格式化-挂载-删除"></a>分区-格式化-挂载-删除</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">分区</span><br><span class="line">fdisk -l</span><br><span class="line"></span><br><span class="line">fdisk /dev/vdb</span><br><span class="line">p</span><br><span class="line">n</span><br><span class="line">p</span><br><span class="line">1</span><br><span class="line">+10G</span><br><span class="line">p</span><br><span class="line">w</span><br><span class="line">partx -a /dev/vdb</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">格式化</span><br><span class="line">mkfs.ext4 /dev/vdb1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">挂载</span><br><span class="line">mkdir /mnt/data</span><br><span class="line">mount /dev/vdb1 /mnt/data</span><br><span class="line">df -h|grep vdb1</span><br><span class="line">vi /etc/fstab</span><br><span class="line">/dev/vdb1 /mnt/data ext4 defaults 0 0</span><br><span class="line">w</span><br><span class="line">mount -a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">删除</span><br><span class="line">umount /dev/db1</span><br><span class="line">vi /etc/fstab(删除加的自动挂载)</span><br><span class="line">控制台卸载</span><br></pre></td></tr></table></figure>
+
+<p>PS： 如果不删除&#x2F;etc&#x2F;fstab中挂载信息，ECS在重启过程中会尝试挂载&#x2F;etc&#x2F;fstab内分区信息，由于分区所在云硬盘已经在ECS中卸载，会导致ECS无法正常开机。</p>
+<p>主分区：一块硬盘最多只能创建4个，可以放置任何类型数据。</p>
+<p>扩展分区：一块硬盘最多只能创建1个，不能放置任何数据，需要进一步划分逻辑分区后才能使用。</p>
+<p>逻辑分区：基于扩展分区进行创建，空间由扩展分区划分出来，可以放置普通数据，不能存放计算机的启动引导文件。</p>
+<h2 id="四、阿里云网络"><a href="#四、阿里云网络" class="headerlink" title="四、阿里云网络"></a>四、阿里云网络</h2><h4 id="1、VPC的概念"><a href="#1、VPC的概念" class="headerlink" title="1、VPC的概念"></a>1、VPC的概念</h4><h6 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">专有网络VPC (Virtual Private Cloud)是基于阿里云构建的一个隔离的网络环境，专有网络之间逻辑上彻底隔离。</span><br></pre></td></tr></table></figure>
+
+<h6 id="能力"><a href="#能力" class="headerlink" title="能力"></a>能力</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">VPC主要提供了两个能力:</span><br><span class="line">用户可以自定义网络拓扑，包括选择自有IP地址范围、划分网段、配置路由表和网关等;</span><br><span class="line">通过专线或VPN与原有数据中心连接，云上和云下的资源使用同一个网络地址规划，实现应用的平滑迁移上云。</span><br></pre></td></tr></table></figure>
+
+<h6 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">每个VPC都由一个路由器、至少一个私网网段和至少一个交换机组成。</span><br><span class="line"></span><br><span class="line">路由器（VRouter）是专有网络的枢纽。</span><br><span class="line"></span><br><span class="line">交换机(VSwitch)是组成专有网络的基础网络设备,用来连接不同的云资源。</span><br><span class="line"></span><br><span class="line">在创建专有网络和交换机时，您需要以CIDR地址块的形式指定专有网络使用的私网网段。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2、VPC连接"><a href="#2、VPC连接" class="headerlink" title="2、VPC连接"></a>2、VPC连接</h4><h6 id="公网连接技术"><a href="#公网连接技术" class="headerlink" title="公网连接技术"></a>公网连接技术</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612080738661.png" alt="image-20220612080738661"></p>
+<h6 id="vpc优势"><a href="#vpc优势" class="headerlink" title="vpc优势"></a>vpc优势</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612080839333.png" alt="image-20220612080839333"></p>
+<h6 id="本地IDC上云"><a href="#本地IDC上云" class="headerlink" title="本地IDC上云"></a>本地IDC上云</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612080929011.png" alt="image-20220612080929011"></p>
+<h4 id="3、VPC的基础架构"><a href="#3、VPC的基础架构" class="headerlink" title="3、VPC的基础架构"></a>3、VPC的基础架构</h4><h6 id="vpc逻辑架构"><a href="#vpc逻辑架构" class="headerlink" title="vpc逻辑架构"></a>vpc逻辑架构</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">基于隧道技术和软件定义网络(Software Defined Network，简称SDN)技术，阿里云的研发在硬件网关和自研交换机设备的基础上实现了VPC产品。</span><br><span class="line"></span><br><span class="line">VPC包含交换机、网关和控制器三个重要的组件。交换机和网关组成了数据通路的关键路径，控制器使用自研的协议下发转发表到网关和交换机，完成了配置通路的关键路径。</span><br></pre></td></tr></table></figure>
+
+<h6 id="网络规划"><a href="#网络规划" class="headerlink" title="网络规划"></a>网络规划</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在创建VPC和交换机前，需要结合具体的业务规划VPC和交换机的数量及网段等。</span><br><span class="line"></span><br><span class="line">一个VPC ：如果没有多地域部署系统的要求且各系统之间也不需要通过VPC进行隔离，那么推荐使用一个VPC。</span><br><span class="line"></span><br><span class="line">多个VPC：VPC是地域级别的资源，是不能跨地域部署的。当有多地域部署系统的需求时，就必须使用多个VPC。多业务系统隔离如果在一个地域的多个业务系统需要通过VPC进行严格隔离。</span><br><span class="line"></span><br><span class="line">交换机的规划:</span><br><span class="line">即使只使用一个VPC，也尽量使用至少两个交换机，并且将两个交换机分布在不同可用区，这样可以实现跨可用区容灾。</span><br><span class="line">网段的规划:</span><br><span class="line">交换机的网段必须是其所属VPC网段的子集。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4、SLB的概念"><a href="#4、SLB的概念" class="headerlink" title="4、SLB的概念"></a>4、SLB的概念</h4><h6 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h6><p>![What is SLB](What is SLB.png)</p>
+<h6 id="组成-1"><a href="#组成-1" class="headerlink" title="组成"></a>组成</h6><p>![SLB made](SLB made.png)</p>
+<h6 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h6><p>![SLB made](SLB made.png)</p>
+<h4 id="5、SLB的原理"><a href="#5、SLB的原理" class="headerlink" title="5、SLB的原理"></a>5、SLB的原理</h4><h6 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">负载均衡采用集群部署，提供四层（TCP协议和UDP协议)和七层(HTTP和HTTPS协议）的负载均衡，可实现会话同步，以消除服务器单点故障，提升冗余，保证服务的稳定性。</span><br><span class="line"></span><br><span class="line">七层</span><br><span class="line">·采用Tengine实现负载均衡。</span><br><span class="line">四层</span><br><span class="line">·采用开源软件LVS (Linux Virtual Server) + keepalived的方式实现负载均衡。</span><br></pre></td></tr></table></figure>
+
+<h6 id="常用功能"><a href="#常用功能" class="headerlink" title="常用功能"></a>常用功能</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612081447352.png" alt="image-20220612081447352"></p>
+<h6 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612081534695.png" alt="image-20220612081534695"></p>
+<h4 id="6、SLB的配置"><a href="#6、SLB的配置" class="headerlink" title="6、SLB的配置"></a>6、SLB的配置</h4><h6 id="流程-1"><a href="#流程-1" class="headerlink" title="流程"></a>流程</h6><p>![SLB use](SLB use.png)</p>
+<h6 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h6><p>![SLB waring](SLB waring.png)</p>
+<h4 id="7、实验—SLB初体验"><a href="#7、实验—SLB初体验" class="headerlink" title="7、实验—SLB初体验"></a>7、实验—SLB初体验</h4><p>PS: 后端服务器不需要配置公网IP地址（固定和弹性都不需要），外面客户访问通过SLB的公网IP地址进行访问，后端服务器添加的公网IP目的为了方便管理和控制后端服务器。</p>
+<h4 id="8、AS的概念"><a href="#8、AS的概念" class="headerlink" title="8、AS的概念"></a>8、AS的概念</h4><h6 id="概念-3"><a href="#概念-3" class="headerlink" title="概念"></a>概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">·弹性伸缩（Auto Scaling）可以根据业务需求和策略设置伸缩规则，在业务需求增长时自动增加ECS实例以保证计算能力，在业务需求下降时自动减少ECS实例以节约成本。</span><br><span class="line">·弹性伸缩不仅适合业务量不断波动的应用程序，同时也适合业务量稳定的应用程序。</span><br></pre></td></tr></table></figure>
+
+<h6 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">弹性扩张</span><br><span class="line"></span><br><span class="line">弹性收缩</span><br><span class="line"></span><br><span class="line">弹性自愈</span><br></pre></td></tr></table></figure>
+
+<h4 id="9、AS的原理"><a href="#9、AS的原理" class="headerlink" title="9、AS的原理"></a>9、AS的原理</h4><h6 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">伸缩组 --  伸缩配置 -- 伸缩规则 -- 伸缩触发任务 </span><br></pre></td></tr></table></figure>
+
+<h6 id="伸缩模式"><a href="#伸缩模式" class="headerlink" title="伸缩模式"></a>伸缩模式</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612075511029.png" alt="image-20220612075511029"></p>
+<h4 id="10、AS的配置"><a href="#10、AS的配置" class="headerlink" title="10、AS的配置"></a>10、AS的配置</h4><h6 id="流程-2"><a href="#流程-2" class="headerlink" title="流程"></a>流程</h6><p>![as use](as use.png)</p>
+<h6 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h6><p>![AS waring](AS waring.png)</p>
+<h6 id="创建伸缩组"><a href="#创建伸缩组" class="headerlink" title="创建伸缩组"></a>创建伸缩组</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">伸缩组： 具有相同应用场景的ECS实例的集合</span><br><span class="line"></span><br><span class="line">伸缩配置： 伸缩组自动创建ECS实例时候的模板</span><br></pre></td></tr></table></figure>
+
+<p>![config AS](config AS.png)</p>
+<h6 id="伸缩规则"><a href="#伸缩规则" class="headerlink" title="伸缩规则"></a>伸缩规则</h6><p>!![AS rule config](AS rule config.png)</p>
+<h4 id="11、实验—弹性伸宿-AS-初体验"><a href="#11、实验—弹性伸宿-AS-初体验" class="headerlink" title="11、实验—弹性伸宿(AS)初体验"></a>11、实验—弹性伸宿(AS)初体验</h4><p>PS：弹性伸缩AS是调整ECS服务器的数量，SLB是提供负载均衡服务，本次实验中没有结合SLB服务，无法对外提供负载均衡访问，只能调整ECS数量。一个完整的AS服务，需要后端服务器与SLB结合提供负载均衡访问，然后再由AS来调整SLB的后端服务器的数量。</p>
+<h2 id="五、阿里云云数据库"><a href="#五、阿里云云数据库" class="headerlink" title="五、阿里云云数据库"></a>五、阿里云云数据库</h2><h4 id="1、PolarDB的概念"><a href="#1、PolarDB的概念" class="headerlink" title="1、PolarDB的概念"></a>1、PolarDB的概念</h4><h6 id="概念-4"><a href="#概念-4" class="headerlink" title="概念"></a>概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">PolarDB是阿里云自研的下一代关系型云数据库，有三个独立的引擎，分别可以100%兼容MySQL.100%兼容PostgreSQL、高度兼容Oracle语法，存储容量最高可达100TB，单库最多可扩展到16个节点，适用于企业多样化的数据库应用场景。</span><br><span class="line"></span><br><span class="line">PolarDB采用存储和计算分离的架构，所有计算节点共享一份数据，提供分钟级的配置升降级、秒级的故障恢复、全局数据一致性和免费的数据备份容灾服务。PolarDB既融合了商业数据库稳定可靠、高性能、可扩展的特征，又具有开源云数据库简单开放、自我迭代的优势。</span><br></pre></td></tr></table></figure>
+
+<h6 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">集群架构，计算与存储分离点</span><br><span class="line">PolarDB采用多节点集群的架构，集群中有一个Writer节点（主节点)和多个Reader节点(读节点)。</span><br><span class="line"></span><br><span class="line">读写分离</span><br><span class="line">当应用程序使用集群地址时，PolarDB MySQL/PostgreSQL通过内部的代理层（(Proxy)对外提供服务，应用程序的请求都先经过代理，然后才访问到数据库节点。</span><br></pre></td></tr></table></figure>
+
+<h6 id="常见概念"><a href="#常见概念" class="headerlink" title="常见概念"></a>常见概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">集群：一个集群包含一个主节点以及最多15个只读节点(最少一个，用于提供Active-Active高可用)。</span><br><span class="line"></span><br><span class="line">节点：—个独立占用物理内存的数据库服务进程,节点ID以pi开头。</span><br><span class="line"></span><br><span class="line">数据库：在节点下创建的逻辑单元，一个节点可以创建多个数据库，数据库在节点内的命名唯一。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2、PolarDB的优势"><a href="#2、PolarDB的优势" class="headerlink" title="2、PolarDB的优势"></a>2、PolarDB的优势</h4><h6 id="优势-1"><a href="#优势-1" class="headerlink" title="优势"></a>优势</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612081947561.png" alt="image-20220612081947561"></p>
+<h6 id="产品架构"><a href="#产品架构" class="headerlink" title="产品架构"></a>产品架构</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云数据库PolarDB既融合了商业数据库稳定可靠、高性能、可扩展的特征，又具有开源云数据库简单开放、自我迭代的优势。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082035464.png" alt="image-20220612082035464"></p>
+<h4 id="3、RDS的概念"><a href="#3、RDS的概念" class="headerlink" title="3、RDS的概念"></a>3、RDS的概念</h4><h6 id="概念-5"><a href="#概念-5" class="headerlink" title="概念"></a>概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">阿里云关系型数据库RDS (Relational Database Service)是一种稳定可靠、可弹性伸缩的在线数据库服务。基于阿里云分布式文件系统和SSD盘高性能存储，RDS支持MySQL、SQL Server.PostgreSQL、PPAS (Postgre Plus Advanced Server，高度兼容Oracle数据库）和MariaDB TX引擎，并且提供了容灾、备份、恢复、监控、迁移等方面的全套解决方案。</span><br></pre></td></tr></table></figure>
+
+<h6 id="优势-2"><a href="#优势-2" class="headerlink" title="优势"></a>优势</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082150355.png" alt="image-20220612082150355"></p>
+<h6 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082239226.png" alt="image-20220612082239226"></p>
+<h6 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082303192.png" alt="image-20220612082303192"></p>
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082323394.png" alt="image-20220612082323394"></p>
+<h4 id="4、RDS的产品选型"><a href="#4、RDS的产品选型" class="headerlink" title="4、RDS的产品选型"></a>4、RDS的产品选型</h4><p><em><strong>在使用RDS的过程中，需要注意的选择的内容主要有:产品系列、实例规格族和存储类型。</strong></em></p>
+<h6 id="对比-1"><a href="#对比-1" class="headerlink" title="对比"></a>对比</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082422224.png" alt="image-20220612082422224"></p>
+<h6 id="实例规格分类"><a href="#实例规格分类" class="headerlink" title="实例规格分类"></a>实例规格分类</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082515033.png" alt="image-20220612082515033"></p>
+<h6 id="存储类型"><a href="#存储类型" class="headerlink" title="存储类型"></a>存储类型</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082543999.png" alt="image-20220612082543999"></p>
+<h4 id="5、PolarDB-MySQL的管理步骤"><a href="#5、PolarDB-MySQL的管理步骤" class="headerlink" title="5、PolarDB MySQL的管理步骤"></a>5、PolarDB MySQL的管理步骤</h4><h6 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082624727.png" alt="image-20220612082624727"></p>
+<h6 id="账户"><a href="#账户" class="headerlink" title="账户"></a>账户</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082701818.png" alt="image-20220612082701818"></p>
+<h6 id="集群连接地址"><a href="#集群连接地址" class="headerlink" title="集群连接地址"></a>集群连接地址</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082728635.png" alt="image-20220612082728635"></p>
+<h4 id="6、PolarDB-MySQL的连接"><a href="#6、PolarDB-MySQL的连接" class="headerlink" title="6、PolarDB MySQL的连接"></a>6、PolarDB MySQL的连接</h4><h6 id="连接方式"><a href="#连接方式" class="headerlink" title="连接方式"></a>连接方式</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">PolarDB MySQL集群支持使用DMS (Data Management Service)）和通用MySQL客户端连接。。DMS是阿里云提供的图形化的数据管理工具，它是一种集数据管理、结构管理、访问安全、Bl图表、数据趋势、数据轨迹、性能与优化和服务器管理于一体的数据管理服务。支持对关系型数据库(MySQL、SQL Server、PostgreSQL等)和NoSQL数据库(MongoDB、Redis等)的管理，同时还支持Linux服务器管理。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">可以使用任何通用的客户端连接PolarDB集群。比如HeidiSQL。</span><br><span class="line">若客户端部署在ECS实例上，且ECS实例与要访问的PolarDB集群的地域、网络类型相同，可以使用私网地址。使用私网地址连接能提供安全高效的访问。</span><br><span class="line">其它情况只能使用公网地址。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">如果服务器安装了MySQL客户端工具，可以通过命令行连接PolarDB MySQL数据库集群</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612082955042.png" alt="image-20220612082955042"></p>
+<h4 id="7、PolarDB-MySQL的数据管理"><a href="#7、PolarDB-MySQL的数据管理" class="headerlink" title="7、PolarDB MySQL的数据管理"></a>7、PolarDB MySQL的数据管理</h4><h6 id="迁移和同步"><a href="#迁移和同步" class="headerlink" title="迁移和同步"></a>迁移和同步</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云数据库PolarDB提供了多种数据迁移同步方案，可满足不同上云、迁云、同步的业务需求，可以在不影响业务的情况下平滑将数据库迁移、同步至阿里云云数据库PolarDB上面。</span><br><span class="line">通过使用阿里云数据传输服务（DTS)，可以实现PolarDB的结构迁移、全量迁移和实时同步。</span><br></pre></td></tr></table></figure>
+
+<h6 id="DTS的特点"><a href="#DTS的特点" class="headerlink" title="DTS的特点"></a>DTS的特点</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DTS具备极高的链路稳定性和数据可靠性。</span><br><span class="line">数据传输支持同/异构数据源之间的数据交互，提供数据迁移/订阅/同步交互功能。。支持节点的故障容灾，可实现链路的秒级恢复。</span><br><span class="line">支持断点续传，可有效解决因硬件、网络等异常导致的传输中断。</span><br><span class="line">DTS支持RAM主子账号体系，用户可以使用子账号创建并管理DTS实例，提高企业安全性。</span><br></pre></td></tr></table></figure>
+
+<h6 id="数据迁移"><a href="#数据迁移" class="headerlink" title="数据迁移"></a>数据迁移</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">数据迁移提供多种迁移类型:结构对象迁移、全量数据迁移及增量数据迁移。如果需要实现不停服迁移，需要选择结构对象迁移、全量数据迁移和增量数据迁移。</span><br></pre></td></tr></table></figure>
+
+<h6 id="PolarDB支持的数据迁移场景"><a href="#PolarDB支持的数据迁移场景" class="headerlink" title="PolarDB支持的数据迁移场景"></a>PolarDB支持的数据迁移场景</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">从RDS迁移至PolarDB</span><br><span class="line">从PolarDB迁移至RDS</span><br><span class="line">从自建数据库迁移至PolarDB</span><br><span class="line">从第三方云数据库迁移至PolarDB</span><br><span class="line">PolarDB之间的数据迁移</span><br></pre></td></tr></table></figure>
+
+<h6 id="数据同步"><a href="#数据同步" class="headerlink" title="数据同步"></a>数据同步</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">实时同步功能能够实现两个数据源之间的增量数据实时同步</span><br></pre></td></tr></table></figure>
+
+<h6 id="PolarDB数据同步场景"><a href="#PolarDB数据同步场景" class="headerlink" title="PolarDB数据同步场景:"></a>PolarDB数据同步场景:</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">·从RDS同步至PolarDB</span><br><span class="line"></span><br><span class="line">·从PolarDB间的同步</span><br><span class="line">从自建数据库同步至POALRDB</span><br><span class="line"></span><br><span class="line">·从PolarDB同步至RDS</span><br><span class="line">·从PolarDB同步至分析型数据库</span><br><span class="line"></span><br><span class="line">.从PolarDB同步至Datahub.</span><br><span class="line"></span><br><span class="line">从PolarDB同步至Kafka</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="8、实验—PolarDB-MySQL"><a href="#8、实验—PolarDB-MySQL" class="headerlink" title="8、实验—PolarDB MySQL"></a>8、实验—PolarDB MySQL</h4><h2 id="六、阿里云CDN"><a href="#六、阿里云CDN" class="headerlink" title="六、阿里云CDN"></a>六、阿里云CDN</h2><h4 id="1、CDN的概念"><a href="#1、CDN的概念" class="headerlink" title="1、CDN的概念"></a>1、CDN的概念</h4><h6 id="CDN解决的问题"><a href="#CDN解决的问题" class="headerlink" title="CDN解决的问题"></a>CDN解决的问题</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">最后一公里传输质量</span><br><span class="line">用户与服务器物理距离远，多次网络转发，延时高，且不稳定。</span><br><span class="line">先进的分布式系统架构，国内节点数最多的云CDN:全球1500+。</span><br><span class="line"></span><br><span class="line">弹性带宽、低成本</span><br><span class="line">资源弹性扩展，按实际使用量付费，接入即可实现跨运营商、跨地域的全网覆盖。</span><br><span class="line">先用后付，提供按流量或峰值带宽两种计费方式，满足不同业务需求。</span><br><span class="line"></span><br><span class="line">减少源站压力，节省源站带宽成本</span><br><span class="line">对于网站突发流量，无需用户干预，自动作出响应和调整，有效减少源站压力。</span><br><span class="line">CDN是公认的最具性价比的解决方案。</span><br></pre></td></tr></table></figure>
+
+<h6 id="概念-6"><a href="#概念-6" class="headerlink" title="概念"></a>概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">阿里云内容分发网络(Content Delivery Network，简称CDN)是建立并覆盖在承载网之上，由分布在不同区域的边缘节点服务器群组成的分布式网络。阿里云CDN分担源站压力，避免网络拥塞，确保在不同区域、不同场景下加速网站内容的分发，提高资源访问速度。</span><br><span class="line">阿里云CDN将源站资源缓存至阿里云遍布全球的加速节点上，当终端用户请求访问和获取该资源时，无需回源，系统自动调用离终端用户最近的CDN节点上已缓存的资源。</span><br></pre></td></tr></table></figure>
+
+<h6 id="相关产品"><a href="#相关产品" class="headerlink" title="相关产品"></a>相关产品</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612083540474.png" alt="image-20220612083540474"></p>
+<h6 id="主要优势"><a href="#主要优势" class="headerlink" title="主要优势"></a>主要优势</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612083616091.png" alt="image-20220612083616091"></p>
+<h4 id="2、CDN的工作原理"><a href="#2、CDN的工作原理" class="headerlink" title="2、CDN的工作原理"></a>2、CDN的工作原理</h4><h6 id="CDN工作原理"><a href="#CDN工作原理" class="headerlink" title="CDN工作原理"></a>CDN工作原理</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612083715726.png" alt="image-20220612083715726"></p>
+<h6 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612083739154.png" alt="image-20220612083739154"></p>
+<h4 id="3、CDN的常用名词"><a href="#3、CDN的常用名词" class="headerlink" title="3、CDN的常用名词"></a>3、CDN的常用名词</h4><h6 id="常见名词"><a href="#常见名词" class="headerlink" title="常见名词"></a>常见名词</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612083814374.png" alt="image-20220612083814374"></p>
+<h6 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CDN的业务使用场景，分为静态内容加速、动态内容加速和安全加速。其中，阿里云CDN只针对于静态内容加速的使用;动态内容加速需使用阿里云全站加速;安全加速需使用阿里云安全加速。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612083858685.png" alt="image-20220612083858685"></p>
+<h4 id="4、CDN的使用"><a href="#4、CDN的使用" class="headerlink" title="4、CDN的使用"></a>4、CDN的使用</h4><h6 id="流程-3"><a href="#流程-3" class="headerlink" title="流程"></a>流程</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612083928731.png" alt="image-20220612083928731"></p>
+<h6 id="加速域名"><a href="#加速域名" class="headerlink" title="加速域名"></a>加速域名</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">如果需要使用CDN加速指定网站上的业务，则需要将该网站作为源站，为其创建加速域名。</span><br><span class="line">CDN通过加速域名将源站上的资源缓存到CDN的加速节点，实现资源访问加速。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">加速域名注意事项:</span><br><span class="line">1．加速城名一般使用子域名或泛域名。</span><br><span class="line">2．支持泛域名加速，不支持中文域名加速。</span><br><span class="line">3．加速域名不允许重复添加。</span><br><span class="line">4．如果泛域名未被添加到任何CDN账号下，则其支持多个CDN账号添加不同的子域名。</span><br><span class="line">5．加速内容必须合法且符合CDN业务规范。</span><br></pre></td></tr></table></figure>
+
+<h6 id="配置CNAME"><a href="#配置CNAME" class="headerlink" title="配置CNAME"></a>配置CNAME</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">域名添加成功后，阿里云CDN会分配对应的CNAME地址。如果想启用CDN加速服务，则需要将加速域名指向CNAME地址，访问加速域名的请求才能转发到CDN节点上，达到加速效果。</span><br><span class="line"></span><br><span class="line">不同的DNS服务商修改CNAME记录方式略有不同，请参考相应DNS服务商进行配置。</span><br></pre></td></tr></table></figure>
+
+<h6 id="停止CDN"><a href="#停止CDN" class="headerlink" title="停止CDN"></a>停止CDN</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">当不想使用CDN加速服务时，可以在CDN控制台上删除指定加速域名。删除加速域名后，不会产生任何费用。</span><br><span class="line">在域名管理页面，单击目标域名对应下图红框中的图标，选择删除。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="七、阿里云云上安全防护"><a href="#七、阿里云云上安全防护" class="headerlink" title="七、阿里云云上安全防护"></a>七、阿里云云上安全防护</h2><h4 id="1、云计算常见威胁"><a href="#1、云计算常见威胁" class="headerlink" title="1、云计算常见威胁"></a>1、云计算常见威胁</h4><h6 id="网络安全概述"><a href="#网络安全概述" class="headerlink" title="网络安全概述"></a>网络安全概述</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">针对网络中的一个运行系统而言，网络安全是指网络系统的硬件、软件及其系统中的信息受到保护。包括系统连续、可靠、正常地运行，网络服务不中断，系统中的信息不因偶然的或恶意的行为而遭到破坏、更改或泄露。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084247650.png" alt="image-20220612084247650"></p>
+<h6 id="云计算面临的新挑战"><a href="#云计算面临的新挑战" class="headerlink" title="云计算面临的新挑战"></a>云计算面临的新挑战</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">传统集中式管理方式有很大安全问题，云计算的多租户、分布性、对网络和服务提供者的依赖性，为安全问题带来新的挑战。除了传统信息系统的安全问题外，云计算由于其本身的特点，带来了新的安全威胁。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084333661.png" alt="image-20220612084333661"></p>
+<h4 id="2、阿里云云上安全"><a href="#2、阿里云云上安全" class="headerlink" title="2、阿里云云上安全"></a>2、阿里云云上安全</h4><p><em><strong>云上安全是由阿里云和用户共同负责构建云安全环境。</strong></em></p>
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084441722.png" alt="image-20220612084441722"></p>
+<h6 id="阿里云安全体系"><a href="#阿里云安全体系" class="headerlink" title="阿里云安全体系"></a>阿里云安全体系</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084506888.png" alt="image-20220612084506888"></p>
+<h4 id="3、阿里云DDoS防护"><a href="#3、阿里云DDoS防护" class="headerlink" title="3、阿里云DDoS防护"></a>3、阿里云DDoS防护</h4><h6 id="DDos"><a href="#DDos" class="headerlink" title="DDos"></a>DDos</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">分布式拒绝服务（Distributed Denial of Service，简称DDoS)将多台计算机联合起来作为攻击平台，通过远程连接利用恶意程序，对一个或多个目标发起DDoS攻击，消耗目标服务器性能或网络带宽，从而造成服务器无法正常地提供服务。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084603137.png" alt="image-20220612084603137"></p>
+<h6 id="阿里云DDoS原生防护"><a href="#阿里云DDoS原生防护" class="headerlink" title="阿里云DDoS原生防护"></a>阿里云DDoS原生防护</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DDoS原生防护是一款针对阿里云ECS、 SLB、Web应用防火墙、EIP等产品直接提升DDoS防御能力的安全产品。相比于DDoS高防，DDoS原生防护可以直接把防御能力加载到云产品上，不需要更换IP，也没有四层端口、七层域名数等限制。同时，DDoS原生防护部署简易，购买后只需要绑定需要防护的云产品的IP地址即可使用，几分钟内生效。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084708860.png" alt="image-20220612084708860"></p>
+<h6 id="DDoS高防"><a href="#DDoS高防" class="headerlink" title="DDoS高防"></a>DDoS高防</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DDoS高防(Anti-DDoS）是阿里云提供的DDos攻击代理防护服务。当用户的互联网服务器遭受大流量的DDos攻击时，DDoS高防可以保护其应用服务持续可用。DDoS高防通过DNS解析调度流量到阿里云高防网络，代理接入阿里云DDoS防护系统，抵御流量型和资源耗尽型DDoS攻击。</span><br><span class="line"></span><br><span class="line">DDoS高防支持通过DNS解析和IP直接指向两种引流方式，实现网站域名和业务端口的接入防护。根据用户在DDoS高防服务中为业务配置的转发规则，DDoS高防将业务的DNS域名解析或业务IP指向DDoS高防实例IP或CNAME地址进行引流。</span><br><span class="line"></span><br><span class="line">来自公网的访问流量都将优先经过高防机房，恶意攻击流量将在高防流量清洗中心进行清洗过滤，正常的访问流量通过端口协议转发的方式返回给源站服务器，从而保障源站服务器的稳定访问。</span><br></pre></td></tr></table></figure>
+
+<h6 id="流程-4"><a href="#流程-4" class="headerlink" title="流程"></a>流程</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084807399.png" alt="image-20220612084807399"></p>
+<h4 id="4、Web应用防火墙"><a href="#4、Web应用防火墙" class="headerlink" title="4、Web应用防火墙"></a>4、Web应用防火墙</h4><h6 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云盾Web应用防火墙(Web Application Firewall，简称WAF)基于云安全大数据能力，用于防御SQL注入.XSS跨站脚本、常见Web服务器插件漏洞、木马上传、非授权核心资源访问等OWASP常见攻击，并过滤海量恶意CC攻击，避免您的网站资产数据泄露，保障网站的安全与可用性。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084921231.png" alt="image-20220612084921231"></p>
+<h6 id="WEB应用安全防护"><a href="#WEB应用安全防护" class="headerlink" title="WEB应用安全防护"></a>WEB应用安全防护</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612084952930.png" alt="image-20220612084952930"></p>
+<h6 id="优势-3"><a href="#优势-3" class="headerlink" title="优势"></a>优势</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云盾Web应用防火墙具有部署简易、防护及时精确、大数据驱动、高可靠等优势。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612085028576.png" alt="image-20220612085028576"></p>
+<h6 id="接入WAF"><a href="#接入WAF" class="headerlink" title="接入WAF"></a>接入WAF</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">使用Web应用防火墙之前，必须将要防护的网站接入Web应用防火墙。网站接入默认使用DNS配置模式，需要在Web应用防火墙添加域名，设置网站流量的转发信息，并修改域名的DNS解析设置，将网站流量解析到Web应用防火墙进行防护。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612085107524.png" alt="image-20220612085107524"></p>
+<h4 id="5、云安全中心"><a href="#5、云安全中心" class="headerlink" title="5、云安全中心"></a>5、云安全中心</h4><h6 id="概念-7"><a href="#概念-7" class="headerlink" title="概念"></a>概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云安全中心是一个实时识别、分析、预警安全威胁的统一安全管理系统，通过防勒索、防病毒、防篡改、合规检查等安全能力，实现威胁检测、响应、溯源的自动化安全运营闭环，保护云上资产和本地服务器并满足监管合规要求。</span><br></pre></td></tr></table></figure>
+
+<h6 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云安全中心提供基础版、基础杀毒版、高级版和企业版多个版本</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612085208631.png" alt="image-20220612085208631"></p>
+<h6 id="优势-4"><a href="#优势-4" class="headerlink" title="优势"></a>优势</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612085233365.png" alt="image-20220612085233365"></p>
+<h6 id="使用流程-2"><a href="#使用流程-2" class="headerlink" title="使用流程"></a>使用流程</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612085251257.png" alt="image-20220612085251257"></p>
+<h4 id="6、云监控的概念"><a href="#6、云监控的概念" class="headerlink" title="6、云监控的概念"></a>6、云监控的概念</h4><h6 id="概念-8"><a href="#概念-8" class="headerlink" title="概念"></a>概念</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云监控(CloudMonitor）是一项针对阿里云资源和互联网应用进行监控的服务。</span><br><span class="line">云监控为云上用户提供开箱即用的企业级开放型一站式监控解决方案。云监控涵盖IT设施基础监控和外网网络质量拨测监控，是基于事件、自定义指标和日志的业务监控，全方位提供更高效、全面、省钱的监控服务。</span><br></pre></td></tr></table></figure>
+
+<h6 id="优势-5"><a href="#优势-5" class="headerlink" title="优势"></a>优势</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">云监控结合阿里云云计算平台强大的数据分析能力，提供云服务监控、站点监控和自定义监控，云产品、业务保驾护航。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612085418116.png" alt="image-20220612085418116"></p>
+<h6 id="应用场景-1"><a href="#应用场景-1" class="headerlink" title="应用场景"></a>应用场景</h6><p><img src="/2022/06/12/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8A%A9%E7%90%86ACA%E7%AC%94%E8%AE%B0/image-20220612085441643.png" alt="image-20220612085441643"></p>
+<h4 id="7、云监控的使用"><a href="#7、云监控的使用" class="headerlink" title="7、云监控的使用"></a>7、云监控的使用</h4><h6 id="主机监控"><a href="#主机监控" class="headerlink" title="主机监控"></a>主机监控</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">·主机监控的应用场景如下:</span><br><span class="line">·混合云场景下监控解决方案云监控通过插件采集用户服务器监控数据，该插件支持安装在非ECS服务器上，解决云上、云下双重环境的基础监控问题。</span><br><span class="line">·企业级用户的监控解决方案主机监控提供应用分组功能，支持将阿里云不同地域的服务器分配在同一分组中，真正从业务角度管理服务器。同时，提供分组维度的报警功能管理能力，一次规则设置可以作用全组，极大提升监控运维效率和管理体验。</span><br></pre></td></tr></table></figure>
+
+<h6 id="自定义监控"><a href="#自定义监控" class="headerlink" title="自定义监控"></a>自定义监控</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">·自定义监控提供了自由定义监控项及报警规则的功能。</span><br><span class="line">·可以针对自己关心的业务指标进行监控，将采集到的监控数据上报至云监控，由云监控来进行数据处理，并根据处理结果进行报警。</span><br><span class="line">·事件监控与自定义监控的区别:</span><br><span class="line">·事件监控用于解决非连续的事件类型数据监控数据上报、查询与报警的场景。</span><br><span class="line">·自定义监控用于解决周期性持续采集的时间序列监控数据上报、查询与报警的场景。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="8、实验—安全中心初体验"><a href="#8、实验—安全中心初体验" class="headerlink" title="8、实验—安全中心初体验"></a>8、实验—安全中心初体验</h4><p>PS：</p>
+<p>资产安全状态通过云安全中心Agent插件收集和检测得出。</p>
+<p>如果在创建ECS实例时勾选了安全加固，会自动加载云安全中心基础版本，即自动为该ECS服务器开启Agent插件。这种情况下，可以直接使用云安全中心提供的服务。</p>
+<p>在创建ECS实例时未勾选安全加固，实例创建完成后，如果还需云安全中心为该ECS服务器提供安全防护，需要先安装云安全中心Agent。</p>
+<h4 id="9、实验—云监控初体验"><a href="#9、实验—云监控初体验" class="headerlink" title="9、实验—云监控初体验"></a>9、实验—云监控初体验</h4><p>PS:</p>
+<p>阿里云云监控支持非阿里云主机的监控，需要手动安装插件。</p>
+<p>在主机监控页面，可以点击“非阿里云主机安装”按钮：</p>
+]]></content>
+      <categories>
+        <category>阿里 ACA</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
 </search>
